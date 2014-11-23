@@ -83,6 +83,12 @@
             android:key="carrierlabel"
             android:fragment="com.android.settings.xperience.CarrierLabel"
             android:title="@string/carrier_options" />
+
+        <PreferenceScreen
+            android:key="network_traffic_state"
+            android:fragment="com.android.settings.xperience.NetworkTraffic"
+	    android:summary="@string/network_traffic_summary"
+	    android:title="@string/network_traffic_title" />
     </PreferenceCategory>
 
 </PreferenceScreen>
