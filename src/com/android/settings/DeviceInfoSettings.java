@@ -119,7 +119,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         findPreference(KEY_BUILD_NUMBER).setEnabled(true);
         findPreference(KEY_KERNEL_VERSION).setSummary(getFormattedKernelVersion());
         setValueSummary(KEY_MOD_VERSION_XPE, "ro.xpe.display.version");
-        findPreference(KEY_MOD_VERSION).setEnabled(true);
+	findPreference(KEY_MOD_VERSION_XPE).setEnabled(true);
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
 	setValueSummary(KEY_MOD_RELEASE_TYPE, "ro.xpe.releasetype");
 
