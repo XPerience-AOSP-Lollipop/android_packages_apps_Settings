@@ -658,6 +658,13 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
                 .getStringArray(R.array.root_access_entries)[Integer.valueOf(value)]);
     }
 
+    /* package */ static boolean isRootForAppsEnabled() {
+        int value = SystemProperties.getInt(ROOT_ACCESS_PROPERTY, 1);
+        boolean daemonState =
+                SystemProperties.get("init.svc.su_daemon", "absent").equals("running");
+        return daemonState && (value == 1 || value == 3);
+    }
+
     private void writeRootAccessOptions(Object newValue) {
         String oldValue = SystemProperties.get(ROOT_ACCESS_PROPERTY, "1");
         SystemProperties.set(ROOT_ACCESS_PROPERTY, newValue.toString());
@@ -1628,7 +1635,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
                 mRootDialog = new AlertDialog.Builder(getActivity())
                         .setMessage(getResources().getString(R.string.root_access_warning_message))
                         .setTitle(R.string.root_access_warning_title)
-                        .setIcon(android.R.drawable.ic_dialog_alert)
                         .setPositiveButton(android.R.string.yes, this)
                         .setNegativeButton(android.R.string.no, this).show();
                 mRootDialog.setOnDismissListener(this);
