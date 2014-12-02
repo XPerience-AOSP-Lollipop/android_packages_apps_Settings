@@ -1428,7 +1428,6 @@ public final class Utils {
     public static boolean isTablet(Context con) {
         return getScreenType(con) == DEVICE_TABLET;
     }
-}
 
     public static boolean isDozeAvailable(Context context) {
         String name = Build.IS_DEBUGGABLE ? SystemProperties.get("debug.doze.component") : null;
