@@ -1807,18 +1807,6 @@
                 android:resource="@id/profiles_settings" />
         </activity-alias>
 
-        <activity android:name=".profiles.ProfileConfig" />
-
-        <activity android:name=".profiles.AppGroupList" />
-
-        <activity android:name=".profiles.AppGroupConfig" />
-
-        <activity android:name=".profiles.ProfileGroupConfig" />
-
-        <activity android:name=".profiles.WifiTriggers" />
-
-        <activity android:name=".profiles.NFCProfileWriter" />
-
         <activity android:name=".profiles.NFCProfileSelect" />
 
         <activity android:name=".profiles.NFCProfile"
@@ -2119,11 +2107,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".cyanogenmod.PrivacySettings" />
-
-        <activity android:name=".notificationlight.NotificationLightSettings" />
-        <activity android:name=".notificationlight.BatteryLightSettings" />
 
         <receiver android:name=".widget.SettingsAppWidgetProvider"
                 android:label="@string/gadget_title"
