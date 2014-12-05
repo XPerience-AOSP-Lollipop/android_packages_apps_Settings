@@ -15,12 +15,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
-    <!-- About phone screen, CyanogenMod version -->
-    <string name="mod_version_xpe">Versión XPerience™</string>
-    <string name="mod_version_xpedefault">Desconocido</string>
-
-    <string name="rel_type">Tipo de Build</string>
-    <string name="performance_app">Rendimiento XPe™</string>
-    
+ <string name="show_status_bar_carrier_title">运营商名称</string>
+ <string name="show_status_bar_carrier_summary">在状态栏显示运营商名称</string>
+ <string name="custom_carrier_label_title">自定义运营商名称</string>
+ <string name="custom_carrier_label_explain">请输入新的运营商名称，留空为恢复默认运营商名称。</string>
+ <string name="custom_carrier_label_notset">当前没有设置运营商名称</string>
+ 
+ <string name="status_bar_am_pm_title">上午/下午样式</string>
 </resources>
+ 
