@@ -45,10 +45,5 @@
   <string name="listview_overshoot_interpolator">快速到达终点超出一小步然后回到终点</string>
   <string name="listview_anticipate_overshoot_interpolator">到达终点超出一小步然后回到终点</string>
   <string name="listview_bounce_interpolator">到达终点产生弹球效果，弹几下回到终点</string>
-  
- <string name="navigation_bar_height">导航栏高度</string>
- <string name="navigation_bar_height_48">48dp (默认)</string>
- <string name="navigation_bar_height_0">隐藏</string>
- <string name="navigation_bar_category">导航栏</string>
 </resources>
  
