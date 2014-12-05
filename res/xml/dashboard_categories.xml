@@ -279,12 +279,12 @@
 	<dashboard-tile
 		android:id="@+id/performance"
 		android:icon="@drawable/ic_settings_performance"
-	 	android:title="@string/performance_app">
+	        android:title="@string/performance_app">
 	        <intent
 		  android:action="android.intent.action.MAIN" 
 		  android:targetPackage="com.klozz.performance"
 		  android:targetClass="com.klozz.performance.MainActivity"/>
-		/>
+		</dashboard-tile>
 	  	
         <!-- Development -->
         <dashboard-tile
