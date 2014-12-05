@@ -278,7 +278,7 @@
 	<!-- XPerience Performance APP-->
 	<dashboard-tile
 		android:id="@+id/performance"
-		android:icon="@drawable/ic_settings_performance"
+		android:icon="@drawable/ic_settings_development"
 	        android:title="@string/performance_app">
 	        <intent
 		  android:action="android.intent.action.MAIN" 
