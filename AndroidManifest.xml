@@ -107,6 +107,8 @@
             android:supportsRtl="true"
             android:allowBackup="false">
 
+        <uses-library android:name="org.cyanogenmod.hardware" required="false" />
+
         <!-- Only system/su can open this activity -->
         <!-- This activity will then call the MultitaskSuRequestActivity to create a new task stack -->
         <activity
@@ -1822,7 +1824,7 @@
 
         <activity android:name=".cyanogenmod.SpamList" />
 
-         <!-- "Blacklist settings" UI, used only on voice-capable phone devices. -->
+        <!-- "Blacklist settings" UI, used only on voice-capable phone devices. -->
         <activity android:name="Settings$BlacklistSettingsActivity"
                 android:theme="@style/Theme.SubSettingsDialogWhenLarge"
                 android:uiOptions="splitActionBarWhenNarrow"
