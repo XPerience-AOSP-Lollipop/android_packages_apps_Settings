@@ -23,7 +23,4 @@
     <string name="rel_type">Tipo de Build</string>
     <string name="performance_app">Rendimiento XPe™</string>
     
-    <string name="status_bar_show_weather_title">Mostrar clima</string>
-    <string name="status_bar_show_weather_summary">Muestra el clima en la barra de estado</string>
-    
 </resources>
