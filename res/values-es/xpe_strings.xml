@@ -26,4 +26,54 @@
     <string name="status_bar_show_weather_title">Mostrar clima</string>
     <string name="status_bar_show_weather_summary">Muestra el clima en la barra de estado</string>
     
+                <!-- donators strings -->
+    <string name="donators_title">Ver donantes</string>
+    <string name="donators_loading">Cargango lista de donantes...</string>
+    <string name="donators_error">No se puede leer el archivo de donadores.</string>
+
+     <!-- Show carrier label and custom -->
+ <string name="show_status_bar_carrier_title">Status bar carrier</string>
+ <string name="show_status_bar_carrier_summary">Mostrar Carrier en la barra de estado</string>
+ <string name="custom_carrier_label_title">Etiqueta customizada de carrier</string>Deje en blanco para regresar a la etiqueta por defecto.</string>
+ <string name="custom_carrier_label_notset">Etiqueta custom. Actualmente no usada</string>
+
+  <!-- show network speed -->
+ <string name="show_network_speed_title">Velocidad de Red</string>
+ <string name="show_network_speed_summary">Mostrar velocidad de Red en barra de estado</string>
+ <string name="status_bar_network_traffic_style_disable">Desactivada</string>
+ <string name="status_bar_network_traffic_style_up">Saliente</string>
+ <string name="status_bar_network_traffic_style_down">Entrante</string>
+ <string name="status_bar_network_traffic_style_all">Saliente y Entrante</string>
+
+     <!-- AP/PM Indicator -->
+    <string name="status_bar_am_pm_title">Estilo AM/PM</string>
+    
+    <!-- Animation Settings -->
+    <string name="animation_settings_title">Animación</string>
+
+    
+    
+    <!-- Status bar -->
+    <string name="status_bar_title">Barra de Estado</string>
+    <string name="status_bar_toggle_brightness">Control de Brillo</string>
+    <string name="status_bar_toggle_brightness_summary">Ajuste el brillo deslizando a través de la barra de estado</string>
+    <string name="status_bar_quick_qs_pulldown_title">Despliegue rápido</string>
+    <string name="status_bar_quick_qs_pulldown_summary">Borde derecho de la barra de estado despliega ajustes rápidos</string>
+    <string name="status_bar_notif_count_title">Mostrar conteo de notificaciones</string>
+    <string name="status_bar_notif_count_summary">Muestra el número pendiente de notificaciones</string>
+    
+        <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Mostrar porcentaje de batería</string>
+    <string name="status_bar_battery_percentage_dialog_title">porcentaje de batería</string>
+    <string name="status_bar_battery_percentage_default">Oculta (defecto)</string>
+    <string name="status_bar_battery_percentage_text_inside">Dentro del icono</string>
+    <string name="status_bar_battery_percentage_text_next">A un lado del icono</string>
+    
+        <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_title">Estilo de batería</string>
+    <string name="status_bar_battery_style_icon_portrait">Icon portrait</string>
+    <string name="status_bar_battery_style_icon_landscape">Icon landscape</string>
+    <string name="status_bar_battery_style_circle">Circular</string>
+    <string name="status_bar_battery_style_text">Texto</string>
+    <string name="status_bar_battery_style_hidden">Oculto</string>
 </resources>

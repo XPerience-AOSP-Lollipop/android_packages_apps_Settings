@@ -30,8 +30,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class ChangeLog extends Fragment {
-    private static final String CHANGELOG_PATH = "/system/etc/CHANGELOG-XPE.txt";
+public class Donators extends Fragment {
+    private static final String DONATORS_PATH = "/system/etc/donators.txt";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -44,13 +44,13 @@ public class ChangeLog extends Fragment {
             char tmp[] = new char[2048];
             int numRead;
 
-            inputReader = new FileReader(CHANGELOG_PATH);
+            inputReader = new FileReader(DONATORS_PATH);
             while ((numRead = inputReader.read(tmp)) >= 0) {
                 data.append(tmp, 0, numRead);
             }
             text = data.toString();
         } catch (IOException e) {
-            text = getString(R.string.changelog_error);
+            text = getString(R.string.donators_error);
         } finally {
             try {
                 if (inputReader != null) {
@@ -69,3 +69,4 @@ public class ChangeLog extends Fragment {
         return scrollView;
     }
 }
+ 

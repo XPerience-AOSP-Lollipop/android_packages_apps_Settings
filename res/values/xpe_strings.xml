@@ -73,4 +73,14 @@
     <string name="status_bar_show_weather_title">Show weather</string>
     <string name="status_bar_show_weather_summary">Show the weather in the status bar header</string>
     
+        <!-- Change Log strings -->
+    <string name="changelog_title">View changelog</string>
+    <string name="changelog_loading">Loading changelog...</string>
+    <string name="changelog_error">Unable to load changelog</string>
+    
+            <!-- donators strings -->
+    <string name="donators_title">View donators</string>
+    <string name="donators_loading">Loading donators...</string>
+    <string name="donators_error">Unable to load donators text</string>
+    
 </resources>
