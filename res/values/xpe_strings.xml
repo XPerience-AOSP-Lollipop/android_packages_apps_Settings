@@ -83,4 +83,7 @@
     <string name="donators_loading">Loading donators...</string>
     <string name="donators_error">Unable to load donators text</string>
     
+    <!-- xpirt's show search bar in recent apps - probably will need reboot -->
+    <string name="recents_show_search_bar_title">Show search bar in recent apps</string>
+    <string name="recents_show_search_bar_summary">Show or hide search bar in recent apps</string>
 </resources>

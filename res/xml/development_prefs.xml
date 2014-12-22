@@ -372,6 +372,11 @@
             android:title="@string/kill_app_longpress_back"
             android:summary="@string/kill_app_longpress_back_summary"/>
 
+        <CheckBoxPreference
+            android:key="recents_show_search_bar"
+            android:title="@string/recents_show_search_bar_title"
+            android:summary="@string/recents_show_search_bar_summary"/>
+
      </PreferenceCategory>
 
 </PreferenceScreen>

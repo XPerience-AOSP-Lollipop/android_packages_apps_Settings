@@ -164,6 +164,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
 
     private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
 
+    private static final String RECENTS_SHOW_SEARCH_BAR = "recents_show_search_bar";
+
     private static final String PROCESS_STATS = "proc_stats";
 
     private static final String TAG_CONFIRM_ENFORCE = "confirm_enforce";
@@ -252,6 +254,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
 
     private CheckBoxPreference mShowAllANRs;
     private CheckBoxPreference mKillAppLongpressBack;
+    private CheckBoxPreference mRecentsShowSearchBar;
 
     private PreferenceScreen mProcessStats;
     private ListPreference mRootAccess;
@@ -404,6 +407,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
 
         mKillAppLongpressBack = findAndInitCheckboxPref(KILL_APP_LONGPRESS_BACK);
 
+        mRecentsShowSearchBar = findAndInitCheckboxPref(RECENTS_SHOW_SEARCH_BAR);
+
         Preference hdcpChecking = findPreference(HDCP_CHECKING_KEY);
         if (hdcpChecking != null) {
             mAllPrefs.add(hdcpChecking);
@@ -542,6 +547,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         }
         mSwitchBar.show();
         updateKillAppLongpressBackOptions();
+        updateRecentsShowSearchBarOptions();
     }
 
     @Override
@@ -790,6 +796,18 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private void updateKillAppLongpressBackOptions() {
         mKillAppLongpressBack.setChecked(Settings.Secure.getInt(
             getActivity().getContentResolver(), Settings.Secure.KILL_APP_LONGPRESS_BACK, 0) != 0);
+    }
+
+	// xpirt's show search bar in recent apps
+    private void writeRecentsShowSearchBarOptions {
+        Settings.System.putInt(getActivity().getContentResolver(),
+                Settings.System.RECENTS_SHOW_SEARCH_BAR,
+                mRecentsShowSearchBar.isChecked() ? 1 : 0);
+    }
+
+    private void updateRecentsShowSearchBarOptions() {
+        mRecentsShowSearchBar.setChecked(Settings.System.getInt(
+            getActivity().getContentResolver(), Settings.System.RECENTS_SHOW_SEARCH_BAR, 0) != 0);
     }
 
     private void updatePasswordSummary() {
@@ -1665,6 +1683,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             writeDevelopmentShortcutOptions();
         } else if (preference == mKillAppLongpressBack) {
             writeKillAppLongpressBackOptions();
+        } else if (preference == mRecentsShowSearchBar) {
+            writeRecentsShowSearchBarOptions();
         } else {
             return super.onPreferenceTreeClick(preferenceScreen, preference);
         }
