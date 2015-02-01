@@ -248,6 +248,17 @@
                 android:icon="@drawable/ic_settings_development"
                 />
 
+	<!-- XPerience Performance APP-->
+	<dashboard-tile
+		android:id="@+id/xperiencecenter"
+		android:icon="@mipmap/ic_launcher_xpeota"
+	        android:title="@string/OTACENTER">
+	        <intent
+		  android:action="android.intent.action.MAIN" 
+		  android:targetPackage="com.xperience.ota"
+		  android:targetClass="com.xperience.center.XPerienceCenter"/>
+		</dashboard-tile>
+
         <!-- About Device -->
         <dashboard-tile
                 android:id="@+id/about_settings"
