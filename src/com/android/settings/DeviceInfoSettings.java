@@ -63,7 +63,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String LOG_TAG = "DeviceInfoSettings";
     private static final String FILENAME_PROC_VERSION = "/proc/version";
     private static final String FILENAME_MSV = "/sys/board_properties/soc/msv";
-    private static final String FILENAME_PROC_CPUINFO = "/proc/cpuinfo";
 
     private static final String KEY_CONTAINER = "container";
     private static final String KEY_REGULATORY_INFO = "regulatory_info";
@@ -77,7 +76,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_KERNEL_VERSION = "kernel_version";
     private static final String KEY_BUILD_NUMBER = "build_number";
     private static final String KEY_DEVICE_MODEL = "device_model";
-    private static final String KEY_DEVICE_PROCESSOR = "device_processor";
     private static final String KEY_SELINUX_STATUS = "selinux_status";
     private static final String KEY_BASEBAND_VERSION = "baseband_version";
     private static final String KEY_FIRMWARE_VERSION = "firmware_version";
@@ -112,7 +110,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         findPreference(KEY_FIRMWARE_VERSION).setEnabled(true);
         setValueSummary(KEY_BASEBAND_VERSION, "gsm.version.baseband");
         setStringSummary(KEY_DEVICE_MODEL, Build.MODEL + getMsvSuffix());
-        setStringSummary(KEY_DEVICE_PROCESSOR, getDeviceProcessorInfo());
         setValueSummary(KEY_EQUIPMENT_ID, PROPERTY_EQUIPMENT_ID);
         setStringSummary(KEY_DEVICE_MODEL, Build.MODEL);
         setStringSummary(KEY_BUILD_NUMBER, Build.DISPLAY);
@@ -184,7 +181,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
 
         // Read platform settings for additional system update setting
         removePreferenceIfBoolFalse(KEY_UPDATE_SETTING,
-                R.bool.config_additional_system_update_setting_enable);
+                getResources().getBoolean(R.bool.config_additional_system_update_setting_enable));
 
         // Remove regulatory information if none present.
         final Intent intent = new Intent(Settings.ACTION_SHOW_REGULATORY_INFO);
@@ -194,7 +191,11 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 getPreferenceScreen().removePreference(pref);
             }
         }
+
         mAdvancedSettings = (SecureSettingSwitchPreference) findPreference(KEY_ADVANCED_MODE);
+        // If enabled by default, just remove the setting, because it's confusing.
+        removePreferenceIfBoolFalse(KEY_ADVANCED_MODE, !getResources().getBoolean(
+                com.android.internal.R.bool.config_advancedSettingsMode));
     }
 
     @Override
@@ -283,8 +284,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         }
     }
 
-    private void removePreferenceIfBoolFalse(String preference, int resId) {
-        if (!getResources().getBoolean(resId)) {
+    private void removePreferenceIfBoolFalse(String preference, boolean bool) {
+        if (!bool) {
             Preference pref = findPreference(preference);
             if (pref != null) {
                 getPreferenceScreen().removePreference(pref);
@@ -512,40 +513,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 return false;
             }
         };
-
-    /**
-     * Returns the Hardware value in /proc/cpuinfo, else returns "Unknown".
-     * @return a string that describes the processor
-     */
-    private static String getDeviceProcessorInfo() {
-        // Hardware : XYZ
-        final String PROC_HARDWARE_REGEX = "Hardware\\s*:\\s*(.*)$"; /* hardware string */
-
-        try {
-            BufferedReader reader = new BufferedReader(new FileReader(FILENAME_PROC_CPUINFO));
-            String cpuinfo;
-
-            try {
-                while (null != (cpuinfo = reader.readLine())) {
-                    if (cpuinfo.startsWith("Hardware")) {
-                        Matcher m = Pattern.compile(PROC_HARDWARE_REGEX).matcher(cpuinfo);
-                        if (m.matches()) {
-                            return m.group(1);
-                        }
-                    }
-                }
-                return "Unknown";
-            } finally {
-                reader.close();
-            }
-        } catch (IOException e) {
-            Log.e(LOG_TAG,
-                "IO Exception when getting cpuinfo for Device Info screen",
-                e);
-
-            return "Unknown";
-        }
-    }
 
     private boolean removePreferenceIfPackageNotInstalled(Preference preference) {
         String intentUri=((PreferenceScreen) preference).getIntent().toUri(1);
