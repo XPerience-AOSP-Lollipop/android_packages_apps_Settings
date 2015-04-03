@@ -21,6 +21,11 @@ import android.content.ContentResolver;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.ContentObserver;
+import android.app.AlertDialog;
+import android.content.ContentResolver;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.database.ContentObserver;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
@@ -38,7 +43,6 @@ import android.text.Spannable;
 import android.text.TextUtils;
 import android.widget.EditText;
 import android.widget.LinearLayout;
-import android.preference.CheckBoxPreference;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -67,17 +71,16 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final int STATUS_BAR_BATTERY_STYLE_HIDDEN = 4;
     private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 6;
 
-
-    private ListPreference mStatusBarNetworkTraffic;
-    private CheckBoxPreference mStatusBarCarrier;
-    private PreferenceScreen mCustomCarrierLabel;
-
-     private String mCustomCarrierLabelText;
-
     private ListPreference mStatusBarClock;
     private ListPreference mStatusBarAmPm;
     private ListPreference mStatusBarBattery;
     private ListPreference mStatusBarBatteryShowPercent;
+
+    private ListPreference mStatusBarNetworkTraffic;
+    private SwitchPreference mStatusBarCarrier;
+    private PreferenceScreen mCustomCarrierLabel;
+
+    private String mCustomCarrierLabelText;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -85,6 +88,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         addPreferencesFromResource(R.xml.status_bar_settings);
 
         ContentResolver resolver = getActivity().getContentResolver();
+        PreferenceScreen prefSet = getPreferenceScreen();
 
         mStatusBarClock = (ListPreference) findPreference(STATUS_BAR_CLOCK_STYLE);
         mStatusBarAmPm = (ListPreference) findPreference(STATUS_BAR_AM_PM);
@@ -92,8 +96,39 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mStatusBarBatteryShowPercent =
                 (ListPreference) findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT);
 
-        PreferenceScreen prefSet = getPreferenceScreen();
-        ContentResolver resolver = getActivity().getContentResolver();
+        int clockStyle = Settings.System.getInt(resolver,
+                Settings.System.STATUS_BAR_CLOCK, 1);
+        mStatusBarClock.setValue(String.valueOf(clockStyle));
+        mStatusBarClock.setSummary(mStatusBarClock.getEntry());
+        mStatusBarClock.setOnPreferenceChangeListener(this);
+
+        if (DateFormat.is24HourFormat(getActivity())) {
+            mStatusBarAmPm.setEnabled(false);
+            mStatusBarAmPm.setSummary(R.string.status_bar_am_pm_info);
+        } else {
+            int statusBarAmPm = Settings.System.getInt(resolver,
+                    Settings.System.STATUS_BAR_AM_PM, 2);
+            mStatusBarAmPm.setValue(String.valueOf(statusBarAmPm));
+            mStatusBarAmPm.setSummary(mStatusBarAmPm.getEntry());
+            mStatusBarAmPm.setOnPreferenceChangeListener(this);
+        }
+
+        int batteryStyle = Settings.System.getInt(resolver,
+                Settings.System.STATUS_BAR_BATTERY_STYLE, 0);
+        mStatusBarBattery.setValue(String.valueOf(batteryStyle));
+        mStatusBarBattery.setSummary(mStatusBarBattery.getEntry());
+        mStatusBarBattery.setOnPreferenceChangeListener(this);
+
+        int batteryShowPercent = Settings.System.getInt(resolver,
+                Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, 0);
+        mStatusBarBatteryShowPercent.setValue(String.valueOf(batteryShowPercent));
+        mStatusBarBatteryShowPercent.setSummary(mStatusBarBatteryShowPercent.getEntry());
+        enableStatusBarBatteryDependents(batteryStyle);
+        mStatusBarBatteryShowPercent.setOnPreferenceChangeListener(this);
+
+        if (TelephonyManager.getDefault().getPhoneCount() <= 1) {
+            removePreference(Settings.System.STATUS_BAR_MSIM_SHOW_EMPTY_ICONS);
+        }
 
         mStatusBarNetworkTraffic = (ListPreference) prefSet.findPreference(STATUS_BAR_NETWORK_TRAFFIC_STYLE);
         int networkTrafficStyle = Settings.System.getInt(resolver, Settings.System.STATUS_BAR_NETWORK_TRAFFIC_STYLE, 3);
@@ -101,7 +136,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mStatusBarNetworkTraffic.setSummary(mStatusBarNetworkTraffic.getEntry());
         mStatusBarNetworkTraffic.setOnPreferenceChangeListener(this);
 
-        mStatusBarCarrier = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_CARRIER);
+        mStatusBarCarrier = (SwitchPreference) prefSet.findPreference(STATUS_BAR_CARRIER);
         mStatusBarCarrier.setChecked((Settings.System.getInt(resolver, Settings.System.STATUS_BAR_CARRIER, 0) == 1));
         mStatusBarCarrier.setOnPreferenceChangeListener(this);
         mCustomCarrierLabel = (PreferenceScreen) prefSet.findPreference(CUSTOM_CARRIER_LABEL);
@@ -179,40 +214,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
-
-        int clockStyle = Settings.System.getInt(resolver,
-                Settings.System.STATUS_BAR_CLOCK, 1);
-        mStatusBarClock.setValue(String.valueOf(clockStyle));
-        mStatusBarClock.setSummary(mStatusBarClock.getEntry());
-        mStatusBarClock.setOnPreferenceChangeListener(this);
-
-        if (DateFormat.is24HourFormat(getActivity())) {
-            mStatusBarAmPm.setEnabled(false);
-            mStatusBarAmPm.setSummary(R.string.status_bar_am_pm_info);
-        } else {
-            int statusBarAmPm = Settings.System.getInt(resolver,
-                    Settings.System.STATUS_BAR_AM_PM, 2);
-            mStatusBarAmPm.setValue(String.valueOf(statusBarAmPm));
-            mStatusBarAmPm.setSummary(mStatusBarAmPm.getEntry());
-            mStatusBarAmPm.setOnPreferenceChangeListener(this);
-        }
-
-        int batteryStyle = Settings.System.getInt(resolver,
-                Settings.System.STATUS_BAR_BATTERY_STYLE, 0);
-        mStatusBarBattery.setValue(String.valueOf(batteryStyle));
-        mStatusBarBattery.setSummary(mStatusBarBattery.getEntry());
-        mStatusBarBattery.setOnPreferenceChangeListener(this);
-
-        int batteryShowPercent = Settings.System.getInt(resolver,
-                Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, 0);
-        mStatusBarBatteryShowPercent.setValue(String.valueOf(batteryShowPercent));
-        mStatusBarBatteryShowPercent.setSummary(mStatusBarBatteryShowPercent.getEntry());
-        enableStatusBarBatteryDependents(batteryStyle);
-        mStatusBarBatteryShowPercent.setOnPreferenceChangeListener(this);
-
-        if (TelephonyManager.getDefault().getPhoneCount() <= 1) {
-            removePreference(Settings.System.STATUS_BAR_MSIM_SHOW_EMPTY_ICONS);
-        }
     }
 
     @Override

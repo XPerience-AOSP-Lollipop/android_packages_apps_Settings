@@ -20,9 +20,7 @@
  <string name="custom_carrier_label_title">自定义运营商名称</string>
  <string name="custom_carrier_label_explain">请输入新的运营商名称，留空为恢复默认运营商名称。</string>
  <string name="custom_carrier_label_notset">当前没有设置运营商名称</string>
- 
- <string name="status_bar_am_pm_title">上午/下午样式</string>
- 
+  
   <string name="animation_settings_title">动画</string>
   <string name="listview_animation_title">列表动画</string>
   <string name="listview_off">关闭</string>
