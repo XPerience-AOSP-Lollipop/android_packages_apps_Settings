@@ -214,7 +214,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
-    }
 
     @Override
     public void onResume() {
