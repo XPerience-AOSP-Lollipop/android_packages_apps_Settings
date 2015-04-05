@@ -77,13 +77,34 @@
     <string name="activity_close_title">Activity close animation</string>
     <string name="task_open_title">Task open animation</string>
     <string name="task_close_title">Task close animation</string>
-    <string name="task_open_behind_title">Task open behind animation</string>
     <string name="task_move_to_front_title">Move to front animation</string>
     <string name="task_move_to_back_title">Move to back animation</string>
     <string name="wallpaper_open_title">Wallpaper open animation</string>
     <string name="wallpaper_close_title">Wallpaper close animation</string>
     <string name="wallpaper_intra_open_title">Wallpaper intra open animation</string>
     <string name="wallpaper_intra_close_title">Wallpaper intra close animation</string>
+    <string name="task_open_behind_title">Task open behind animation</string>
     <string name="animation_duration_title">Animation duration</string>
     <string name="animation_duration_default">Default</string>
+    <string name="screen_and_animations_title">Screen and animations</string> 
+    
+    <!-- Toast animations -->
+    <string name="toast_animation_title">Toast animations</string>
+    <string name="toast_animation_summary">Select and preview system toast animation</string>
+    <string name="toast_none_animation">None</string>
+    <string name="toast_default_animation">Default</string>
+    <string name="toast_fade_animation">Fade animation</string>
+    <string name="toast_SlideRight_animation">Slide right</string>
+    <string name="toast_SlideLeft_animation">Slide left</string>
+    <string name="toast_Xylon_animation">Xylon animation</string>
+    <string name="toast_Toko_animation">Toko animation</string>
+    <string name="toast_Tn_animation">Tn animation</string>
+    <string name="toast_Honami_animation">Honami animation</string>
+    <string name="toast_FastFade_animation">Fast fade</string>
+    <string name="toast_GrowFade_animation">Grow fade</string>
+    <string name="toast_GrowFadeCenter_animation">Grow fade center</string>
+    <string name="toast_GrowFadeBottom_animation">Grow fade bottom</string>
+    <string name="toast_Translucent_animation">Translucent animation</string>
+    <string name="toast_SlideLeftRight_animation">Slide left to right</string>
+    <string name="toast_SlideRightLeft_animation">Slide right to left</string>
 </resources>
