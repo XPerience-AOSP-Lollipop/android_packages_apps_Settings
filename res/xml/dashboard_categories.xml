@@ -342,15 +342,6 @@
                 android:icon="@drawable/ic_settings_print"
                 />
 
-        <!-- Performance -->
-        <dashboard-tile
-                android:id="@+id/performance_settings"
-                android:title="@string/performance_settings_title"
-                android:fragment="com.android.settings.cyanogenmod.PerformanceSettings"
-                android:icon="@drawable/ic_settings_performance"
-                settings:advanced="true"
-                />
-
         <!-- Development -->
         <dashboard-tile
                 android:id="@+id/development_settings"
@@ -359,7 +350,17 @@
                 android:icon="@drawable/ic_settings_development"
                 />
 
-	<!-- XPerience Performance APP-->
+	<!-- XPerience Performance APP and xperience Center-->
+	<dashboard-tile
+		android:id="@+id/performance"
+		android:icon="@drawable/ic_settings_development"
+	        android:title="@string/performance_app">
+	        <intent
+		  android:action="android.intent.action.MAIN" 
+		  android:targetPackage="com.klozz.performance2"
+		  android:targetClass="com.klozz.performance2.activities.MainActivity"/>
+		</dashboard-tile>
+	
 	<dashboard-tile
 		android:id="@+id/xperiencecenter"
 		android:icon="@mipmap/ic_launcher_xpeota"
