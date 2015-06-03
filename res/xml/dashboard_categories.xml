@@ -357,8 +357,8 @@
 	        android:title="@string/performance_app">
 	        <intent
 		  android:action="android.intent.action.MAIN" 
-		  android:targetPackage="com.klozz.performance2"
-		  android:targetClass="com.klozz.performance2.activities.MainActivity"/>
+		  android:targetPackage="mx.klozz.xperience.tweaker"
+		  android:targetClass="mx.klozz.xperience.tweaker.MainActivity"/>
 		</dashboard-tile>
 	
 	<dashboard-tile
