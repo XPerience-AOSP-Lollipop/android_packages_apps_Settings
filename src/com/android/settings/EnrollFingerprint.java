@@ -33,11 +33,13 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.android.settings.cmstats.FingerprintStats;
 import com.android.settings.cyanogenmod.FingerprintProgressBar;
 import com.android.setupwizard.navigationbar.SetupWizardNavBar;
 
@@ -69,6 +71,7 @@ public class EnrollFingerprint extends SettingsActivity
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
     }
 
     public static Intent createIntent(Context context) {
@@ -316,6 +319,7 @@ public class EnrollFingerprint extends SettingsActivity
                 mFpM.cancel();
             }
             mFpM.stopListening();
+            cancelEnrollmentStepTimeout();
             super.onDestroy();
         }
 
@@ -325,6 +329,10 @@ public class EnrollFingerprint extends SettingsActivity
 
         @Override
         public void onNavigateBack() {
+            if (mUiStage != Stage.EnrollmentFinished) {
+                FingerprintStats.sendFingerprintEnrollmentFailedEvent(getActivity(),
+                        getStatsCategory(), FingerprintStats.FAILURE_REASON_CANCELED);
+            }
             switch (mUiStage) {
                 case EnrollmentStep:
                     break;
@@ -370,6 +378,11 @@ public class EnrollFingerprint extends SettingsActivity
             mTitle.setText(stage.titleMessage);
             mInstructions.setText(stage.instructionMessage);
             mInfoGraphic.setImageResource(stage.infoGraphic);
+            EnrollFingerprint activity = getEnrollmentActivity();
+            if (activity == null) {
+                // Activity is gone, nothiing to update here.
+                return;
+            }
             final SetupWizardNavBar setupBar = getEnrollmentActivity().getSetupBar();
 
             if (stage.backMode.enabled) {
@@ -456,6 +469,8 @@ public class EnrollFingerprint extends SettingsActivity
                         mFpM.stopListening();
                         cancelEnrollmentStepTimeout();
                         showFailedEnrollmentDialog();
+                        FingerprintStats.sendFingerprintEnrollmentFailedEvent(getActivity(),
+                                getStatsCategory(), FingerprintStats.FAILURE_REASON_BAD_SCAN);
                     }
                     break;
                 case EnrollmentFinished:
@@ -464,6 +479,7 @@ public class EnrollFingerprint extends SettingsActivity
                     mCompletedCheckmark.setVisibility(View.VISIBLE);
                     mStepsCompleted.setText(R.string.fingerprint_enrollment_done_label);
                     mProcessingProgress.setVisibility(View.GONE);
+                    cancelEnrollmentStepTimeout();
 
                     // Hide add another if at max number of enrolled fingerprints
                     List<Fingerprint> enrolled = mFpM.getEnrolledFingerprints();
@@ -472,12 +488,19 @@ public class EnrollFingerprint extends SettingsActivity
                             enrolled.size()) {
                         setupBar.getBackButton().setVisibility(View.INVISIBLE);
                     }
+
+                    FingerprintStats.sendFingerprintEnrollmentSuccessEvent(getActivity(),
+                            getStatsCategory());
                     break;
             }
         }
 
         protected EnrollFingerprint getEnrollmentActivity() {
             return (EnrollFingerprint) getActivity();
+        }
+
+        protected String getStatsCategory() {
+            return FingerprintStats.Categories.FINGERPRINT_ENROLLMENT_SETTINGS;
         }
 
         private void showWrongSensorDialog() {
@@ -562,6 +585,8 @@ public class EnrollFingerprint extends SettingsActivity
                     mFpM.stopListening();
                     showFailedEnrollmentDialog();
                     updateStage(Stage.EnrollmentError);
+                    FingerprintStats.sendFingerprintEnrollmentFailedEvent(getActivity(),
+                            getStatsCategory(), FingerprintStats.FAILURE_REASON_TIMEOUT);
                 }
             }
         };
