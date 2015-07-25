@@ -137,4 +137,6 @@
     <string name="slim_action_floats">Slim Actions and Pie</string>
     <string name="slim_action_floats_summary">Launch Slim and Pie Actions in Floating Window Mode</string>
 
+    <string name="status_bar_battery_style_xperience"> SOMC XPerience </string>
+
 </resources>
