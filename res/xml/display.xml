@@ -154,12 +154,6 @@
                 android:defaultValue="true"
                 settings:advanced="true" />
 
-	<com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-            android:key="slim_action_floats"
-            android:title="@string/slim_action_floats"
-            android:summary="@string/slim_action_floats_summary"
-            android:defaultValue="false" />
-
     </PreferenceCategory>
 
     <PreferenceCategory

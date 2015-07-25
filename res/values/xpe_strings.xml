@@ -133,10 +133,8 @@
     <string name="color_default">Default</string>
 
     <string name="OTACENTER">XPerience Center</string>
-    <!-- Floating Windows -->
-    <string name="slim_action_floats">Slim Actions and Pie</string>
-    <string name="slim_action_floats_summary">Launch Slim and Pie Actions in Floating Window Mode</string>
 
+ <!--SOMC XPERIENCE BATTERY -->
     <string name="status_bar_battery_style_xperience"> SOMC XPerience </string>
 
 </resources>
