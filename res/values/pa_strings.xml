@@ -19,10 +19,20 @@
 
     <!-- Partition Info -->
     <string name="partition_info_title">Partition info</string>
-    <string name="partition_info_system">/system</string>
-    <string name="partition_info_data">/data</string>
-    <string name="partition_info_cache">/cache</string>
-    <string name="partition_info_sdcard">/sdcard (FAT)</string>
-    <string name="partition_info_sdext">/sd-ext (EXT)</string>
-    <string name="partition_info_used_of">/</string>
+    <string name="partition_info_system" translatable="false">/system</string>
+    <string name="partition_info_data" translatable="false">/data</string>
+    <string name="partition_info_cache" translatable="false">/cache</string>
+    <string name="partition_info_sdcard" translatable="false">/sdcard (FAT)</string>
+    <string name="partition_info_sdext" translatable="false">/sd-ext (EXT)</string>
+    <string name="partition_info_used_of" translatable="false">/</string>
+
+    <!-- User preferences reset -->
+    <string name="personalization">Personalization</string>
+    <string name="reset_user_preferences_title">Reset preferences</string>
+    <string name="reset_user_preferences_summary">Set XPe preferences to their default values</string>
+    <string name="reset_user_preferences_disabled_summary">All XPe preferences are already set to their default values</string>
+    <string name="reset_user_preferences_dialog_title">Reset preferences?</string>
+    <string name="reset_user_preferences_dialog_choice_reset">Reset now</string>
+    <string name="reset_user_preferences_dialog_choice_cancel">Cancel</string>
+
 </resources>
