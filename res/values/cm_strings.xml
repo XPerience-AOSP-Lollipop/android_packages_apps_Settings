@@ -634,6 +634,7 @@
     <string name="profile_menu_delete_title">Delete</string>
 
     <string name="profile_action_none">Leave unchanged</string>
+    <string name="profile_action_system">System default</string>
     <string name="profile_action_disable">Turn off</string>
     <string name="profile_action_enable">Turn on</string>
 
@@ -1310,6 +1311,9 @@
     <string name="fingerprint_enrollment_error_title_3">Hmm, something went wrong</string>
     <string name="fingerprint_enrollment_error_title_4">Uh oh, try again</string>
     <string name="fingerprint_enrollment_error_title_5">Whoops, there was an error</string>
+    <!-- Title for lockscreen settings, on dashboard, that is only used when a device supports
+         the fingerprint feature -->
+    <string name="lockscreen_settings_and_fingerprint">Lock screen &amp; fingerprint</string>
 
     <!-- Menu label for reset the battery stats -->
     <string name="menu_stats_reset">Reset stats</string>
@@ -1327,5 +1331,10 @@
     <!-- Lock screen setup wizard pattern complexity -->
     <string name="setup_lock_pattern_size_title">Pattern complexity</string>
     <string name="setup_lock_pattern_size_details">How many nodes would you like to use with your pattern? The more nodes, the more complex the pattern can be.</string>
+
+    <!-- LTO download data over wi-fi only -->
+    <string name="lto_download_data_wifi_only">GPS assisted data download</string>
+    <string name="lto_download_data_wifi_only_on">Over any networks</string>
+    <string name="lto_download_data_wifi_only_off">Only over Wi\u2011Fi networks</string>
 
 </resources>
