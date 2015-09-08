@@ -30,7 +30,7 @@
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
                 android:title="@string/device_status" 
-                android:summary="@string/device_status_summary">
+                android:summary="@string/device_status_summary" >
             <intent android:action="android.intent.action.MAIN"
                     android:targetPackage="com.android.settings"
                     android:targetClass="com.android.settings.deviceinfo.Status" />
@@ -46,9 +46,9 @@
         <PreferenceScreen android:key="donators"
             android:title="@string/donators_title"
             android:fragment="com.android.settings.xperience.Donators" >
-        </PreferenceScreen> 
+        </PreferenceScreen>
 
-        <!-- Legal Information -->
+<!-- Legal Information -->
         <PreferenceScreen
                 android:key="container"
                 android:title="@string/legal_information">
