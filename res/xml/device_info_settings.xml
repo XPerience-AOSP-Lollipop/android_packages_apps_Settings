@@ -52,7 +52,13 @@
         <PreferenceScreen android:key="changelog"
             android:title="@string/changelog_title"
             android:fragment="com.android.settings.xperience.ChangeLog" >
-        </PreferenceScreen> 
+        </PreferenceScreen>
+        
+        <!-- Donators -->
+        <PreferenceScreen android:key="donators"
+            android:title="@string/donators_title"
+            android:fragment="com.android.settings.xperience.Donators" >
+        </PreferenceScreen>
 
         <!-- Legal Information -->
         <PreferenceScreen
