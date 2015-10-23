@@ -601,6 +601,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         updateMobileDataAlwaysOnOptions();
         updateSimulateColorSpace();
         updateUSBAudioOptions();
+        updateRootAccessOptions();
     }
 
     private void resetDangerousOptions() {
