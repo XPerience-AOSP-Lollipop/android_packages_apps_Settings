@@ -32,6 +32,11 @@
             android:title="@*android:string/bugreport_title"
             android:dialogTitle="@*android:string/bugreport_title" />
 
+    <SwitchPreference
+        android:key="advanced_reboot"
+        android:title="@string/advanced_reboot_title"
+        android:summary="@string/advanced_reboot_summary" />
+
     <PreferenceScreen
             android:key="local_backup_password"
             android:title="@string/local_backup_password_title"
@@ -43,10 +48,13 @@
                 android:targetClass="com.android.settings.SetFullBackupPassword" />
     </PreferenceScreen>
 
-    <SwitchPreference
-        android:key="keep_screen_on"
+    <ListPreference
+        android:key="keep_screen_on_modes"
         android:title="@string/keep_screen_on"
-        android:summary="@string/keep_screen_on_summary"/>
+        android:dialogTitle="@string/keep_screen_on"
+        android:entries="@array/keep_screen_on_titles"
+        android:entryValues="@array/keep_screen_on_values"
+        android:persistent="false" />
 
     <ListPreference
         android:key="hdcp_checking"
@@ -78,10 +86,11 @@
         android:entries="@array/root_access_entries"
         android:entryValues="@array/root_access_values" />
 
-    <CheckBoxPreference
-        android:key="advanced_reboot"
-        android:title="@string/advanced_reboot_title"
-        android:summary="@string/advanced_reboot_summary" />
+    <com.android.settings.ColorModePreference
+        android:key="color_mode"
+        android:title="@string/picture_color_mode"
+        android:summary="@string/picture_color_mode_desc"
+        android:persistent="false" />
 
     <PreferenceCategory android:key="debug_debugging_category"
             android:title="@string/debug_debugging_category">
@@ -129,6 +138,11 @@
 
         <PreferenceScreen android:key="mock_location_app"
             android:title="@string/mock_location_app" />
+
+        <SwitchPreference
+            android:key="development_shortcut"
+            android:title="@string/development_shortcut_title"
+            android:summary="@string/development_shortcut_summary" />
 
         <SwitchPreference
                 android:key="debug_view_attributes"
@@ -384,8 +398,13 @@
             android:summary="@string/show_all_anrs_summary"/>
 
         <Preference
-                android:key="inactive_apps"
-                android:title="@string/inactive_apps_title" />
+            android:key="inactive_apps"
+            android:title="@string/inactive_apps_title" />
+
+        <SwitchPreference
+            android:key="kill_app_longpress_back"
+            android:title="@string/kill_app_longpress_back"
+            android:summary="@string/kill_app_longpress_back_summary"/>
 
      </PreferenceCategory>
 

@@ -17,6 +17,7 @@
 package com.android.settings;
 
 import com.android.settings.applications.AppOpsSummary;
+import com.android.settings.blacklist.BlacklistSettings;
 
 /**
  * Top-level Settings activity
@@ -75,7 +76,6 @@ public class Settings extends SettingsActivity {
     public static class RunningServicesActivity extends SettingsActivity { /* empty */ }
     public static class ManageAccountsSettingsActivity extends SettingsActivity { /* empty */ }
     public static class PowerUsageSummaryActivity extends SettingsActivity { /* empty */ }
-    public static class BatterySaverSettingsActivity extends SettingsActivity { /* empty */ }
     public static class AccountSyncSettingsActivity extends SettingsActivity { /* empty */ }
     public static class AccountSettingsActivity extends SettingsActivity { /* empty */ }
     public static class AccountSyncSettingsInAddAccountActivity extends SettingsActivity { /* empty */ }
@@ -119,4 +119,5 @@ public class Settings extends SettingsActivity {
     public static class AppDrawOverlaySettingsActivity extends SettingsActivity { /* empty */ }
     public static class AppWriteSettingsActivity extends SettingsActivity { /* empty */ }
     public static class LiveDisplayActivity extends SettingsActivity { /* empty */ }
+    public static class BlacklistSettingsActivity extends SettingsActivity { /* empty */ }
 }

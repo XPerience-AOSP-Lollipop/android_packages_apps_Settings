@@ -482,9 +482,17 @@ public class WifiConfigController implements TextWatcher,
                 String clientCert = (String) mEapUserCertSpinner.getSelectedItem();
                 if (clientCert.equals(unspecifiedCert)) clientCert = "";
                 config.enterpriseConfig.setClientCertificateAlias(clientCert);
-                config.enterpriseConfig.setIdentity(mEapIdentityView.getText().toString());
-                config.enterpriseConfig.setAnonymousIdentity(
-                        mEapAnonymousView.getText().toString());
+                if (eapMethod == Eap.SIM || eapMethod == Eap.AKA || eapMethod == Eap.AKA_PRIME) {
+                    config.enterpriseConfig.setIdentity("");
+                    config.enterpriseConfig.setAnonymousIdentity("");
+                } else if (eapMethod == Eap.PWD) {
+                    config.enterpriseConfig.setIdentity(mEapIdentityView.getText().toString());
+                    config.enterpriseConfig.setAnonymousIdentity("");
+                } else {
+                    config.enterpriseConfig.setIdentity(mEapIdentityView.getText().toString());
+                    config.enterpriseConfig.setAnonymousIdentity(
+                            mEapAnonymousView.getText().toString());
+                }
 
                 if (mPasswordView.isShown()) {
                     // For security reasons, a previous password is not displayed to user.
@@ -800,7 +808,10 @@ public class WifiConfigController implements TextWatcher,
             case WIFI_EAP_METHOD_SIM:
             case WIFI_EAP_METHOD_AKA:
             case WIFI_EAP_METHOD_AKA_PRIME:
-                WifiConfiguration config = mAccessPoint.getConfig();
+                WifiConfiguration config = null;
+                if (mAccessPoint != null) {
+                    config = mAccessPoint.getConfig();
+                }
                 ArrayAdapter<String> eapSimAdapter = new ArrayAdapter<String>(
                          mContext, android.R.layout.simple_spinner_item,
                          mSimDisplayNames.toArray(new String[mSimDisplayNames.size()])

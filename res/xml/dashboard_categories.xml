@@ -82,7 +82,7 @@
                 android:id="@+id/button_settings"
                 android:title="@string/button_pref_title"
                 android:fragment="com.android.settings.ButtonSettings"
-                android:icon="@drawable/ic_settings_home"
+                android:icon="@drawable/ic_settings_buttons"
                 />
 
         <!-- Home -->
@@ -105,7 +105,7 @@
         <dashboard-tile
             android:id="@+id/device_specific_gesture_settings"
             android:title="@string/gesture_settings_title"
-            android:icon="@drawable/ic_settings_home">
+            android:icon="@drawable/ic_settings_gestures">
             <intent
                 android:action="com.cyanogenmod.action.LAUNCH_TOUCHSCREEN_GESTURE_SETTINGS"
                 android:targetPackage="com.cyanogenmod.settings.device"
@@ -225,6 +225,15 @@
                 android:title="@string/security_settings_title"
                 android:fragment="com.android.settings.SecuritySettings"
                 android:icon="@drawable/ic_settings_security"
+                />
+
+        <!-- CyanogenMod Privacy Settings -->
+        <!-- This is the 'real' Privacy items and includes Privacy Guard, Blacklist & WhisperPush -->
+        <dashboard-tile
+                android:id="@+id/privacy_settings_cyanogenmod"
+                android:title="@string/privacy_settings_cyanogenmod_title"
+                android:fragment="com.android.settings.cyanogenmod.PrivacySettings"
+                android:icon="@drawable/ic_settings_privacy"
                 />
 
         <!-- Account -->
