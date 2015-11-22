@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--  Copyright (C) 2007 The Android Open Source Project
+      Copyright (C) 2011-2015 The XPerience Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -12,14 +13,30 @@
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
      See the License for the specific language governing permissions and
      limitations under the License.
+
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="xpe_version">Versión de XPerience</string>
+    <string name="xpe_version">Versión de XPerience™</string>
     <string name="xpe_version_default">Desconocida</string>
 
     <!-- About phone screen, build date -->
     <string name="build_date">Fecha de compilación</string>
     <string name="build_date_default">2015-01-01-0000</string>
+
+    <!-- Change Log strings -->
+    <string name="changelog_title">Ver changelog</string>
+    <string name="changelog_loading">Cargando changelog...</string>
+    <string name="changelog_error">Imposible cargar changelog</string>
+    
+    <!-- donators strings -->
+    <string name="donators_title">Ver donators</string>
+    <string name="donators_loading">Cargando donadores...</string>
+    <string name="donators_error">Imposible cargar texto de donadores</string>
+        
+    <string name="OTACENTER">Centro XPerience™</string>
+
+    <string name="rel_type">Tipo de build</string>
+    <string name="xpe_codename">Nombre Código de XPerience™</string>
 
 </resources>

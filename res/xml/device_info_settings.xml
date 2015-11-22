@@ -97,6 +97,12 @@
                 android:title="@string/xpe_version"
                 android:summary="@string/xpe_version_default" />
 
+        <!-- XPerience CodeName-->
+        <Preference android:key="xpe_codename" 
+                android:enabled="false"
+                android:shouldDisableView="false"
+                android:title="@string/xpe_codename"/>
+
         <!-- Security patch level -->
         <Preference android:key="security_patch"
                 android:enabled="false"
@@ -151,6 +157,12 @@
                 style="?android:preferenceInformationStyle"
                 android:title="@string/qgp_version"
 		android:summary="@string/device_info_default"/>
+
+        <!-- Detailed build version -->
+        <Preference android:key="rel_type" 
+                android:enabled="false"
+                android:shouldDisableView="false"
+                android:title="@string/rel_type"/>
 
         <!-- SELinux status information -->
         <Preference android:key="selinux_status"

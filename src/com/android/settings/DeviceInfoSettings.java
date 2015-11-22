@@ -77,6 +77,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_XPE_VERSION = "xpe_version";
     private static final String KEY_QGP_VERSION = "qgp_version";
     private static final String PROPERTY_QGP_VERSION = "persist.qgp.version";
+    private static final String KEY_MOD_RELEASE_TYPE = "rel_type";
+    private static final String KEY_XPE_CODENAME = "xpe_codename";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
@@ -135,6 +137,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 PROPERTY_MBN_VERSION);
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
         setValueSummary(KEY_XPE_VERSION, "ro.xpe.version");
+	setValueSummary(KEY_MOD_RELEASE_TYPE, "ro.xpe.releasetype");
+	setValueSummary(KEY_XPE_CODENAME, "ro.xpe.codename");
 
         if (!SELinux.isSELinuxEnabled()) {
             String status = getResources().getString(R.string.selinux_status_disabled);
