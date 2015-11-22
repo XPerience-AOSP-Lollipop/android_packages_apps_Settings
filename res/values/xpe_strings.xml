@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">   
-    <string name="xpe_version">XPerience version</string>
+    <string name="xpe_version">XPerience™ version</string>
     <string name="xpe_version_default">Unknown</string>
 
     <!-- About phone screen, build date -->
@@ -27,4 +27,20 @@
 
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="supersu_title">SuperSU</string>
+
+    <!-- Change Log strings -->
+    <string name="changelog_title">View changelog</string>
+    <string name="changelog_loading">Loading changelog...</string>
+    <string name="changelog_error">Unable to load changelog</string>
+    
+    <!-- donators strings -->
+    <string name="donators_title">View donators</string>
+    <string name="donators_loading">Loading donators...</string>
+    <string name="donators_error">Unable to load donators text</string>
+        
+    <string name="OTACENTER">XPerience™ Center</string>
+  
+    <string name="rel_type">Release type</string>
+    <string name="xpe_codename">XPerience™ CodeName</string>
+
 </resources>
