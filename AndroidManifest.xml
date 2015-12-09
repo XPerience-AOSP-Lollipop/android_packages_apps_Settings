@@ -77,6 +77,8 @@
     <uses-permission android:name="cyanogenmod.permission.FINISH_SETUP" />
     <uses-permission android:name="android.permission.ACCESS_FINGERPRINT_SERVICE" />
     <uses-permission android:name="cyanogenmod.permission.MODIFY_PROFILES" />
+    <uses-permission android:name="cyanogenmod.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="cyanogenmod.permission.WRITE_SECURE_SETTINGS"/>
 
     <permission
         android:name="cyanogenmod.permission.PROTECTED_APP"
@@ -2368,5 +2370,11 @@
             android:name=".cyanogenmod.LtoService">
         </service>
 
+        <receiver android:name=".cyanogenmod.ShortcutCleanupReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package"></data>
+            </intent-filter>
+        </receiver>
     </application>
 </manifest>
