@@ -122,6 +122,18 @@
                 android:targetClass="com.cyanogenmod.settings.device.TouchscreenGestureSettings" />
         </dashboard-tile>
 
+        <!-- Themes -->
+        <!-- NOTE: Intent.parseIntent looks for "categories" tag and not "category" -->
+        <dashboard-tile
+                android:id="@+id/theme_settings"
+                android:title="@string/themes_settings_title"
+                android:icon="@drawable/ic_settings_themes">
+            <intent
+                    android:action="android.intent.action.MAIN" >
+                <categories android:name="cyanogenmod.intent.category.APP_THEMES" />
+            </intent>
+        </dashboard-tile>
+
         <!-- Notifications -->
         <dashboard-tile
                 android:id="@+id/notification_settings"
@@ -302,7 +314,7 @@
                 />
 
 	<!-- XPerience OTA APP-->
-	<dashboard-tile
+<!--	<dashboard-tile
 		android:id="@+id/xperiencecenter"
 		android:icon="@mipmap/ic_launcher_xpeota"
 	        android:title="@string/OTACENTER">
@@ -310,7 +322,7 @@
 		  android:action="android.intent.action.MAIN" 
 		  android:targetPackage="com.xperience.ota"
 		  android:targetClass="com.xperience.center.XPerienceCenter"/>
-		</dashboard-tile>
+		</dashboard-tile>-->
 
         <!-- SuperSU -->
         <dashboard-tile
