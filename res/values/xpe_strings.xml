@@ -36,4 +36,9 @@
     <string name="rel_type">Release type</string>
      <string name="xpe_codename">XPerience™ CodeName</string>
 
+    <!-- Recents Fullscreen -->
+    <string name="recents_show_fullscreen">Recents in fullscreen</string>
+    <string name="recents_fullscreen_summary_enabled">Recents in fullscreen is enabled</string>
+    <string name="recents_fullscreen_summary_disabled">Recents in fullscreen is disabled</string>
+
 </resources>
