@@ -114,14 +114,6 @@
                 android:fragment="com.android.settings.DisplaySettings"
                 android:icon="@drawable/ic_settings_display"
                 />
-         
-         <!--XPERIENCE-->       
-        <dashboard-tile
-                android:id="@+id/xperience"
-                android:title="xperience"
-                android:fragment="com.android.settings.xperience.xperience"
-                android:icon="@drawable/ic_settings_security"
-                />
 
         <!-- Themes -->
         <!-- NOTE: Intent.parseIntent looks for "categories" tag and not "category" -->
