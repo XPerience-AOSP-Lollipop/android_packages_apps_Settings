@@ -198,4 +198,16 @@
             android:summaryOff="@string/recents_fullscreen_summary_disabled"
             android:defaultValue="false" />
 
+    <PreferenceCategory
+            android:key="custom_xperience"
+            android:title="@string/xpe">
+
+    <!-- Screen and animations -->
+    <PreferenceScreen
+         android:key="screen_and_animations"
+         android:fragment="com.android.settings.temasek.ScreenAndAnimations"
+         android:title="@string/screen_and_animations_title"/>
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
