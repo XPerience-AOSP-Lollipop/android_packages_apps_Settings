@@ -144,6 +144,7 @@
    <string name="temasek_settings_title">XPerience Settings</string>
 
     <!-- Show carrier label and custom -->
+    <string name="default_string">Default</string>
     <string name="carrier_options">Carrier Label</string>
     <string name="custom_carrier_label_title">Custom carrier label</string>
     <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
