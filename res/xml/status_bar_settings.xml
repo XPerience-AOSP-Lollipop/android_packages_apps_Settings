@@ -78,6 +78,11 @@
         android:key="daylight_header_pack"
         android:title="@string/daylight_header_pack_title"
         android:persistent="false" />
+
+        <PreferenceScreen
+            android:key="carrierlabel"
+            android:fragment="com.android.settings.xperience.CarrierLabel"
+            android:title="@string/carrier_options" />
     </PreferenceCategory>
 
 </PreferenceScreen>
