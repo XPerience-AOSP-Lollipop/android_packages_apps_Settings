@@ -247,7 +247,7 @@ public class ApnSettings extends SettingsPreferenceFragment implements
         }
 
         Cursor cursor = getContentResolver().query(Telephony.Carriers.CONTENT_URI, new String[] {
-                "_id", "name", "apn", "type", "mvno_type", "mvno_match_data"}, where.toString(),
+                "_id", "name", "apn", "type", "mvno_type", "mvno_match_data", "read_only"}, where.toString(),
                 null, Telephony.Carriers.DEFAULT_SORT_ORDER);
 
         if (cursor != null) {
@@ -502,3 +502,4 @@ public class ApnSettings extends SettingsPreferenceFragment implements
         return null;
     }
 }
+
