@@ -191,4 +191,10 @@
     <string name="network_traffic_color_reset_message">Reset network traffic color to default?</string>
 
     <string name="xpe_developer">Developer</string>
+
+    <!-- Notification fragment -->
+   <string name="battery_saver_notif_title">Battery saver notification</string>
+   <string name="battery_saver_notif_summary">Show battery saver notification when enabled</string>
+   <string name="battery_low_notif_title">Low battery notification</string>
+   <string name="battery_low_notif_summary">Show low battery notification when enabled</string>
 </resources>

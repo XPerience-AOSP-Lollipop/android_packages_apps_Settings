@@ -37,4 +37,10 @@
      <string name="xpe_codename">XPerience™ CodeName</string>
 
     <string name="xpe_developer">Desarrollador</string>
+
+    <!-- Notification fragment -->
+    <string name="battery_saver_notif_title">Notificación de ahorro de batería</string>
+    <string name="battery_saver_notif_summary">Mostrar notificación de ahorro de batería cuando está habilitado</string>
+    <string name="battery_low_notif_title">Notificación de batería baja</string>
+    <string name="battery_low_notif_summary">Mostrar la notificación de batería baja cuando está habilitado</string>
 </resources>
