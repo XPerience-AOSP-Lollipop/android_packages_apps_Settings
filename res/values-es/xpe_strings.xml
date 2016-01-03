@@ -36,4 +36,5 @@
     <string name="rel_type">Tipo de build</string>
      <string name="xpe_codename">XPerience™ CodeName</string>
 
+    <string name="xpe_developer">Desarrollador</string>
 </resources>

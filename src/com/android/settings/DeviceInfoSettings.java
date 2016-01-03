@@ -90,6 +90,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_MOD_API_LEVEL = "mod_api_level";
     private static final String KEY_MOD_RELEASE_TYPE = "rel_type";
     private static final String KEY_XPE_CODENAME = "xpe_codename";
+    private static final String KEY_XPE_DEVELOPER = "xpe_dev";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
@@ -147,6 +148,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         findPreference(KEY_MOD_API_LEVEL).setEnabled(true);
 	setValueSummary(KEY_MOD_RELEASE_TYPE, "ro.xpe.releasetype");
 	setValueSummary(KEY_XPE_CODENAME, "ro.xpe.codename");
+	setStringSummary(KEY_XPE_DEV,"Klozz@TeamMEX-XDA");
 
         if (!SELinux.isSELinuxEnabled()) {
             String status = getResources().getString(R.string.selinux_status_disabled);
