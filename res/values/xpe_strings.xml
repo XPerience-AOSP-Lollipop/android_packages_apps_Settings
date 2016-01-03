@@ -196,6 +196,7 @@
    <string name="battery_low_notif_title">Low battery notification</string>
    <string name="battery_low_notif_summary">Show low battery notification when enabled</string>
    
+    <string name="reset">Reset</string>
         <!-- PA Pie control -->
     <string name="pa_piecontrol_settings_summary">Customize PA Pie 2.0 targets, sytle, size and color</string>
     <string name="pa_pie_control_title">PA Pie Control</string>
@@ -261,4 +262,5 @@
 
     <string name="reset_xperience">XPerience</string>
     <string name="reset_android">Android</string>
+    <string name="reset_message">Reset all entries to default?</string>
 </resources>
