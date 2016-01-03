@@ -148,7 +148,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         findPreference(KEY_MOD_API_LEVEL).setEnabled(true);
 	setValueSummary(KEY_MOD_RELEASE_TYPE, "ro.xpe.releasetype");
 	setValueSummary(KEY_XPE_CODENAME, "ro.xpe.codename");
-	setStringSummary(KEY_XPE_DEV,"Klozz@TeamMEX-XDA");
+	setStringSummary(KEY_XPE_DEVELOPER,"Klozz@TeamMEX-XDA");
 
         if (!SELinux.isSELinuxEnabled()) {
             String status = getResources().getString(R.string.selinux_status_disabled);
