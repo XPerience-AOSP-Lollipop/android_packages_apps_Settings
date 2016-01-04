@@ -263,4 +263,6 @@
     <string name="reset_xperience">XPerience</string>
     <string name="reset_android">Android</string>
     <string name="reset_message">Reset all entries to default?</string>
+    <string name="pa_pie_always_right_title">Pie always on the right</string>
+    <string name="pa_pie_always_right_summary">Pie will be always shown on the right while in landscape</string>
 </resources>
