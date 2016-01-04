@@ -137,4 +137,6 @@
  <!--SOMC XPERIENCE BATTERY -->
     <string name="status_bar_battery_style_xperience"> SOMC XPerience </string>
 
+    <!-- Viper4Android -->
+    <string name="viper_title">Viper4Android</string>
 </resources>
