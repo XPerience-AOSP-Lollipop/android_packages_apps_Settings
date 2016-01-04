@@ -1319,7 +1319,17 @@ public class SettingsActivity extends Activity
                         removeTile = true;
                     }
 
-
+                } else if (id == R.id.viper_settings) {
+                    // Embedding into Settings only if app exists (user could manually remove it)
+                    boolean supported = false;
+                    try {
+                        supported = (getPackageManager().getPackageInfo("com.vipercn.viper4android_v2", 0).versionCode >= 18);
+                    } catch (PackageManager.NameNotFoundException e) {
+                    }
+                    if (!supported) {
+                        removeTile = true;
+                    }
+                    
                 } else if (id == R.id.supersu_settings) {
                     // Embedding into Settings is supported from SuperSU v1.85 and up
                     boolean supported = false;
