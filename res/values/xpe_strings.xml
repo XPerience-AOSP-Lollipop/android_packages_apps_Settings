@@ -142,4 +142,8 @@
 
     <!-- On-The-Go -->
     <string name="power_menu_onthego_title">On-The-Go Mode</string>
+    
+       <!-- Custom Header Image -->
+   <string name="status_bar_custom_header_title">Custom header image</string>
+   <string name="status_bar_custom_header_summary">Enable notification panel header image</string>
 </resources>
