@@ -139,4 +139,7 @@
 
     <!-- Viper4Android -->
     <string name="viper_title">Viper4Android</string>
+
+    <!-- On-The-Go -->
+    <string name="power_menu_onthego_title">On-The-Go Mode</string>
 </resources>
