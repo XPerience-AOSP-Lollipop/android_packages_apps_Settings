@@ -140,12 +140,10 @@
     <!-- Viper4Android -->
     <string name="viper_title">Viper4Android</string>
 
-    <!-- On-The-Go -->
-    <string name="power_menu_onthego_title">On-The-Go Mode</string>
-    
-       <!-- Custom Header Image -->
+   <!-- Custom Header Image -->
    <string name="status_bar_custom_header_title">Custom header image</string>
    <string name="status_bar_custom_header_summary">Enable notification panel header image</string>
    <string name="status_bar_custom_header_default_title">Use poly HD images</string>
    <string name="status_bar_custom_header_default_summary">Enable for poly hd images. Disable for original images.</string>
+
 </resources>
