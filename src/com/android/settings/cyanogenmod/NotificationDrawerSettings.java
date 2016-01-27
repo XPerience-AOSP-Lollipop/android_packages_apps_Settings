@@ -22,7 +22,6 @@ import android.os.Bundle;
 import android.os.UserHandle;
 import android.preference.ListPreference;
 import android.preference.Preference;
-import android.preference.SwitchPreference;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.provider.SearchIndexableResource;
@@ -31,7 +30,6 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.cyanogenmod.qs.QSTiles;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
-import com.android.settings.util.Helpers;
 
 import cyanogenmod.providers.CMSettings;
 
@@ -41,10 +39,8 @@ import java.util.List;
 public class NotificationDrawerSettings extends SettingsPreferenceFragment implements Indexable,
         Preference.OnPreferenceChangeListener {
     private static final String QUICK_PULLDOWN = "quick_pulldown";
-    private static final String PREF_CUSTOM_HEADER_DEFAULT = "status_bar_custom_header_default";
 
     private ListPreference mQuickPulldown;
-    private SwitchPreference mCustomHeader;
     private Preference mQSTiles;
 
     @Override
@@ -68,11 +64,6 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment imple
                 CMSettings.System.QS_QUICK_PULLDOWN, 0, UserHandle.USER_CURRENT);
         mQuickPulldown.setValue(String.valueOf(quickPulldownValue));
         updatePulldownSummary(quickPulldownValue);
-
-        // Status bar custom header default
-        mCustomHeader = (SwitchPreference) prefSet.findPreference(PREF_CUSTOM_HEADER_DEFAULT);
-        mCustomHeader.setChecked((Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.STATUS_BAR_CUSTOM_HEADER_DEFAULT, 0) == 1));
     }
 
     @Override
@@ -95,17 +86,6 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment imple
             return true;
         }
         return false;
-    }
-
-    @Override
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        if (preference == mCustomHeader) {
-           boolean customHeader = ((SwitchPreference)preference).isChecked();
-           Settings.System.putInt(getActivity().getContentResolver(),
-                   Settings.System.STATUS_BAR_CUSTOM_HEADER_DEFAULT, customHeader ? 1:0);
-           Helpers.restartSystemUI();
-        }
-        return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
     private void updatePulldownSummary(int value) {
