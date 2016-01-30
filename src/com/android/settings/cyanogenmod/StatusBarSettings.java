@@ -265,19 +265,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         return headerPacks.toArray(new String[headerPacks.size()]);
     }
 
-    private void updatePulldownSummary(int value) {
-        Resources res = getResources();
-
-        if (value == 0) {
-            // quick pulldown deactivated
-            mQuickPulldown.setSummary(res.getString(R.string.status_bar_quick_qs_pulldown_off));
-        } else {
-            String direction = res.getString(value == 2
-                    ? R.string.status_bar_quick_qs_pulldown_summary_left
-                    : R.string.status_bar_quick_qs_pulldown_summary_right);
-            mQuickPulldown.setSummary(res.getString(R.string.status_bar_quick_qs_pulldown_summary, direction));
-        }
-        
     private String[] getAvailableHeaderPacksEntries() {
         List<String> headerPacks = new ArrayList<String>();
         Intent i = new Intent();
@@ -297,6 +284,20 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         }
         return headerPacks.toArray(new String[headerPacks.size()]);
 
+    }
+
+    private void updatePulldownSummary(int value) {
+        Resources res = getResources();
+
+        if (value == 0) {
+            // quick pulldown deactivated
+            mQuickPulldown.setSummary(res.getString(R.string.status_bar_quick_qs_pulldown_off));
+        } else {
+            String direction = res.getString(value == 2
+                    ? R.string.status_bar_quick_qs_pulldown_summary_left
+                    : R.string.status_bar_quick_qs_pulldown_summary_right);
+            mQuickPulldown.setSummary(res.getString(R.string.status_bar_quick_qs_pulldown_summary, direction));
+        }
     }
 
     public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
