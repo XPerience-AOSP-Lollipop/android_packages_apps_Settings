@@ -346,7 +346,7 @@
                 />
 
 	<!-- XPerience Performance APP and xperience Center-->
-	<dashboard-tile
+<!--	<dashboard-tile
 		android:id="@+id/performance"
 		android:icon="@drawable/ic_settings_development"
 	        android:title="@string/performance_app">
@@ -354,7 +354,7 @@
 		  android:action="android.intent.action.MAIN" 
 		  android:targetPackage="com.klozz.performance.yayayaya"
 		  android:targetClass="com.klozz.performance.yayayaya.MainActivity"/>
-		</dashboard-tile>
+		</dashboard-tile>-->
 
         <!-- About Device -->
         <dashboard-tile
