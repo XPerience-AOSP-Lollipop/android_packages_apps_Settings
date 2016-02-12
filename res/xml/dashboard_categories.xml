@@ -207,14 +207,14 @@
                 android:fragment="com.android.settings.applications.ProcessStatsSummary"
                 android:icon="@drawable/ic_settings_memory"
                 />
-                
+
 	<!-- Preference categories are dynamically created based on the list of available storage volumes -->
         <!-- Partition info -->
         <dashboard-tile
                android:icon="@drawable/ic_tab_selected_sdcard"
 	       android:title="@string/partition_info_title">
 	        <intent
-        	    android:action="com.android.action.MAIN"
+		    android:action="com.android.action.MAIN"
 	            android:targetPackage="com.android.settings"
 	            android:targetClass="com.android.settings.PartitionInfo" />
 	</dashboard-tile>
