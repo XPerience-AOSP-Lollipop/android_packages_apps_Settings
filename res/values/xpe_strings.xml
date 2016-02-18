@@ -66,5 +66,44 @@
     <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
     <string name="network_traffic_hidearrow_title">Hide arrows</string>
     <string name="network_traffic_hidearrow_summary">Hide the traffic monitor activity arrows</string>
+    <!-- Display Settings -->
+    <!-- Doze pulse options -->
+    <string name="summary_doze_enabled">Enabled</string>
+    <string name="summary_doze_disabled">Disabled</string>
+    <string name="doze_overwrite_value_title">Overwrite defaults</string>
+    <string name="doze_overwrite_value_summary">Allow override of default values with user config</string>
+    <string name="doze_pulse_title">User configurable settings</string>
+    <string name="doze_pulse_duration_in_title">Fade in</string>
+    <string name="doze_pulse_duration_in_summary"></string>
+    <string name="doze_pulse_duration_visible_title">Visible duration</string>
+    <string name="doze_pulse_duration_visible_summary"></string>
+    <string name="doze_pulse_duration_out_title">Fade out</string>
+    <string name="doze_pulse_duration_out_summary"></string>
+    <string name="doze_trigger_pickup_title">Pick up sensor trigger</string>
+    <string name="doze_trigger_pickup_summary_on">Pulse will be triggered by pick up sensor</string>
+    <string name="doze_trigger_pickup_summary_off">Pick up sensor will not be utilized as a trigger</string>
+    <string name="doze_trigger_notification_title">Notification trigger</string>
+    <string name="doze_trigger_notification_summary_on">Pulse will be triggered by notifications</string>
+    <string name="doze_trigger_notification_summary_off">Notifications will not be utilized as a trigger</string>
+    <string name="doze_brightness_level_title">Brightness level</string>
+    <string name="onehundred_ms" translatable="false">100 ms</string>
+    <string name="twofifty_ms" translatable="false">250 ms</string>
+    <string name="fivehundred_ms_default">500 ms (default)</string>
+    <string name="sevenfifty_ms" translatable="false">750 ms</string>
+    <string name="one_second" translatable="false">1 s</string>
+    <string name="onehalf_second" translatable="false">1.5 s</string>
+    <string name="two_second" translatable="false">2 s</string>
+    <string name="twohalf_second" translatable="false">2.5 s</string>
+    <string name="three_second_default">3 s (default)</string>
+    <string name="threehalf_second" translatable="false">3.5 s</string>
+    <string name="four_second" translatable="false">4 s</string>
+    <string name="fourhalf_second" translatable="false">4.5 s</string>
+    <string name="five_second" translatable="false">5 s</string>
 
+    <!--On the GO RESET-->
+    <string name="reset_all_settings">RESET ALL</string>
+    <string name="reset_selected_settings">RESET SELECTED</string>
+    <string name="reset_settings_title">Feature preferences</string>
+    <string name="reset_settings_summary">Reset Paranoid Android feature preferences</string>
+    <string name="keywords_settings_reset">reset</string>
 </resources>
