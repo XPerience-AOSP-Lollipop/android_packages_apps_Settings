@@ -116,4 +116,10 @@
     <string name="fourhalf_second" translatable="false">4.5 s</string>
     <string name="five_second" translatable="false">5 s</string>
 
+    <!--On the GO RESET-->
+    <string name="reset_all_settings">RESET ALL</string>
+    <string name="reset_selected_settings">RESET SELECTED</string>
+    <string name="reset_settings_title">Feature preferences</string>
+    <string name="reset_settings_summary">Reset Paranoid Android feature preferences</string>
+    <string name="keywords_settings_reset">reset</string>
 </resources>
