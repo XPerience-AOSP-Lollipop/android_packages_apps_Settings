@@ -145,13 +145,6 @@
                 android:fragment="com.android.settings.notification.NotificationManagerSettings"
                 android:icon="@drawable/ic_settings_notifications"
                 />
-
-	<dashboard-tile
-                android:id="@+id/recentsr_settings"
-                android:title="@string/recents_title"
-                android:fragment="com.android.settings.xperience.Recents"
-                android:icon="@drawable/ic_recents"
-                />
                 
         <!-- Lock screen -->
         <dashboard-tile

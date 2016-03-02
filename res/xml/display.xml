@@ -209,6 +209,13 @@
          android:summaryOff="@string/recents_show_membar_summary_off"
          android:defaultValue="false" />
 
+    <!-- Recents -->
+    <PreferenceScreen
+         android:id="@+id/recentsr_settings"
+         android:title="@string/recents_title"
+         android:fragment="com.android.settings.xperience.Recents"
+         android:icon="@drawable/ic_recents" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
