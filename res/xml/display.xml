@@ -216,6 +216,13 @@
          android:fragment="com.android.settings.xperience.Recents"
          android:icon="@drawable/ic_recents" />
 
+    <!-- Circle app bar -->
+    <PreferenceScreen
+         android:key="app_circle_bar"
+         android:fragment="com.android.settings.xperience.AppCircleBar"
+         android:title="@string/app_circle_bar_title"
+         android:icon="@drawable/ic_settings_app_circle" />
+               
     </PreferenceCategory>
 
 </PreferenceScreen>
