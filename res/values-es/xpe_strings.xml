@@ -43,4 +43,9 @@
     <string name="battery_saver_notif_summary">Mostrar notificación de ahorro de batería cuando está habilitado</string>
     <string name="battery_low_notif_title">Notificación de batería baja</string>
     <string name="battery_low_notif_summary">Mostrar la notificación de batería baja cuando está habilitado</string>
+
+    <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+    <string name="show_cpu_info">Mostrar información de la CPU</string>
+    <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+    <string name="show_cpu_info_summary">Superposición en pantalla que muestra información actual de la CPU</string>
 </resources>
