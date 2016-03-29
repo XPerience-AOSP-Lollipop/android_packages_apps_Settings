@@ -257,7 +257,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private SwitchPreference mDisableOverlays;
     private SwitchPreference mEnableMultiWindow;
     private SwitchPreference mShowCpuUsage;
-    private CheckBoxPreference mShowCpuInfo;
+    private SwitchPreference mShowCpuInfo;
     private SwitchPreference mForceHardwareUi;
     private SwitchPreference mForceMsaa;
     private SwitchPreference mShowHwScreenUpdates;
@@ -415,7 +415,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         mShowScreenUpdates = findAndInitSwitchPref(SHOW_SCREEN_UPDATES_KEY);
         mDisableOverlays = findAndInitSwitchPref(DISABLE_OVERLAYS_KEY);
         mShowCpuUsage = findAndInitSwitchPref(SHOW_CPU_USAGE_KEY);
-        mShowCpuInfo = findAndInitCheckboxPref(SHOW_CPU_INFO_KEY);
+        mShowCpuInfo = findAndInitSwitchPref(SHOW_CPU_INFO_KEY);
         mForceHardwareUi = findAndInitSwitchPref(FORCE_HARDWARE_UI_KEY);
         mForceMsaa = findAndInitSwitchPref(FORCE_MSAA_KEY);
         mTrackFrameTime = addListPreference(TRACK_FRAME_TIME_KEY);
@@ -744,7 +744,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     }
 
     private void updateCpuInfoOptions() {
-        updateCheckBox(mShowCpuInfo, Settings.Global.getInt(getActivity().getContentResolver(),
+       updateSwitchPreference(mShowCpuInfo, Settings.Global.getInt(getActivity().getContentResolver(),
                 Settings.Global.SHOW_CPU, 0) != 0);
     }
 
