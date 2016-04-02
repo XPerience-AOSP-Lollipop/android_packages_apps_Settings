@@ -377,8 +377,8 @@ public class SettingsActivity extends Activity
 
             BlacklistSettings.class.getName(),
             ProfilesSettings.class.getName(),
-            NotificationManagerSettings.class.getName()
-            LiveLockScreenSettings.class.getName()
+            NotificationManagerSettings.class.getName(),
+            LiveLockScreenSettings.class.getName(),
             WeatherServiceSettings.class.getName()
     };
 
