@@ -143,6 +143,7 @@
   <!-- Settings main menu entry -->
   <!-- Power menu -->
   <!-- Buttons - Enable navbar -->
+  <!-- tap-to-wake -->
   <!-- tap-to-sleep -->
   <!-- Proximity wake -->
   <!-- Turn on display when power connected; turn off display when power disconnected -->
@@ -151,7 +152,6 @@
   <!-- Volume settings - Volume adjustment sound -->
   <!-- Hardware tunables - Vibrator intensity -->
   <!-- Hardware tunables - Color calibration -->
-  <!-- used if no name provided by overlay -->
   <!-- Launch music player when headset is connected -->
   <!-- WiFi auto-configure priorities -->
   <!-- Display : Rotation  -->
@@ -298,4 +298,5 @@
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Superposición en pantalla que muestra información actual de la CPU</string>
   <!-- Weather -->
+  <!-- Label for settings shortcut: carrier selection -->
 </resources>
