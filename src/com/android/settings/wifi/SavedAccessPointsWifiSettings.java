@@ -21,7 +21,6 @@ import static android.os.UserManager.DISALLOW_CONFIG_WIFI;
 import android.app.Dialog;
 import android.content.ContentResolver;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.database.ContentObserver;
 import android.net.Uri;
@@ -60,8 +59,8 @@ import java.util.List;
 /**
  * UI to manage saved networks/access points.
  */
-public class SavedAccessPointsWifiSettings extends RestrictedSettingsFragment
-        implements DialogInterface.OnClickListener, Indexable {
+public class SavedAccessPointsWifiSettings extends SettingsPreferenceFragment
+        implements Indexable, WifiDialog.WifiDialogListener {
     private static final String TAG = "SavedAccessPointsWifiSettings";
 
     private DraggableSortListView.DropListener mDropListener =
@@ -332,12 +331,17 @@ public class SavedAccessPointsWifiSettings extends RestrictedSettingsFragment
     }
 
     @Override
-    public void onClick(DialogInterface dialogInterface, int button) {
-        if (button == WifiDialog.BUTTON_FORGET && mSelectedAccessPoint != null) {
+    public void onForget(WifiDialog dialog) {
+        if (mSelectedAccessPoint != null) {
             mWifiManager.forget(mSelectedAccessPoint.getConfig().networkId, null);
             getPreferenceScreen().removePreference((Preference) mSelectedAccessPoint.getTag());
             mSelectedAccessPoint = null;
         }
+    }
+
+    @Override
+    public void onSubmit(WifiDialog dialog) {
+        // Ignored
     }
 
     @Override
