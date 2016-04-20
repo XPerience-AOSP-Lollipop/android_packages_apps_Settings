@@ -59,7 +59,7 @@ import java.util.List;
 /**
  * UI to manage saved networks/access points.
  */
-public class SavedAccessPointsWifiSettings extends SettingsPreferenceFragment
+public class SavedAccessPointsWifiSettings extends RestrictedSettingsFragment
         implements Indexable, WifiDialog.WifiDialogListener {
     private static final String TAG = "SavedAccessPointsWifiSettings";
 
