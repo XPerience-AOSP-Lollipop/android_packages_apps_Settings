@@ -53,7 +53,6 @@ public class KeyboardLayoutDialogFragment extends DialogFragment
     private int mInputDeviceId = -1;
     private InputManager mIm;
     private KeyboardLayoutAdapter mAdapter;
-    private boolean mHasShownLayoutSelectionScreen;
 
     public KeyboardLayoutDialogFragment() {
     }
@@ -179,7 +178,6 @@ public class KeyboardLayoutDialogFragment extends DialogFragment
             dialog.getListView().setItemChecked(data.current, true);
         }
         updateSwitchHintVisibility();
-        showSetupKeyboardLayoutsIfNecessary();
     }
 
     @Override
@@ -211,17 +209,6 @@ public class KeyboardLayoutDialogFragment extends DialogFragment
         if (dialog != null) {
             View customPanel = dialog.findViewById(com.android.internal.R.id.customPanel);
             customPanel.setVisibility(mAdapter.getCount() > 1 ? View.VISIBLE : View.GONE);
-        }
-    }
-
-    private void showSetupKeyboardLayoutsIfNecessary() {
-        AlertDialog dialog = (AlertDialog)getDialog();
-        if (dialog != null
-                && mAdapter.getCount() == 1 && mAdapter.getItem(0) == null
-                && !mHasShownLayoutSelectionScreen) {
-            mHasShownLayoutSelectionScreen = true;
-            ((OnSetupKeyboardLayoutsListener)getTargetFragment()).onSetupKeyboardLayouts(
-                    mInputDeviceIdentifier);
         }
     }
 
@@ -313,7 +300,7 @@ public class KeyboardLayoutDialogFragment extends DialogFragment
         public Keyboards loadInBackground() {
             Keyboards keyboards = new Keyboards();
             InputManager im = (InputManager)getContext().getSystemService(Context.INPUT_SERVICE);
-            String[] keyboardLayoutDescriptors = im.getEnabledKeyboardLayoutsForInputDevice(
+            String[] keyboardLayoutDescriptors = im.getKeyboardLayoutsForInputDevice(
                     mInputDeviceIdentifier);
             for (String keyboardLayoutDescriptor : keyboardLayoutDescriptors) {
                 KeyboardLayout keyboardLayout = im.getKeyboardLayout(keyboardLayoutDescriptor);
