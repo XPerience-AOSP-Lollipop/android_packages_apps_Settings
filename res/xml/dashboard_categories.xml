@@ -370,6 +370,15 @@
                     android:targetClass="eu.chainfire.supersu.MainActivity" />
         </dashboard-tile>
 
+	<dashboard-tile
+  		android:id="@+id/performance"
+  		android:icon="@drawable/ic_settings_system"
+  	        android:title="@string/performance_app">
+  	        <intent
+  		  android:action="android.intent.action.MAIN" 
+  		  android:targetPackage="mx.klozz.xperience.robaalmas"
+  		  android:targetClass="mx.klozz.xperience.robaalmas.MainActivity"/>
+		</dashboard-tile>
 
         <!-- About Device -->
         <dashboard-tile

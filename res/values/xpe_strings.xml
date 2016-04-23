@@ -23,6 +23,8 @@
     <string name="changelog_loading">Loading changelog...</string>
     <string name="changelog_error">Unable to load changelog</string>
     
+    <string name="performance_app">Performance</string>
+
     <!-- donators strings -->
     <string name="donators_title">View donators</string>
     <string name="donators_loading">Loading donators...</string>
