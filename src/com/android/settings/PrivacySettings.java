@@ -34,11 +34,14 @@ import android.os.UserManager;
 import android.preference.Preference;
 import android.preference.PreferenceCategory;
 import android.preference.Preference.OnPreferenceChangeListener;
+import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
+import android.util.SparseBooleanArray;
 import android.util.Log;
+import android.widget.ListView;
 
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
@@ -46,13 +49,9 @@ import com.android.settings.search.Indexable.SearchIndexProvider;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
-import com.android.settings.search.BaseSearchIndexProvider;
-import com.android.settings.search.Indexable;
-import com.android.settings.search.Indexable.SearchIndexProvider;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Gesture lock pattern settings.
@@ -65,6 +64,7 @@ public class PrivacySettings extends SettingsPreferenceFragment implements
     private static final String BACKUP_CATEGORY = "backup_category";
     private static final String BACKUP_DATA = "backup_data";
     private static final String AUTO_RESTORE = "auto_restore";
+    private static final String RESET_PREFERENCES = "user_preferences_reset";
     private static final String CONFIGURE_ACCOUNT = "configure_account";
     private static final String BACKUP_INACTIVE = "backup_inactive";
     private static final String PERSONAL_DATA_CATEGORY = "personal_data_category";
@@ -72,6 +72,7 @@ public class PrivacySettings extends SettingsPreferenceFragment implements
     private IBackupManager mBackupManager;
     private SwitchPreference mBackup;
     private SwitchPreference mAutoRestore;
+    private Preference mResetUserPreferences;
     private Dialog mConfirmDialog;
     private PreferenceScreen mConfigure;
     private boolean mEnabled;
@@ -255,6 +256,7 @@ public class PrivacySettings extends SettingsPreferenceFragment implements
                     }
                 }
 
+		updateResetUserPreferences();
                 dialog.dismiss();
             }
 
