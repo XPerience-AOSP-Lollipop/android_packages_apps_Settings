@@ -101,6 +101,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_MOD_BUILD_DATE = "build_date";
     private static final String KEY_CM_UPDATES = "cm_updates";
     private static final String KEY_MOD_RELEASE_TYPE = "rel_type";
+    private static final String KEY_HW_VERSION = "hardware_version";
+
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
@@ -227,6 +229,9 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         // If enabled by default, just remove the setting, because it's confusing.
         removePreferenceIfBoolFalse(KEY_ADVANCED_MODE, !getResources().getBoolean(
                 com.android.internal.R.bool.config_advancedSettingsMode));
+
+        removePreferenceIfBoolFalse(KEY_HW_VERSION,
+                !TextUtils.isEmpty(getResources().getString(R.string.hardware_version_value)));
     }
 
     @Override
