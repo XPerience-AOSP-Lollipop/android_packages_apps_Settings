@@ -299,4 +299,5 @@
     <string name="show_cpu_info_summary">Superposición en pantalla que muestra información actual de la CPU</string>
   <!-- Weather -->
   <!-- Label for settings shortcut: carrier selection -->
+  <!-- title for lock screen blur preference -->
 </resources>
