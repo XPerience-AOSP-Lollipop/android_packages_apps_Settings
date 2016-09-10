@@ -48,4 +48,8 @@
     <string name="show_cpu_info">Mostrar información de la CPU</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Superposición en pantalla que muestra información actual de la CPU</string>
+    
+    <!-- The volume key answer -->
+    <string name="volume_answer_call_title">Responder con tecla de volumen</string>
+    <string name="volume_answer_call_summary">Volumen arriba para responder la llamada</string>
 </resources>
