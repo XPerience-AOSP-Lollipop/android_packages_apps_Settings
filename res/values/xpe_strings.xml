@@ -6,7 +6,7 @@
 
     <!-- About phone screen, build date -->
     <string name="build_date">Build date</string>
-    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="build_date_default" translatable="false">2017-01-01-0000</string>
 
     <!-- Force expanded notifications -->
     <string name="force_expanded_notifications_title">Force Expanded Notifications</string>
@@ -129,5 +129,6 @@
 <!-- Custom Settings -->    
 <!-- Dashboard -->
    <string name="header_category_custom">Rainbow Unicorn XPerience™</string>
-
+   <string name="substratum_title">Substratum</string>
+   <string name="substratum_summary">Customize device theme</string>
 </resources>

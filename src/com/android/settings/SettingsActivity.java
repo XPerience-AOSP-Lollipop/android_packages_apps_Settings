@@ -240,6 +240,8 @@ public class SettingsActivity extends SettingsDrawerActivity
     private static final String SUPERSU_FRAGMENT = "com.android.settings.SuperSU";
     private static final String ALESSA_FRAGMENT = "com.android.settings.Alessa";
 
+    private static final String SUBSTRATUM_FRAGMENT = "com.android.settings.Substratum";
+
     private String mFragmentClass;
     private String mActivityAction;
 
@@ -1068,6 +1070,14 @@ public class SettingsActivity extends SettingsDrawerActivity
             finish();
             return null;
         }
+        if (SUBSTRATUM_FRAGMENT.equals(fragmentName)) {
+            Intent subIntent = new Intent();
+            subIntent.setClassName("projekt.substratum", "projekt.substratum.LaunchActivity");
+            startActivity(subIntent);
+            finish();
+            return null;
+        }
+
         if (validate && !isValidFragment(fragmentName)) {
             throw new IllegalArgumentException("Invalid fragment for this activity: "
                     + fragmentName);
@@ -1161,7 +1171,21 @@ public class SettingsActivity extends SettingsDrawerActivity
                         Settings.DevelopmentSettingsActivity.class.getName()),
                 showDev, isAdmin, pm);
 
+<<<<<<< HEAD
         // Embedding into Settings is supported from SuperSU v1.85 and up
+=======
+        // Substratum
+        boolean subSupported = false;
+        try {
+            subSupported = (getPackageManager().getPackageInfo("projekt.substratum", 0).versionCode > 0);
+        } catch (PackageManager.NameNotFoundException e) {
+        }
+        setTileEnabled(new ComponentName(packageName,
+                        Settings.SubstratumActivity.class.getName()),
+                subSupported, isAdmin, pm);
+
+        // SuperSU
+>>>>>>> 36a971b... Add Substratum dashboard tile
         boolean suSupported = false;
         try {
             suSupported = (getPackageManager().getPackageInfo("eu.chainfire.supersu", 0).versionCode >= 185);
