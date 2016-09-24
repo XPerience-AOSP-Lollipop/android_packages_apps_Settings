@@ -92,6 +92,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             = "camera_double_tap_power_gesture";
     private static final String KEY_WALLPAPER = "wallpaper";
     private static final String KEY_VR_DISPLAY_PREF = "vr_display_pref";
+    private static final String FORCE_EXPANDED_NOTIFICATIONS = "force_expanded_notifications";
+    private static final String DISABLE_IMMERSIVE_MESSAGE = "disable_immersive_message";
 
     private Preference mFontSizePref;
 
@@ -104,6 +106,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private SwitchPreference mAutoBrightnessPreference;
     private SwitchPreference mCameraGesturePreference;
     private SwitchPreference mCameraDoubleTapPowerGesturePreference;
+    private SwitchPreference mForceExpanded;
+    private SwitchPreference mDisableIM;
 
     @Override
     protected int getMetricsCategory() {
@@ -230,6 +234,18 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 }
             }
 
+            mForceExpanded = (SwitchPreference) findPreference(FORCE_EXPANDED_NOTIFICATIONS);
+            mForceExpanded.setOnPreferenceChangeListener(this);
+            int ForceExpanded = Settings.System.getInt(getContentResolver(),
+                                                       FORCE_EXPANDED_NOTIFICATIONS, 0);
+            mForceExpanded.setChecked(ForceExpanded != 0);
+            
+            mDisableIM = (SwitchPreference) findPreference(DISABLE_IMMERSIVE_MESSAGE);
+            mDisableIM.setOnPreferenceChangeListener(this);
+            int DisableIM = Settings.System.getInt(getContentResolver(),
+                                                   DISABLE_IMMERSIVE_MESSAGE, 0);
+            mDisableIM.setChecked(DisableIM != 0);
+            
             DropDownPreference vrDisplayPref =
                     (DropDownPreference) findPreference(KEY_VR_DISPLAY_PREF);
             if (vrDisplayPref != null) {
@@ -266,7 +282,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 }
             }
         }
-
+        
         mNightModePreference = (ListPreference) findPreference(KEY_NIGHT_MODE);
         if (mNightModePreference != null) {
             final UiModeManager uiManager = (UiModeManager) getSystemService(
@@ -471,6 +487,18 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             boolean value = (Boolean) objValue;
             Settings.Secure.putInt(getContentResolver(), CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED,
                     value ? 0 : 1 /* Backwards because setting is for disabling */);
+        }
+        if (preference == mForceExpanded) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getContentResolver(), FORCE_EXPANDED_NOTIFICATIONS,
+                                value ? 1 : 0);
+                return true;
+        }
+        if (preference == mDisableIM) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getContentResolver(), DISABLE_IMMERSIVE_MESSAGE,
+                                   value ? 1 : 0);
+            return true;
         }
         if (preference == mNightModePreference) {
             try {

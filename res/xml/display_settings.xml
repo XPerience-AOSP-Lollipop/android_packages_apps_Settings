@@ -80,6 +80,16 @@
                 android:fragment="com.android.settings.DreamSettings" />
 
         <SwitchPreference
+                android:key="force_expanded_notifications"
+                android:title="@string/force_expanded_notifications_title"
+                android:summary="@string/force_expanded_notifications_summary" />
+
+        <SwitchPreference
+                android:key="disable_immersive_message"
+                android:title="@string/disable_immersive_message_title"
+                android:summary="@string/disable_immersive_message_summary" />
+
+        <SwitchPreference
                 android:key="lift_to_wake"
                 android:title="@string/lift_to_wake_title" />
 
