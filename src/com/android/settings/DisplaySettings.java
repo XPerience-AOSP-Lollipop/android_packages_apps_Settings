@@ -95,6 +95,9 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_VR_DISPLAY_PREF = "vr_display_pref";
     private static final String FORCE_EXPANDED_NOTIFICATIONS = "force_expanded_notifications";
     private static final String DISABLE_IMMERSIVE_MESSAGE = "disable_immersive_message";
+    private static final String IMMERSIVE_RECENTS = "immersive_recents";
+
+    private ListPreference mImmersiveRecents;
 
     private Preference mFontSizePref;
 
@@ -239,6 +242,12 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             int DisableIM = Settings.System.getInt(getContentResolver(),
                                                    DISABLE_IMMERSIVE_MESSAGE, 0);
             mDisableIM.setChecked(DisableIM != 0);
+            
+            mImmersiveRecents = (ListPreference) findPreference(IMMERSIVE_RECENTS);
+            mImmersiveRecents.setValue(String.valueOf(Settings.System.getInt(
+                    getContentResolver(), Settings.System.IMMERSIVE_RECENTS, 0)));
+            mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
+            mImmersiveRecents.setOnPreferenceChangeListener(this);
             
             DropDownPreference vrDisplayPref =
                     (DropDownPreference) findPreference(KEY_VR_DISPLAY_PREF);
@@ -434,6 +443,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         final String key = preference.getKey();
+        ContentResolver resolver = getActivity().getContentResolver();
         if (KEY_SCREEN_TIMEOUT.equals(key)) {
             try {
                 int value = Integer.parseInt((String) objValue);
@@ -475,6 +485,13 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             boolean value = (Boolean) objValue;
             Settings.System.putInt(getContentResolver(), DISABLE_IMMERSIVE_MESSAGE,
                                    value ? 1 : 0);
+            return true;
+        }
+        if (preference == mImmersiveRecents) {
+            Settings.System.putInt(getContentResolver(), Settings.System.IMMERSIVE_RECENTS,
+                                        Integer.valueOf((String) objValue));
+                mImmersiveRecents.setValue(String.valueOf(objValue));
+                mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
             return true;
         }
         if (preference == mNightModePreference) {
