@@ -1055,7 +1055,7 @@
 
         <activity android:name="Settings$AlessaActivity"
                 android:label="@string/Alessa_title"
-                android:icon="@drawable/ic_settings_system"
+                android:icon="@drawable/ic_settings_alessa"
                 android:taskAffinity="" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
