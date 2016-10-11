@@ -236,6 +236,7 @@ public class SettingsActivity extends SettingsDrawerActivity
     private static final String MOBILENETWORK_FRAGMENT = "com.android.settings.MobileNetworkMain";
     private static final String SYSTEM_UPDATE = "android.settings.SystemUpdateActivity";
     private static final String SUPERSU_FRAGMENT = "com.android.settings.SuperSU";
+    private static final String ALESSA_FRAGMENT = "com.android.settings.Alessa";
 
     private String mFragmentClass;
     private String mActivityAction;
@@ -1057,10 +1058,19 @@ public class SettingsActivity extends SettingsDrawerActivity
             finish();
             return null;
         }
+
         if (SUPERSU_FRAGMENT.equals(fragmentName)) {
             Intent superSUIntent = new Intent();
             superSUIntent.setClassName("eu.chainfire.supersu", "eu.chainfire.supersu.MainActivity");
             startActivity(superSUIntent);
+            finish();
+            return null;
+        }
+
+        if (ALESSA_FRAGMENT.equals(fragmentName)) {
+            Intent AlessaIntent = new Intent();
+            AlessaIntent.setClassName("mx.klozz.xperience.robaalmas", "mx.klozz.xperience.robaalmas.MainActivity");
+            startActivity(AlessaIntent);
             finish();
             return null;
         }
