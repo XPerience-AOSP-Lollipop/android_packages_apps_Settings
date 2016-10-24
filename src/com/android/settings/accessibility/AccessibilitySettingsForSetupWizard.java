@@ -121,27 +121,27 @@ public class AccessibilitySettingsForSetupWizard extends SettingsPreferenceFragm
             return;
         } else {
             mScreenReaderPreference.setEnabled(true);
+
+            ServiceInfo serviceInfo = info.getResolveInfo().serviceInfo;
+            String title = info.getResolveInfo().loadLabel(getPackageManager()).toString();
+            mScreenReaderPreference.setTitle(title);
+
+            ComponentName componentName = new ComponentName(serviceInfo.packageName, serviceInfo.name);
+            mScreenReaderPreference.setKey(componentName.flattenToString());
+
+            // Update the extras.
+            Bundle extras = mScreenReaderPreference.getExtras();
+            extras.putParcelable(AccessibilitySettings.EXTRA_COMPONENT_NAME, componentName);
+
+            extras.putString(AccessibilitySettings.EXTRA_PREFERENCE_KEY,
+                    mScreenReaderPreference.getKey());
+            extras.putString(AccessibilitySettings.EXTRA_TITLE, title);
+
+            String description = info.loadDescription(getPackageManager());
+            if (TextUtils.isEmpty(description)) {
+                description = getString(R.string.accessibility_service_default_description);
+            }
+            extras.putString(AccessibilitySettings.EXTRA_SUMMARY, description);
         }
-
-        ServiceInfo serviceInfo = info.getResolveInfo().serviceInfo;
-        String title = info.getResolveInfo().loadLabel(getPackageManager()).toString();
-        mScreenReaderPreference.setTitle(title);
-
-        ComponentName componentName = new ComponentName(serviceInfo.packageName, serviceInfo.name);
-        mScreenReaderPreference.setKey(componentName.flattenToString());
-
-        // Update the extras.
-        Bundle extras = mScreenReaderPreference.getExtras();
-        extras.putParcelable(AccessibilitySettings.EXTRA_COMPONENT_NAME, componentName);
-
-        extras.putString(AccessibilitySettings.EXTRA_PREFERENCE_KEY,
-                mScreenReaderPreference.getKey());
-        extras.putString(AccessibilitySettings.EXTRA_TITLE, title);
-
-        String description = info.loadDescription(getPackageManager());
-        if (TextUtils.isEmpty(description)) {
-            description = getString(R.string.accessibility_service_default_description);
-        }
-        extras.putString(AccessibilitySettings.EXTRA_SUMMARY, description);
     }
 }
