@@ -149,6 +149,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_MBN_VERSION,
                 PROPERTY_MBN_VERSION);
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
+        findPreference(KEY_XPE_VERSION).setEnabled(true);
         setValueSummary(KEY_XPE_VERSION, "ro.xpe.version");
 	setValueSummary(KEY_MOD_RELEASE_TYPE, "ro.xpe.releasetype");
 	setValueSummary(KEY_XPE_CODENAME, "ro.xpe.codename");
@@ -260,6 +261,28 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 Intent intent = new Intent(Intent.ACTION_MAIN);
                 intent.setClassName("android",
                         com.android.internal.app.PlatLogoActivity.class.getName());
+                try {
+                    startActivity(intent);
+                } catch (Exception e) {
+                    Log.e(LOG_TAG, "Unable to start activity " + intent.toString());
+                }
+            }
+          }else if (preference.getKey().equals(KEY_XPE_VERSION)) {
+            System.arraycopy(mHits, 1, mHits, 0, mHits.length-1);
+            mHits[mHits.length-1] = SystemClock.uptimeMillis();
+            if (mHits[0] >= (SystemClock.uptimeMillis()-500)) {
+                if (mUm.hasUserRestriction(UserManager.DISALLOW_FUN)) {
+                    if (mFunDisallowedAdmin != null && !mFunDisallowedBySystem) {
+                        RestrictedLockUtils.sendShowAdminSupportDetailsIntent(getActivity(),
+                                mFunDisallowedAdmin);
+                    }
+                    Log.d(LOG_TAG, "Sorry, no fun for you!");
+                    return false;
+                }
+
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.setClassName("android",
+                        com.android.internal.app.XPeWorldActivity.class.getName());
                 try {
                     startActivity(intent);
                 } catch (Exception e) {
