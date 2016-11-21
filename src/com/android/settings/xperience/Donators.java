@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2011-2015 The XPerience Project
+ * Copyright (C) 2011-2016 The XPerience Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,6 +18,13 @@ package com.android.settings.xperience;
 
 import android.app.Fragment;
 import android.os.Bundle;
+import android.graphics.Color;
+import android.graphics.Typeface;
+import android.text.Spannable;
+import android.text.SpannableStringBuilder;
+import android.text.style.ForegroundColorSpan;
+import android.text.style.StyleSpan;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,6 +36,8 @@ import com.android.settings.R;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
 
 public class Donators extends Fragment {
     private static final String DONATORS_PATH = "/system/etc/donators.txt";
@@ -39,8 +48,12 @@ public class Donators extends Fragment {
         InputStreamReader inputReader = null;
         String text = null;
 
+        StringBuilder data = new StringBuilder();
+        Pattern diseño = Pattern.compile("([a-f0-9]{7})\\s\\s(.*)\\s\\s\\[(.*)\\]"); //(?dms)
+        Pattern diseño2 = Pattern.compile("\\s+\\*\\s(([\\w_\\-]+/)+)");
+        Pattern diseño3 = Pattern.compile("(\\d\\d\\-\\d\\d\\-\\d{4})");
+
         try {
-            StringBuilder data = new StringBuilder();
             char tmp[] = new char[2048];
             int numRead;
 
@@ -48,9 +61,7 @@ public class Donators extends Fragment {
             while ((numRead = inputReader.read(tmp)) >= 0) {
                 data.append(tmp, 0, numRead);
             }
-            text = data.toString();
         } catch (IOException e) {
-            text = getString(R.string.donators_error);
         } finally {
             try {
                 if (inputReader != null) {
@@ -60,8 +71,25 @@ public class Donators extends Fragment {
             }
         }
 
+    	SpannableStringBuilder sb = new SpannableStringBuilder(data);
+        Matcher m = diseño.matcher(data);
+        while (m.find()){
+          sb.setSpan(new ForegroundColorSpan(Color.rgb(96,125,139)),m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+          sb.setSpan(new StyleSpan(Typeface.BOLD),m.start(1),m.end(1),Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+          sb.setSpan(new ForegroundColorSpan(Color.rgb(69,90,100)),m.start(3), m.end(3), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+        }
+        m = diseño2.matcher(data);
+        while (m.find()){
+          sb.setSpan(new StyleSpan(Typeface.BOLD),m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+          sb.setSpan(new ForegroundColorSpan(Color.rgb(33,39,43)),m.start(1),m.end(1),Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+        }
+        m = diseño3.matcher(data);
+        while (m.find()){
+          sb.setSpan(new StyleSpan(Typeface.BOLD+Typeface.ITALIC),m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+        }
+
         final TextView textView = new TextView(getActivity());
-        textView.setText(text);
+        textView.setText(sb);
 
         final ScrollView scrollView = new ScrollView(getActivity());
         scrollView.addView(textView);
@@ -69,4 +97,4 @@ public class Donators extends Fragment {
         return scrollView;
     }
 }
- 
+
