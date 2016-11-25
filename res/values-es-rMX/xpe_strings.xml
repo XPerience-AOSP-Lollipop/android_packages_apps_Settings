@@ -83,4 +83,10 @@
   <string name="doze_brightness_level_title">Nivel de brillo</string>
   <string name="fivehundred_ms_default">500ms (por defecto)</string>
   <string name="three_second_default">3s (por defecto)</string>
+  <!--On the GO RESET-->
+  <string name="reset_all_settings">REINICIAR TODO</string>
+  <string name="reset_selected_settings">REINICIAR SELECCIONADO</string>
+  <string name="reset_settings_title">Preferencias de funciones</string>
+  <string name="reset_settings_summary">Restablecer las preferencias de funciónes XPerience</string>
+  <string name="keywords_settings_reset">restablecer</string>
 </resources>
