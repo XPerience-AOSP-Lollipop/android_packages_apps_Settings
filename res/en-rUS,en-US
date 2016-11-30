@@ -83,4 +83,10 @@
   <string name="doze_brightness_level_title">Nível de brilho</string>
   <string name="fivehundred_ms_default">500 ms (padrão)</string>
   <string name="three_second_default">3 s (padrão)</string>
+  <!--On the GO RESET-->
+  <string name="reset_all_settings">REDEFINIR TODAS</string>
+  <string name="reset_selected_settings">REDEFINIR SELECIONADO</string>
+  <string name="reset_settings_title">Preferências de recursos</string>
+  <string name="reset_settings_summary">Repor as preferências das funcionalidades XPerience</string>
+  <string name="keywords_settings_reset">redefinir</string>
 </resources>
