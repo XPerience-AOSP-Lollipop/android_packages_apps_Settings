@@ -55,7 +55,7 @@
   <string name="show_network_traffic_frequency">Intervalo de actualización</string>
   <string name="show_network_traffic_disable">Inhabilitado</string>
   <string name="show_network_traffic_up">Saliente</string>
-  <string name="show_network_traffic_down">Entrada</string>
+  <string name="show_network_traffic_down">Entrante</string>
   <string name="show_network_traffic_all">Salientes y entrantes</string>
   <string name="show_network_traffic_bit">Bits por segundo</string>
   <string name="show_network_traffic_byte">Bytes por segundo</string>
@@ -74,9 +74,9 @@
   <string name="doze_pulse_duration_in_title">Fundirse</string>
   <string name="doze_pulse_duration_visible_title">Duración visible</string>
   <string name="doze_pulse_duration_out_title">Desvanecerse</string>
-  <string name="doze_trigger_pickup_title">Activar cuando levantas el sensor</string>
+  <string name="doze_trigger_pickup_title">Activar cuando levantas el dispositivo</string>
   <string name="doze_trigger_pickup_summary_on">El pulso será activado cuando levantes el dispositivo</string>
-  <string name="doze_trigger_pickup_summary_off">Captura de sensor no sera utilizado como disparador</string>
+  <string name="doze_trigger_pickup_summary_off">Levantar el dispositivo no sera utilizado como disparador</string>
   <string name="doze_trigger_notification_title">Disparador de notificación</string>
   <string name="doze_trigger_notification_summary_on">El pulso se activará mediante notificaciones</string>
   <string name="doze_trigger_notification_summary_off">Las notificaciones no se utilizarán como disparador</string>
