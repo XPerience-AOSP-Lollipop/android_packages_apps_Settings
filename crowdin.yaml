@@ -1,0 +1,8 @@
+files:
+  - source: xpe_strings.xml
+    translation: '%android_code%%original_file_name%'
+    languages_mapping:
+      android_code:
+        pt-BR: values-pt-rBR
+        es-ES: values-es
+        fr: values-fr
