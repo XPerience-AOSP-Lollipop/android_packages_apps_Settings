@@ -79,14 +79,14 @@
   <string name="doze_trigger_pickup_summary_off">Non utilizzare sensore</string>
   <string name="doze_trigger_notification_title">Trigger notifica</string>
   <string name="doze_trigger_notification_summary_on">Accendere schermo all\'arrivo delle notifiche</string>
-  <string name="doze_trigger_notification_summary_off">Notifications will not be utilized as a trigger</string>
-  <string name="doze_brightness_level_title">Brightness level</string>
-  <string name="fivehundred_ms_default">500 ms (default)</string>
-  <string name="three_second_default">3 s (default)</string>
+  <string name="doze_trigger_notification_summary_off">Non utilizzare notifiche</string>
+  <string name="doze_brightness_level_title">Livello luminosità</string>
+  <string name="fivehundred_ms_default">500 ms (predefinito)</string>
+  <string name="three_second_default">3 s (predefinito)</string>
   <!--On the GO RESET-->
-  <string name="reset_all_settings">RESET ALL</string>
-  <string name="reset_selected_settings">RESET SELECTED</string>
-  <string name="reset_settings_title">Feature preferences</string>
-  <string name="reset_settings_summary">Reset XPerience feature preferences</string>
+  <string name="reset_all_settings">RIPRISTINA TUTTO</string>
+  <string name="reset_selected_settings">RIPRISTINA SELEZIONATI</string>
+  <string name="reset_settings_title">Preferenze funzioni</string>
+  <string name="reset_settings_summary">Ripristina le preferenze delle funzioni di XPerience</string>
   <string name="keywords_settings_reset">reset</string>
 </resources>
