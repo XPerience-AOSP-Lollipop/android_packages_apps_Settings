@@ -37,11 +37,11 @@
   <string name="immersive_recents_navbar">Solo barra di navigazione</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <!-- Change Log strings -->
-  <string name="changelog_title">Vedi changelog</string>
+  <string name="changelog_title">Mostra changelog</string>
   <string name="changelog_loading">Caricamento changelog...</string>
   <string name="changelog_error">Impossibile caricare changelog</string>
   <!-- donators strings -->
-  <string name="donators_title">Vedi donatori</string>
+  <string name="donators_title">Mostra donatori</string>
   <string name="donators_loading">Caricamento elenco...</string>
   <string name="donators_error">Impossibile caricare elenco donatori</string>
   <string name="OTACENTER">XPerience™ Center</string>
@@ -75,7 +75,7 @@
   <string name="doze_pulse_duration_visible_title">Durata visibilità</string>
   <string name="doze_pulse_duration_out_title">Dissolvenza in uscita</string>
   <string name="doze_trigger_pickup_title">Trigger sensore</string>
-  <string name="doze_trigger_pickup_summary_on">Accebdi schermo tramite sensore</string>
+  <string name="doze_trigger_pickup_summary_on">Accendi schermo tramite sensore</string>
   <string name="doze_trigger_pickup_summary_off">Non utilizzare sensore</string>
   <string name="doze_trigger_notification_title">Trigger notifica</string>
   <string name="doze_trigger_notification_summary_on">Accendere schermo all\'arrivo delle notifiche</string>
