@@ -107,4 +107,5 @@
   <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
   <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
   <string name="xpe">XPerience Configs</string>
+  <string name="default_string">Default</string>
 </resources>
