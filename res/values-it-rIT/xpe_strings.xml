@@ -93,17 +93,18 @@
   <!-- Show carrier label and custom -->
   <string name="carrier_options">Nome operatore</string>
   <string name="custom_carrier_label_title">Personalizza nome operatore</string>
-  <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
-  <string name="custom_carrier_label_notset">Custom label currently not set</string>
-  <string name="status_bar_carrier_color">Carrier label color</string>
-  <string name="status_bar_carrier_size">Carrier label text size</string>
-  <string name="show_carrier_title">Carrier label</string>
-  <string name="show_carrier_disabled">Disabled</string>
-  <string name="show_carrier_keyguard">Keyguard carrier</string>
-  <string name="show_carrier_statusbar">Status bar carrier</string>
-  <string name="show_carrier_enabled">Enabled</string>
+  <string name="custom_carrier_label_explain">Inserire un nuovo nome. Lasciare vuoto per tornare al nome originale.</string>
+  <string name="custom_carrier_label_notset">Nome personalizzato non impostato</string>
+  <string name="status_bar_carrier_color">Colore nome operatore</string>
+  <string name="status_bar_carrier_size">Dimensione testo nome operatore</string>
+  <string name="show_carrier_title">Mostra operatore</string>
+  <string name="show_carrier_disabled">Disattivato</string>
+  <string name="show_carrier_keyguard">Operatore schermata blocco</string>
+  <string name="show_carrier_statusbar">Operatore barra di stato</string>
+  <string name="show_carrier_enabled">Attivato</string>
   <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
-  <string name="show_cpu_info">Show CPU info</string>
+  <string name="show_cpu_info">Mostra informazioni CPU</string>
   <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
-  <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+  <string name="show_cpu_info_summary">Sovrapporre sullo schermo le informazioni attuali della CPU</string>
+  <string name="xpe">XPerience Configs</string>
 </resources>
