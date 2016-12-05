@@ -32,7 +32,7 @@
   <string name="immersive_recents_summary">Alterar a exibição última tela</string>
   <string name="immersive_recents_dialog_title">Ver os últimos selecionados</string>
   <string name="immersive_recents_default">Padrão</string>
-  <string name="immersive_recents_fullscreen">Fullscreen</string>
+  <string name="immersive_recents_fullscreen">Tela Cheia</string>
   <string name="immersive_recents_statusbar">Barra de status somente</string>
   <string name="immersive_recents_navbar">Barra de navegação somente</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
