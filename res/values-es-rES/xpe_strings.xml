@@ -17,76 +17,76 @@
 
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="xpe_version">XPerience™ version</string>
-  <string name="xpe_version_default">Unknown</string>
+  <string name="xpe_version">Versión de XPerience™</string>
+  <string name="xpe_version_default">Desconocido</string>
   <!-- About phone screen, build date -->
-  <string name="build_date">Build date</string>
+  <string name="build_date">Fecha de compilación</string>
   <!-- Force expanded notifications -->
-  <string name="force_expanded_notifications_title">Force Expanded Notifications</string>
-  <string name="force_expanded_notifications_summary">Available only for apps that support expanded notifications</string>
+  <string name="force_expanded_notifications_title">Forzar notificaciones expandidas</string>
+  <string name="force_expanded_notifications_summary">Disponible sólo para aplicaciones que admiten notificaciones expandidas</string>
   <!-- Disabling immersive mode messages -->
-  <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
-  <string name="disable_immersive_message_summary">This will hide all Immersive Mode Messages</string>
+  <string name="disable_immersive_message_title">Deshabilitar mensajes de modo inmersivo</string>
+  <string name="disable_immersive_message_summary">Esto ocultará todos los mensajes de modo inmersivo</string>
   <!-- Immersive Recents -->
-  <string name="immersive_recents_title">Immersive Recents</string>
-  <string name="immersive_recents_summary">Change the view of the recents screen</string>
-  <string name="immersive_recents_dialog_title">Select recents view</string>
-  <string name="immersive_recents_default">Default</string>
-  <string name="immersive_recents_fullscreen">Fullscreen</string>
-  <string name="immersive_recents_statusbar">Statusbar only</string>
-  <string name="immersive_recents_navbar">Navbar only</string>
+  <string name="immersive_recents_title">Recientes Inmersivos</string>
+  <string name="immersive_recents_summary">Cambiar la vista de la pantalla de recientes</string>
+  <string name="immersive_recents_dialog_title">Seleccionar vista reciente</string>
+  <string name="immersive_recents_default">Por defecto</string>
+  <string name="immersive_recents_fullscreen">Pantalla completa</string>
+  <string name="immersive_recents_statusbar">Sólo barra de estado</string>
+  <string name="immersive_recents_navbar">Sólo barra de Navegación</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <!-- Change Log strings -->
-  <string name="changelog_title">View changelog</string>
-  <string name="changelog_loading">Loading changelog...</string>
-  <string name="changelog_error">Unable to load changelog</string>
+  <string name="changelog_title">Ver Registro de Cambios</string>
+  <string name="changelog_loading">Cargando el registro de cambios...</string>
+  <string name="changelog_error">No se puede cargar el registro de cambios</string>
   <!-- donators strings -->
-  <string name="donators_title">View donators</string>
-  <string name="donators_loading">Loading donators...</string>
-  <string name="donators_error">Unable to load donators text</string>
-  <string name="OTACENTER">XPerience™ Center</string>
-  <string name="rel_type">Release type</string>
-  <string name="xpe_codename">XPerience™ CodeName</string>
+  <string name="donators_title">Ver donadores</string>
+  <string name="donators_loading">Cargando donadores...</string>
+  <string name="donators_error">No se puede cargar el texto de los donantes</string>
+  <string name="OTACENTER">Centro XPerience™</string>
+  <string name="rel_type">Tipo de lanzamiento</string>
+  <string name="xpe_codename">Código XPerience™</string>
   <!-- Network traffic -->
-  <string name="network_traffic_title">Network traffic</string>
-  <string name="show_network_traffic_state">Status bar traffic monitor</string>
-  <string name="network_traffic_summary">Enable various network traffic options in statusbar</string>
-  <string name="show_network_traffic_unit">Display unit</string>
-  <string name="show_network_traffic_frequency">Update interval</string>
-  <string name="show_network_traffic_disable">Disabled</string>
-  <string name="show_network_traffic_up">Outgoing</string>
-  <string name="show_network_traffic_down">Incoming</string>
-  <string name="show_network_traffic_all">Outgoing and incoming</string>
-  <string name="show_network_traffic_bit">Bits per second</string>
-  <string name="show_network_traffic_byte">Bytes per second</string>
-  <string name="network_traffic_autohide">Auto hide</string>
-  <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
-  <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
-  <string name="network_traffic_hidearrow_title">Hide arrows</string>
-  <string name="network_traffic_hidearrow_summary">Hide the traffic monitor activity arrows</string>
+  <string name="network_traffic_title">Tráfico de red</string>
+  <string name="show_network_traffic_state">Monitor de tráfico en la barra de estado</string>
+  <string name="network_traffic_summary">Permiten varias opciones de tráfico de red en barra de estado</string>
+  <string name="show_network_traffic_unit">Unidad de Muestreo</string>
+  <string name="show_network_traffic_frequency">Intervalo de actualización</string>
+  <string name="show_network_traffic_disable">Inhabilitado</string>
+  <string name="show_network_traffic_up">Saliente</string>
+  <string name="show_network_traffic_down">Entrante</string>
+  <string name="show_network_traffic_all">Salientes y entrantes</string>
+  <string name="show_network_traffic_bit">Bits por segundo</string>
+  <string name="show_network_traffic_byte">Bytes por segundo</string>
+  <string name="network_traffic_autohide">Auto ocultar</string>
+  <string name="network_traffic_autohide_summary">Ocultar al monitor de tráfico cuando no hay actividad</string>
+  <string name="network_traffic_autohide_threshold">Umbral de inactividad</string>
+  <string name="network_traffic_hidearrow_title">Ocultar las flechas</string>
+  <string name="network_traffic_hidearrow_summary">Ocultar las flechas de actividad de monitor de tráfico</string>
   <!-- Display Settings -->
   <!-- Doze pulse options -->
-  <string name="summary_doze_enabled">Enabled</string>
-  <string name="summary_doze_disabled">Disabled</string>
-  <string name="doze_overwrite_value_title">Overwrite defaults</string>
-  <string name="doze_overwrite_value_summary">Allow override of default values with user config</string>
-  <string name="doze_pulse_title">User configurable settings</string>
-  <string name="doze_pulse_duration_in_title">Fade in</string>
-  <string name="doze_pulse_duration_visible_title">Visible duration</string>
-  <string name="doze_pulse_duration_out_title">Fade out</string>
-  <string name="doze_trigger_pickup_title">Pick up sensor trigger</string>
-  <string name="doze_trigger_pickup_summary_on">Pulse will be triggered by pick up sensor</string>
-  <string name="doze_trigger_pickup_summary_off">Pick up sensor will not be utilized as a trigger</string>
-  <string name="doze_trigger_notification_title">Notification trigger</string>
-  <string name="doze_trigger_notification_summary_on">Pulse will be triggered by notifications</string>
-  <string name="doze_trigger_notification_summary_off">Notifications will not be utilized as a trigger</string>
-  <string name="doze_brightness_level_title">Brightness level</string>
-  <string name="fivehundred_ms_default">500 ms (default)</string>
-  <string name="three_second_default">3 s (default)</string>
+  <string name="summary_doze_enabled">Habilitado</string>
+  <string name="summary_doze_disabled">Inhabilitado</string>
+  <string name="doze_overwrite_value_title">Sobrescribir los valores por defecto</string>
+  <string name="doze_overwrite_value_summary">Permitir anulación de valores por defecto con la configuración del usuario</string>
+  <string name="doze_pulse_title">Ajustes configurables del usuario</string>
+  <string name="doze_pulse_duration_in_title">Fundirse</string>
+  <string name="doze_pulse_duration_visible_title">Duración visible</string>
+  <string name="doze_pulse_duration_out_title">Desvanecerse</string>
+  <string name="doze_trigger_pickup_title">Activar cuando levantas el dispositivo</string>
+  <string name="doze_trigger_pickup_summary_on">El pulso será activado cuando levantes el dispositivo</string>
+  <string name="doze_trigger_pickup_summary_off">Levantar el dispositivo no sera utilizado como disparador</string>
+  <string name="doze_trigger_notification_title">Disparador de notificación</string>
+  <string name="doze_trigger_notification_summary_on">El pulso se activará mediante notificaciones</string>
+  <string name="doze_trigger_notification_summary_off">Las notificaciones no se utilizarán como disparador</string>
+  <string name="doze_brightness_level_title">Nivel de brillo</string>
+  <string name="fivehundred_ms_default">500ms (por defecto)</string>
+  <string name="three_second_default">3s (por defecto)</string>
   <!--On the GO RESET-->
-  <string name="reset_all_settings">RESET ALL</string>
-  <string name="reset_selected_settings">RESET SELECTED</string>
-  <string name="reset_settings_title">Feature preferences</string>
-  <string name="reset_settings_summary">Reset XPerience feature preferences</string>
-  <string name="keywords_settings_reset">reset</string>
+  <string name="reset_all_settings">REINICIAR TODO</string>
+  <string name="reset_selected_settings">REINICIAR SELECCIONADO</string>
+  <string name="reset_settings_title">Preferencias de funciones</string>
+  <string name="reset_settings_summary">Restablecer las preferencias de funciónes XPerience</string>
+  <string name="keywords_settings_reset">restablecer</string>
 </resources>
