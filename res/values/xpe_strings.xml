@@ -122,4 +122,10 @@
     <string name="reset_settings_title">Feature preferences</string>
     <string name="reset_settings_summary">Reset XPerience feature preferences</string>
     <string name="keywords_settings_reset">reset</string>
+
+    <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+    <string name="show_cpu_info">Show CPU info</string>
+    <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+    <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+
 </resources>
