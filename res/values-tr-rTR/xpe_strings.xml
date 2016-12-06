@@ -89,23 +89,8 @@
   <string name="reset_settings_title">Özellik tercihleri</string>
   <string name="reset_settings_summary">XPerience özellik tercihlerini sıfırla</string>
   <string name="keywords_settings_reset">sıfırla</string>
-  <string name="temasek_settings_title">XPerience Settings</string>
-  <!-- Show carrier label and custom -->
-  <string name="carrier_options">Carrier Label</string>
-  <string name="custom_carrier_label_title">Custom carrier label</string>
-  <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
-  <string name="custom_carrier_label_notset">Custom label currently not set</string>
-  <string name="status_bar_carrier_color">Carrier label color</string>
-  <string name="status_bar_carrier_size">Carrier label text size</string>
-  <string name="show_carrier_title">Carrier label</string>
-  <string name="show_carrier_disabled">Disabled</string>
-  <string name="show_carrier_keyguard">Keyguard carrier</string>
-  <string name="show_carrier_statusbar">Status bar carrier</string>
-  <string name="show_carrier_enabled">Enabled</string>
   <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
   <string name="show_cpu_info">Show CPU info</string>
   <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
   <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
-  <string name="xpe">XPerience Configs</string>
-  <string name="default_string">Default</string>
 </resources>
