@@ -89,23 +89,8 @@
   <string name="reset_settings_title">Preferências de recursos</string>
   <string name="reset_settings_summary">Repor as preferências das funcionalidades XPerience</string>
   <string name="keywords_settings_reset">redefinir</string>
-  <string name="temasek_settings_title">Configurações do XPerience</string>
-  <!-- Show carrier label and custom -->
-  <string name="carrier_options">Nome da operadora</string>
-  <string name="custom_carrier_label_title">Nome personalizado da operadora</string>
-  <string name="custom_carrier_label_explain">Por favor, insira um novo texto. Deixe em branco para reverter para a original.</string>
-  <string name="custom_carrier_label_notset">Nome personalizado não definido</string>
-  <string name="status_bar_carrier_color">Cor do nome da operadora</string>
-  <string name="status_bar_carrier_size">Tamanhi do texto do nome da operadora</string>
-  <string name="show_carrier_title">Nome da operadora</string>
-  <string name="show_carrier_disabled">Desabilitado</string>
-  <string name="show_carrier_keyguard">Portador do teclado</string>
-  <string name="show_carrier_statusbar">Operadora na barra de status</string>
-  <string name="show_carrier_enabled">Habilitado</string>
   <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
   <string name="show_cpu_info">Mostrar informação da CPU</string>
   <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
   <string name="show_cpu_info_summary">Sobreposição de tela mostrando informações atuais da CPU</string>
-  <string name="xpe">Configurações do XPerience</string>
-  <string name="default_string">Padrão</string>
 </resources>
