@@ -95,10 +95,10 @@
   <string name="show_cpu_info_summary">Sovrapporre sullo schermo le informazioni attuali della CPU</string>
   <!-- Device info settings -->
   <string name="cpu_info">CPU</string>
-  <string name="mem_info">Memory</string>
-  <string name="ambient_display_show_battery_title">Battery Status</string>
-  <string name="ambient_display_show_battery_summary">Show battery indicator during pulse</string>
+  <string name="mem_info">Memoria</string>
+  <string name="ambient_display_show_battery_title">Stato batteria</string>
+  <string name="ambient_display_show_battery_summary">Mostra l\'indicatore della batteria durante la pulsazione</string>
   <!-- Lockscreen charging current indicator  -->
-  <string name="lockscreen_charging_current_title">Lockscreen charging info</string>
+  <string name="lockscreen_charging_current_title">Informazioni carica in schermata blocco</string>
   <string name="lockscreen_charging_current_summary">Display negociated charger max current and voltage on lockscreen</string>
 </resources>
