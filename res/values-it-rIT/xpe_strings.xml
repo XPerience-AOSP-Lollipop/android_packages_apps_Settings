@@ -100,5 +100,5 @@
   <string name="ambient_display_show_battery_summary">Mostra l\'indicatore della batteria durante la pulsazione</string>
   <!-- Lockscreen charging current indicator  -->
   <string name="lockscreen_charging_current_title">Informazioni carica in schermata blocco</string>
-  <string name="lockscreen_charging_current_summary">Display negociated charger max current and voltage on lockscreen</string>
+  <string name="lockscreen_charging_current_summary">Mostra corrente e tensione massime di ricarica nella schermata di blocco</string>
 </resources>
