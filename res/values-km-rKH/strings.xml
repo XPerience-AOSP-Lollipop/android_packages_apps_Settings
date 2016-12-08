@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!--  Copyright (C) 2007 The Android Open Source Project
 
@@ -679,7 +678,7 @@
     <string name="wifi_suspend_optimizations_summary" msgid="4151428966089116856">"បង្រួម​ការ​ប្រើ​ថ្ម​អប្បបរមា​ពេល​បើក​វ៉ាយហ្វាយ"</string>
     <string name="wifi_limit_optimizations_summary" msgid="9000801068363468950">"កំណត់ថ្មដែលបានប្រើតាមវ៉ាយហ្វាយ"</string>
     <string name="wifi_switch_away_when_unvalidated" msgid="1410499115509796174">"ប្តូរទៅទិន្នន័យចល័ត ប្រសិនបើបាត់បង់សេវា Wi‑Fi។"</string>
-    <string name="wifi_cellular_data_fallback_title" msgid="8741291033791891668">"ប្តូរទៅទិន្នន័យទូរសព្ទ​ចល័តដោយស្វ័យប្រវត្តិ"</string>
+    <string name="wifi_cellular_data_fallback_title" msgid="8741291033791891668">"ប្តូរទៅទិន្នន័យចល័តដោយស្វ័យប្រវត្តិ"</string>
     <string name="wifi_cellular_data_fallback_summary" msgid="2641527693037426430">"ប្រើទិន្នន័យចល័តនៅពេលដែល Wi‑Fi លែងមានអ៊ីនធឺណិត។ ការប្រើប្រាស់ទិន្នន័យអាចត្រូវបានអនុវត្ត។"</string>
     <string name="wifi_add_network" msgid="6234851776910938957">"បន្ថែម​បណ្ដាញ"</string>
     <string name="wifi_access_points" msgid="7053990007031968609">"បណ្ដាញ​វ៉ាយហ្វាយ"</string>
@@ -1595,8 +1594,8 @@
     <string name="runningservicedetails_stop_dlg_title" msgid="4253292537154337233">"បញ្ឈប់​សេវាកម្ម​ប្រព័ន្ធ?"</string>
     <string name="runningservicedetails_stop_dlg_text" product="tablet" msgid="3371302398335665793">"បើ​អ្នក​បញ្ឈប់​សេវាកម្ម​នេះ លក្ខណៈ​មួយ​ចំនួន​នៃ​កុំព្យូទ័រ​បន្ទះ​របស់​អ្នក​អាច​មិន​ដំណើរការ​ត្រឹមត្រូវ លុះ​ត្រា​តែ​អ្នក​បិទ ហើយ​បើក​វា​ឡើងវិញ។"</string>
     <string name="runningservicedetails_stop_dlg_text" product="default" msgid="3920243762189484756">"បើ​អ្នក​បញ្ឈប់​សេវាកម្ម​នេះ លក្ខណៈ​មួយ​ចំនួន​នៃ​ទូរស័ព្ទ​របស់​អ្នក​អាច​លែង​ដំណើរការ​តាម​ត្រឹមត្រូវ លុះ​ត្រា​តែ​អ្នក​បិទ ហើយ​បើក​វា​ឡើងវិញ។"</string>
-    <string name="language_settings" msgid="8758655933029560944">"ភាសា និងធាតុចូល"</string>
-    <string name="language_keyboard_settings_title" msgid="3709159207482544398">"ភាសា និងធាតុចូល"</string>
+    <string name="language_settings" msgid="8758655933029560944">"ភាសា និងធាតុចូល"</string>
+    <string name="language_keyboard_settings_title" msgid="3709159207482544398">"ភាសា និងធាតុចូល"</string>
     <string name="keyboard_settings_category" msgid="8275523930352487827">"ក្ដារ​ចុច &amp; វិធី​សាស្ត្រ​បញ្ចូល"</string>
     <string name="phone_language" msgid="7116581601133118044">"ភាសា"</string>
     <string name="phone_language_summary" msgid="3871309445655554211"></string>
@@ -2810,7 +2809,7 @@
     <string name="notifications_redacted" msgid="4493588975742803160">"មិនមានមាតិការសើបនៅពេលអេក្រង់ជាប់សោទេ"</string>
     <string name="notifications_hidden" msgid="3619610536038757468">"មិនមាននៅពេលអេក្រង់ជាប់សោទេ"</string>
     <string name="notifications_priority" msgid="1066342037602085552">"មុខងារ កុំរំខាន ត្រូវបានរំលង"</string>
-    <string name="notifications_summary_divider" msgid="9013807608804041387">" / "</string>
+    <string name="notifications_summary_divider" msgid="9013807608804041387">" / "</string>
     <string name="notification_summary_level" msgid="2726571692704140826">"កម្រិត %d"</string>
     <plurals name="permissions_summary" formatted="false" msgid="6402730318075959117">
       <item quantity="other"><xliff:g id="COUNT_1">%d</xliff:g>ការអនុញ្ញាតដែលទទួលបាន</item>

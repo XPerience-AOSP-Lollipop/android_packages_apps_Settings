@@ -20,11 +20,8 @@ import android.app.ActivityManager;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
-<<<<<<< HEAD
 import android.content.ActivityNotFoundException;
-=======
 import android.app.ActionBar;
->>>>>>> android-7.1.1_r4
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
@@ -375,12 +372,8 @@ public class SettingsActivity extends SettingsDrawerActivity
             WifiInfo.class.getName(),
             MasterClear.class.getName(),
             NightDisplaySettings.class.getName(),
-<<<<<<< HEAD
-            AmbientSettings.class.getName()
-=======
             ManageDomainUrls.class.getName(),
             AutomaticStorageManagerSettings.class.getName()
->>>>>>> android-7.1.1_r4
     };
 
 
