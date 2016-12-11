@@ -176,6 +176,12 @@
         android:fragment="com.android.settings.xperience.Traffic"
         android:summary="@string/network_traffic_summary" />
 		
+
+     <PreferenceScreen
+        android:key="carrier_label_settings"
+        android:fragment="com.android.settings.xperience.CarrierLabelSettings"
+        android:title="@string/carrier_label_settings_title" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
