@@ -102,11 +102,11 @@
   <string name="lockscreen_charging_current_title">Informação de carregamento na tela de bloqueio</string>
   <string name="lockscreen_charging_current_summary">Exibir a tensão e corrente máxima do carregador na tela de bloqueio</string>
   <!-- Custom carrier label and position -->
-  <string name="carrier_label_settings_title">Carrier Label</string>
-  <string name="custom_carrier_label_title">Custom carrier label</string>
-  <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
-  <string name="custom_carrier_label_notset">Custom label currently not set</string>
-  <string name="show_carrier_title">Carrier label</string>
+  <string name="carrier_label_settings_title">Nome da operadora</string>
+  <string name="custom_carrier_label_title">Personalizar nome de operadora</string>
+  <string name="custom_carrier_label_explain">Por favor, insira um novo texto. Deixe em branco para reverter para o original.</string>
+  <string name="custom_carrier_label_notset">Nome personalizado não definido</string>
+  <string name="show_carrier_title">Nome da operadora</string>
   <string name="show_carrier_disabled">Desabilitado</string>
   <string name="show_carrier_keyguard">Apenas tela de bloqueio</string>
   <string name="show_carrier_statusbar">Apenas barra de status</string>
