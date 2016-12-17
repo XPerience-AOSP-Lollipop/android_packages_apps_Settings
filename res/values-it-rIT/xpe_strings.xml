@@ -102,8 +102,8 @@
   <string name="lockscreen_charging_current_title">Informazioni carica in schermata blocco</string>
   <string name="lockscreen_charging_current_summary">Mostra corrente e tensione massime di ricarica nella schermata di blocco</string>
   <!-- Custom carrier label and position -->
-  <string name="carrier_label_settings_title">Carrier Label</string>
-  <string name="custom_carrier_label_title">Custom carrier label</string>
+  <string name="carrier_label_settings_title">Nome operatore</string>
+  <string name="custom_carrier_label_title">Personalizza nome operatore</string>
   <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
   <string name="custom_carrier_label_notset">Custom label currently not set</string>
   <string name="show_carrier_title">Carrier label</string>
