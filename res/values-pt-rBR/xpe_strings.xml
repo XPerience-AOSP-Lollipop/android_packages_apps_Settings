@@ -89,4 +89,26 @@
   <string name="reset_settings_title">Preferências de recursos</string>
   <string name="reset_settings_summary">Repor as preferências das funcionalidades XPerience</string>
   <string name="keywords_settings_reset">redefinir</string>
+  <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+  <string name="show_cpu_info">Mostrar informação da CPU</string>
+  <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+  <string name="show_cpu_info_summary">Sobreposição de tela mostrando informações atuais da CPU</string>
+  <!-- Device info settings -->
+  <string name="cpu_info">CPU</string>
+  <string name="mem_info">Memória</string>
+  <string name="ambient_display_show_battery_title">Status da Bateria</string>
+  <string name="ambient_display_show_battery_summary">Mostrar indicador da bateria durante o pulso</string>
+  <!-- Lockscreen charging current indicator  -->
+  <string name="lockscreen_charging_current_title">Informação de carregamento na tela de bloqueio</string>
+  <string name="lockscreen_charging_current_summary">Exibir a tensão e corrente máxima do carregador na tela de bloqueio</string>
+  <!-- Custom carrier label and position -->
+  <string name="carrier_label_settings_title">Nome da operadora</string>
+  <string name="custom_carrier_label_title">Personalizar nome de operadora</string>
+  <string name="custom_carrier_label_explain">Por favor, insira um novo texto. Deixe em branco para reverter para o original.</string>
+  <string name="custom_carrier_label_notset">Nome personalizado não definido</string>
+  <string name="show_carrier_title">Nome da operadora</string>
+  <string name="show_carrier_disabled">Desabilitado</string>
+  <string name="show_carrier_keyguard">Apenas tela de bloqueio</string>
+  <string name="show_carrier_statusbar">Apenas barra de status</string>
+  <string name="show_carrier_enabled">Tela de bloqueio &amp; barra de status</string>
 </resources>

@@ -89,4 +89,26 @@
   <string name="reset_settings_title">Feature preferences</string>
   <string name="reset_settings_summary">Reset XPerience feature preferences</string>
   <string name="keywords_settings_reset">reset</string>
+  <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+  <string name="show_cpu_info">Show CPU info</string>
+  <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+  <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+  <!-- Device info settings -->
+  <string name="cpu_info">CPU</string>
+  <string name="mem_info">Memory</string>
+  <string name="ambient_display_show_battery_title">Battery Status</string>
+  <string name="ambient_display_show_battery_summary">Show battery indicator during pulse</string>
+  <!-- Lockscreen charging current indicator  -->
+  <string name="lockscreen_charging_current_title">Lockscreen charging info</string>
+  <string name="lockscreen_charging_current_summary">Display negociated charger max current and voltage on lockscreen</string>
+  <!-- Custom carrier label and position -->
+  <string name="carrier_label_settings_title">Carrier Label</string>
+  <string name="custom_carrier_label_title">Custom carrier label</string>
+  <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
+  <string name="custom_carrier_label_notset">Custom label currently not set</string>
+  <string name="show_carrier_title">Carrier label</string>
+  <string name="show_carrier_disabled">Disabled</string>
+  <string name="show_carrier_keyguard">Lockscreen only</string>
+  <string name="show_carrier_statusbar">Statusbar only</string>
+  <string name="show_carrier_enabled">Lockscreen &amp; statusbar</string>
 </resources>
