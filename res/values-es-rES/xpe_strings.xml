@@ -106,9 +106,8 @@
   <string name="custom_carrier_label_title">Nombre de operador personalizado</string>
   <string name="custom_carrier_label_explain">Por favor, introduzca una nueva etiqueta. Déjala en blanco para volver a la etiqueta por defecto.</string>
   <string name="custom_carrier_label_notset">Etiqueta personalizada actualmente no establecida</string>
-  <string name="show_carrier_title">Carrier label</string>
-  <string name="show_carrier_disabled">Disabled</string>
-  <string name="show_carrier_keyguard">Lockscreen only</string>
-  <string name="show_carrier_statusbar">Statusbar only</string>
-  <string name="show_carrier_enabled">Lockscreen &amp; statusbar</string>
-</resources>
+  <string name="show_carrier_title">Etiqueta de Operador</string>
+  <string name="show_carrier_disabled">Inhabilitado</string>
+  <string name="show_carrier_keyguard">Sólo en la pantalla de bloqueo</string>
+  <string name="show_carrier_statusbar">Sólo en la barra de estado</string>
+  <string name="show_carrier_enabled">Pantalla de bloqueo y barra de estado</string>

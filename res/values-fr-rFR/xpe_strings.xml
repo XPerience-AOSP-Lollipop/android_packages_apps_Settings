@@ -20,17 +20,17 @@
   <string name="xpe_version">Version de XPerience™</string>
   <string name="xpe_version_default">Unknown</string>
   <!-- About phone screen, build date -->
-  <string name="build_date">Build date</string>
+  <string name="build_date">Date du build</string>
   <!-- Force expanded notifications -->
-  <string name="force_expanded_notifications_title">Force Expanded Notifications</string>
-  <string name="force_expanded_notifications_summary">Available only for apps that support expanded notifications</string>
+  <string name="force_expanded_notifications_title">Forcer les notifications élargies</string>
+  <string name="force_expanded_notifications_summary">Disponible uniquement pour les applications qui prennent en charge les notifications élargies</string>
   <!-- Disabling immersive mode messages -->
-  <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
-  <string name="disable_immersive_message_summary">This will hide all Immersive Mode Messages</string>
+  <string name="disable_immersive_message_title">Désactiver les messages en mode immersif</string>
+  <string name="disable_immersive_message_summary">Ceci masquera tout les messages du mode immersif</string>
   <!-- Immersive Recents -->
-  <string name="immersive_recents_title">Immersive Recents</string>
-  <string name="immersive_recents_summary">Change the view of the recents screen</string>
-  <string name="immersive_recents_dialog_title">Select recents view</string>
+  <string name="immersive_recents_title">Applications récentes immersives</string>
+  <string name="immersive_recents_summary">Apparence de l\'écran des applications récentes</string>
+  <string name="immersive_recents_dialog_title">Choisir l\'apparence</string>
   <string name="immersive_recents_default">Default</string>
   <string name="immersive_recents_fullscreen">Fullscreen</string>
   <string name="immersive_recents_statusbar">Statusbar only</string>
