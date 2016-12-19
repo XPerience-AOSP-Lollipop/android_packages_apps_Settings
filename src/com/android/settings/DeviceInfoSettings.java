@@ -62,6 +62,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_KERNEL_VERSION = "kernel_version";
     private static final String KEY_BUILD_NUMBER = "build_number";
     private static final String KEY_DEVICE_MODEL = "device_model";
+    private static final String KEY_DEVICE_CPU = "device_cpu";
+    private static final String KEY_DEVICE_MEMORY = "device_memory";
     private static final String KEY_SELINUX_STATUS = "selinux_status";
     private static final String KEY_BASEBAND_VERSION = "baseband_version";
     private static final String KEY_FIRMWARE_VERSION = "firmware_version";
@@ -140,6 +142,21 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         findPreference(KEY_XPE_VERSION).setEnabled(true);
 	setValueSummary(KEY_MOD_RELEASE_TYPE, "ro.xpe.releasetype");
 	setValueSummary(KEY_XPE_CODENAME, "ro.xpe.codename");
+
+        final String cpuInfo = DeviceInfoUtils.getCPUInfo();
+        String memInfo = DeviceInfoUtils.getMemInfo();
+
+        if (cpuInfo != null) {
+            setStringSummary(KEY_DEVICE_CPU, cpuInfo);
+        } else {
+            getPreferenceScreen().removePreference(findPreference(KEY_DEVICE_CPU));
+        }
+
+        if (memInfo != null) {
+            setStringSummary(KEY_DEVICE_MEMORY, memInfo);
+        } else {
+            getPreferenceScreen().removePreference(findPreference(KEY_DEVICE_MEMORY));
+        }
 
         if (!SELinux.isSELinuxEnabled()) {
             String status = getResources().getString(R.string.selinux_status_disabled);
@@ -310,6 +327,13 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 mDevHitToast = Toast.makeText(getActivity(), R.string.show_dev_already_cm,
                         Toast.LENGTH_LONG);
                 mDevHitToast.show();
+            }
+        } else if (preference.getKey().equals(KEY_SECURITY_PATCH)) {
+            if (getPackageManager().queryIntentActivities(preference.getIntent(), 0).isEmpty()) {
+                // Don't send out the intent to stop crash
+                Log.w(LOG_TAG, "Stop click action on " + KEY_SECURITY_PATCH + ": "
+                        + "queryIntentActivities() returns empty" );
+                return true;
             }
         } else if (preference.getKey().equals(KEY_DEVICE_FEEDBACK)) {
             sendFeedback();

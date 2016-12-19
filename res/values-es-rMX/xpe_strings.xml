@@ -90,9 +90,9 @@
   <string name="reset_settings_summary">Restablecer las preferencias de funciónes XPerience</string>
   <string name="keywords_settings_reset">restablecer</string>
   <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
-  <string name="show_cpu_info">Show CPU info</string>
+  <string name="show_cpu_info">Mostrar información de la CPU</string>
   <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
-  <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+  <string name="show_cpu_info_summary">Superposición en pantalla que muestra información actual de la CPU</string>
   <!-- Device info settings -->
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Memory</string>

@@ -39,6 +39,7 @@
   <!-- App ops detail -->
   <!-- App ops menu options -->
   <!-- Volume settings - Volume adjustment sound -->
+  <!-- Vibrator intensity -->
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <!-- Whether the dots will be drawn when using the lockscreen pattern -->
@@ -73,4 +74,14 @@
   <!-- NFC PreferenceCategory title -->
   <!-- Notification importance -->
   <!-- CM Legal -->
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
+  <!-- Tethering & portable hotspot other category -->
+  <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_never">Neniam</string>
+  <string name="hotstpot_inactivity_timeout_1_minute">1 minuto</string>
+  <string name="hotstpot_inactivity_timeout_5_minutes">5 minutoj</string>
+  <string name="hotstpot_inactivity_timeout_10_minutes">10 minutoj</string>
+  <!-- Wake on plug -->
+  <!-- Heads-up -->
 </resources>

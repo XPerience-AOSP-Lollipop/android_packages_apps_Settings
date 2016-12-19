@@ -216,6 +216,9 @@
   <string name="ok">OK</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Регулисање јачине звука</string>
+  <!-- Vibrator intensity -->
+  <string name="vibrator_intensity_title">Интензитет вибрације</string>
+  <string name="vibrator_intensity_dialog_reset">Ресетуј</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <string name="lockpattern_settings_enable_error_path_title">Прикажи грешку шаблона</string>
@@ -299,4 +302,22 @@
   <!-- Notification importance -->
   <!-- CM Legal -->
   <string name="cmlicense_title">CyanogenMod лиценца</string>
+  <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Нађи сензор отиска прста <xliff:g id="sensor_location">%1$s</xliff:g> твог телефона.</string>
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">иза</string>
+  <string name="security_settings_fingerprint_sensor_location_front">испред</string>
+  <string name="security_settings_fingerprint_sensor_location_left">на левој страни</string>
+  <string name="security_settings_fingerprint_sensor_location_right">на десној страни</string>
+  <!-- Tethering & portable hotspot other category -->
+  <string name="tethering_other_category_text">Друго</string>
+  <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_text">Wi\u2011Fi hotspot временско ограничење</string>
+  <string name="hotstpot_inactivity_timeout_never">Никад</string>
+  <string name="hotstpot_inactivity_timeout_1_minute">1 минут</string>
+  <string name="hotstpot_inactivity_timeout_5_minutes">5 минута</string>
+  <string name="hotstpot_inactivity_timeout_10_minutes">10 минута</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">Пробуди на утикачу</string>
+  <!-- Heads-up -->
 </resources>

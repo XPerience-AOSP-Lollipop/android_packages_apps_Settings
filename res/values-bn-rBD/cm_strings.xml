@@ -134,6 +134,9 @@
   <string name="app_ops_reset_confirm_title">গণনা পুনঃস্থাপন নিশ্চিত করুন</string>
   <string name="ok">ওকে</string>
   <!-- Volume settings - Volume adjustment sound -->
+  <!-- Vibrator intensity -->
+  <string name="vibrator_intensity_title">কম্পক তীব্রতা</string>
+  <string name="vibrator_intensity_dialog_reset">পুনরায় ধার্য করুন</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <!-- Whether the dots will be drawn when using the lockscreen pattern -->
@@ -189,4 +192,11 @@
   <!-- Notification importance -->
   <!-- CM Legal -->
   <string name="cmlicense_title">সায়ানোজেনমড বৈধতা</string>
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
+  <!-- Tethering & portable hotspot other category -->
+  <!-- Wi-Fi tethering inactivity timeout -->
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">প্লাগইন অবস্থায় জেগে উঠা</string>
+  <!-- Heads-up -->
 </resources>

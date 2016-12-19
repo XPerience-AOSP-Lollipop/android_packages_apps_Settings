@@ -155,6 +155,9 @@
   <string name="ok">OK</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
+  <!-- Vibrator intensity -->
+  <string name="vibrator_intensity_title">Vibrator intensity</string>
+  <string name="vibrator_intensity_dialog_reset">Reset</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <!-- Whether the dots will be drawn when using the lockscreen pattern -->
@@ -224,4 +227,11 @@
   <!-- Notification importance -->
   <!-- CM Legal -->
   <string name="cmlicense_title">CyanogenMod legal</string>
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
+  <!-- Tethering & portable hotspot other category -->
+  <!-- Wi-Fi tethering inactivity timeout -->
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
+  <!-- Heads-up -->
 </resources>

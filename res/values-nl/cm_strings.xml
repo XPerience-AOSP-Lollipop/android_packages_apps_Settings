@@ -123,6 +123,7 @@
   <string name="app_ops_summaries_write_external_storage">naar externe opslag schrijven</string>
   <string name="app_ops_summaries_turn_screen_on">scherm inschakelen</string>
   <string name="app_ops_summaries_get_accounts">accounts opvragen</string>
+  <string name="app_ops_summaries_run_in_background">op de achtergrond uitvoeren</string>
   <string name="app_ops_summaries_toggle_wifi">wifi aan-/uitzetten</string>
   <string name="app_ops_summaries_toggle_bluetooth">Bluetooth aan-/uitzetten</string>
   <string name="app_ops_summaries_start_at_boot">starten tijdens opstarten</string>
@@ -192,6 +193,7 @@
   <string name="app_ops_labels_write_external_storage">Naar externe opslag schrijven</string>
   <string name="app_ops_labels_turn_screen_on">Scherm inschakelen</string>
   <string name="app_ops_labels_get_accounts">Accounts opvragen</string>
+  <string name="app_ops_labels_run_in_background">Op de achtergrond uitvoeren</string>
   <string name="app_ops_labels_toggle_wifi">Wifi aan-/uitzetten</string>
   <string name="app_ops_labels_toggle_bluetooth">Bluetooth aan-/uitzetten</string>
   <string name="app_ops_labels_start_at_boot">Starten tijdens opstarten</string>
@@ -215,6 +217,9 @@
   <string name="ok">OK</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Aanpassingsgeluid volume</string>
+  <!-- Vibrator intensity -->
+  <string name="vibrator_intensity_title">Trilintensiteit</string>
+  <string name="vibrator_intensity_dialog_reset">Opnieuw instellen</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <string name="lockpattern_settings_enable_error_path_title">Patroonfout weergeven</string>
@@ -311,4 +316,22 @@
   <!-- Notification importance -->
   <!-- CM Legal -->
   <string name="cmlicense_title">Juridische afdeling van CyanogenMod</string>
+  <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_cm">Vind de vingerafdruksensor op de <xliff:g id="sensor_location">%1$s</xliff:g> van uw telefoon.</string>
+  <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">achterkant</string>
+  <string name="security_settings_fingerprint_sensor_location_front">voorkant</string>
+  <string name="security_settings_fingerprint_sensor_location_left">linkerkant</string>
+  <string name="security_settings_fingerprint_sensor_location_right">rechterkant</string>
+  <!-- Tethering & portable hotspot other category -->
+  <string name="tethering_other_category_text">Overige</string>
+  <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_text">Time-out wifi-hotspot</string>
+  <string name="hotstpot_inactivity_timeout_never">Nooit</string>
+  <string name="hotstpot_inactivity_timeout_1_minute">1 minuut</string>
+  <string name="hotstpot_inactivity_timeout_5_minutes">5 minuten</string>
+  <string name="hotstpot_inactivity_timeout_10_minutes">10 minuten</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">Ontwaken door lader</string>
+  <!-- Heads-up -->
 </resources>

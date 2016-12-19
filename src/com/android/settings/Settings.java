@@ -123,7 +123,8 @@ public class Settings extends SettingsActivity {
     public static class NotificationAppListActivity extends SettingsActivity { /* empty */ }
     public static class AppNotificationSettingsActivity extends SettingsActivity { /* empty */ }
     public static class OtherSoundSettingsActivity extends SettingsActivity { /* empty */ }
-    public static class DomainsURLsAppListActivity extends SettingsActivity { /* empty */ }
+    public static class ManageDomainUrlsActivity extends SettingsActivity { /* empty */ }
+    public static class AutomaticStorageManagerSettingsActivity extends SettingsActivity { /* empty */ }
 
     public static class TopLevelSettings extends SettingsActivity { /* empty */ }
     public static class ApnSettingsActivity extends SettingsActivity { /* empty */ }
@@ -163,5 +164,4 @@ public class Settings extends SettingsActivity {
     public static class DeviceSettings extends SettingsActivity { /* empty */ }
     public static class PersonalSettings extends SettingsActivity { /* empty */ }
     public static class SystemSettings extends SettingsActivity { /* empty */ }
-    public static class AmbientDisplaySettingsActivity extends SettingsActivity { /* empty */ }
 }

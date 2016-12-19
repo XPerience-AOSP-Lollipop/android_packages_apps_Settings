@@ -213,6 +213,9 @@
   <string name="ok">ઑકે</string>
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">વૉલ્યુમ સમાયોજન ધ્વનિ</string>
+  <!-- Vibrator intensity -->
+  <string name="vibrator_intensity_title">વાઇબ્રેટર તીવ્રતા</string>
+  <string name="vibrator_intensity_dialog_reset">ફરીથી સેટ કરો</string>
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <string name="lockpattern_settings_enable_error_path_title">પૅટર્ન ખામી દર્શાવો</string>
@@ -295,4 +298,17 @@
   <!-- Notification importance -->
   <!-- CM Legal -->
   <string name="cmlicense_title">CyanogenMod lકાયદાકીય</string>
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
+  <!-- Tethering & portable hotspot other category -->
+  <string name="tethering_other_category_text">અન્ય</string>
+  <!-- Wi-Fi tethering inactivity timeout -->
+  <string name="hotstpot_inactivity_timeout_text">Wi\u2011Fi હોટસ્પોટ સમયસમાપ્તિ</string>
+  <string name="hotstpot_inactivity_timeout_never">ક્યારેય નહીં</string>
+  <string name="hotstpot_inactivity_timeout_1_minute">1 મિનીટ</string>
+  <string name="hotstpot_inactivity_timeout_5_minutes">5 મિનીટ્સ</string>
+  <string name="hotstpot_inactivity_timeout_10_minutes">10 મિનીટ્સ</string>
+  <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">વેક ઑન પ્લગ</string>
+  <!-- Heads-up -->
 </resources>

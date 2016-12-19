@@ -161,16 +161,17 @@ public class BandMode extends Activity {
                 return;
             }
 
-            int size = bands[0];
+            // Always show Band 0, ie Automatic
+            item = new BandListItem(0);
+            mBandListAdapter.add(item);
+            if (DBG) log("Add " + item.toString());
 
-            if (size > 0) {
-                for (int i=1; i<=size; i++) {
-                    item = new BandListItem(bands[i]);
-                    mBandListAdapter.add(item);
-                    if (DBG) log("Add " + item.toString());
-                }
-                addBandSuccess = true;
+            for (int i=0; i<bands.length; i++) {
+                item = new BandListItem(bands[i]);
+                mBandListAdapter.add(item);
+                if (DBG) log("Add " + item.toString());
             }
+            addBandSuccess = true;
         }
 
         if (addBandSuccess == false) {

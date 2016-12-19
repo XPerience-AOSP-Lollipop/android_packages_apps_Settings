@@ -35,6 +35,7 @@
   <!-- App ops detail -->
   <!-- App ops menu options -->
   <!-- Volume settings - Volume adjustment sound -->
+  <!-- Vibrator intensity -->
   <!-- Sizes for pattern lockscreen -->
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <!-- Whether the dots will be drawn when using the lockscreen pattern -->
@@ -69,4 +70,10 @@
   <!-- NFC PreferenceCategory title -->
   <!-- Notification importance -->
   <!-- CM Legal -->
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
+  <!-- Tethering & portable hotspot other category -->
+  <!-- Wi-Fi tethering inactivity timeout -->
+  <!-- Wake on plug -->
+  <!-- Heads-up -->
 </resources>
