@@ -92,7 +92,7 @@
   <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
   <string name="show_cpu_info">Mostrar información de la CPU</string>
   <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
-  <string name="show_cpu_info_summary">Muestra la información actual del procesador en la pantalla</string>
+  <string name="show_cpu_info_summary">Superposición en pantalla que muestra información actual de la CPU</string>
   <!-- Device info settings -->
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Memoria</string>

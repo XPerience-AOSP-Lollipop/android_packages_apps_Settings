@@ -18,7 +18,7 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="xpe_version">Version de XPerience™</string>
-  <string name="xpe_version_default">Inconnue</string>
+  <string name="xpe_version_default">Unknown</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Date du build</string>
   <!-- Force expanded notifications -->
