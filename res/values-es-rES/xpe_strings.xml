@@ -111,3 +111,4 @@
   <string name="show_carrier_keyguard">Sólo en la pantalla de bloqueo</string>
   <string name="show_carrier_statusbar">Sólo en la barra de estado</string>
   <string name="show_carrier_enabled">Pantalla de bloqueo y barra de estado</string>
+</resources>
