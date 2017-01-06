@@ -111,11 +111,11 @@
   <string name="custom_carrier_label_notset">Aangepast label momenteel niet ingesteld</string>
   <string name="show_carrier_title">Providerlabel</string>
   <string name="show_carrier_disabled">Uitgeschakeld</string>
-  <string name="show_carrier_keyguard">Lockscreen only</string>
-  <string name="show_carrier_statusbar">Statusbar only</string>
-  <string name="show_carrier_enabled">Lockscreen &amp; statusbar</string>
-  <string name="xperience_settings_title">XPerience™ Settings</string>
-  <string name="xperience_settings_summary">Customize ROM features</string>
+  <string name="show_carrier_keyguard">Enkel vergrendelingsscherm</string>
+  <string name="show_carrier_statusbar">Enkel statusbalk</string>
+  <string name="show_carrier_enabled">Vergrendelingsscherm &amp; statusbalk</string>
+  <string name="xperience_settings_title">XPerience™ instellingen</string>
+  <string name="xperience_settings_summary">Customaliseer ROM-functies</string>
   <!-- Custom Settings -->
   <!-- Dashboard -->
   <string name="header_category_custom">Rainbow Unicorn XPerience™</string>
