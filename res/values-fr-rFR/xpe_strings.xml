@@ -90,22 +90,22 @@
   <string name="reset_all_settings">RÉINTIALISER TOUT</string>
   <string name="reset_selected_settings">REMISE À ZÉRO SÉLECTIONNÉ</string>
   <string name="reset_settings_title">Préférences du fonction</string>
-  <string name="reset_settings_summary">Reset XPerience feature preferences</string>
-  <string name="keywords_settings_reset">reset</string>
+  <string name="reset_settings_summary">Réintialiser les préférences du fonction d\'XPerience</string>
+  <string name="keywords_settings_reset">réintialiser</string>
   <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
-  <string name="show_cpu_info">Show CPU info</string>
+  <string name="show_cpu_info">Afficher les infos CPU</string>
   <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
-  <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+  <string name="show_cpu_info_summary">Superposition d\'écran montrant les infos CPU actuelles</string>
   <!-- Device info settings -->
   <string name="cpu_info">CPU</string>
-  <string name="mem_info">Memory</string>
-  <string name="ambient_display_show_battery_title">Battery Status</string>
-  <string name="ambient_display_show_battery_summary">Show battery indicator during pulse</string>
+  <string name="mem_info">RAM</string>
+  <string name="ambient_display_show_battery_title">État de la batterie</string>
+  <string name="ambient_display_show_battery_summary">Afficher l\'icône de la batterie pendant la pulsation</string>
   <!-- Lockscreen charging current indicator  -->
-  <string name="lockscreen_charging_current_title">Lockscreen charging info</string>
-  <string name="lockscreen_charging_current_summary">Display negociated charger max current and voltage on lockscreen</string>
-  <string name="xperience_settings_title">XPerience™ Settings</string>
-  <string name="xperience_settings_summary">Customize ROM features</string>
+  <string name="lockscreen_charging_current_title">Informations de charge sur l\'écran de verrouillage</string>
+  <string name="lockscreen_charging_current_summary">Afficher la charge max courante et le voltage sur l\'écran de verrouillage</string>
+  <string name="xperience_settings_title">Paramètres d\'XPerience™</string>
+  <string name="xperience_settings_summary">Customaliser les fonctions ROM</string>
   <!-- Custom Settings -->
   <!-- Dashboard -->
   <string name="header_category_custom">Rainbow Unicorn XPerience™</string>
