@@ -116,4 +116,7 @@
   <string name="show_carrier_enabled">Schermata di blocco e barra di stato</string>
   <string name="xperience_settings_title">XPerience™ Settings</string>
   <string name="xperience_settings_summary">Customize ROM features</string>
+  <!-- Custom Settings -->
+  <!-- Dashboard -->
+  <string name="header_category_custom">Rainbow Unicorn XPerience™</string>
 </resources>
