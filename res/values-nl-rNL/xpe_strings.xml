@@ -17,19 +17,19 @@
 
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="xpe_version">XPerience™ version</string>
-  <string name="xpe_version_default">Unknown</string>
+  <string name="xpe_version">XPerience™ versie</string>
+  <string name="xpe_version_default">Onbekend</string>
   <!-- About phone screen, build date -->
-  <string name="build_date">Build date</string>
+  <string name="build_date">Versiedatum</string>
   <!-- Force expanded notifications -->
-  <string name="force_expanded_notifications_title">Force Expanded Notifications</string>
-  <string name="force_expanded_notifications_summary">Available only for apps that support expanded notifications</string>
+  <string name="force_expanded_notifications_title">Forceer Uitgebreide Meldingen</string>
+  <string name="force_expanded_notifications_summary">Enkel beschikbaar voor apps die uitgebreide meldingen ondersteunen</string>
   <!-- Disabling immersive mode messages -->
-  <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
-  <string name="disable_immersive_message_summary">This will hide all Immersive Mode Messages</string>
+  <string name="disable_immersive_message_title">Schakel volledig scherm-meldingen uit</string>
+  <string name="disable_immersive_message_summary">Dit zal alle volledig scherm-meldingen verbergen</string>
   <!-- Immersive Recents -->
-  <string name="immersive_recents_title">Immersive Recents</string>
-  <string name="immersive_recents_summary">Change the view of the recents screen</string>
+  <string name="immersive_recents_title">Recente volledig scherm</string>
+  <string name="immersive_recents_summary">Weergave wijzigen van het recente app-scherm</string>
   <string name="immersive_recents_dialog_title">Select recents view</string>
   <string name="immersive_recents_default">Default</string>
   <string name="immersive_recents_fullscreen">Fullscreen</string>
