@@ -104,16 +104,6 @@
   <!-- Lockscreen charging current indicator  -->
   <string name="lockscreen_charging_current_title">Informazioni carica in schermata blocco</string>
   <string name="lockscreen_charging_current_summary">Mostra corrente e tensione massime di ricarica nella schermata di blocco</string>
-  <!-- Custom carrier label and position -->
-  <string name="carrier_label_settings_title">Nome operatore</string>
-  <string name="custom_carrier_label_title">Personalizza nome operatore</string>
-  <string name="custom_carrier_label_explain">Inserire un nuovo nome. Lasciare vuoto per tornare al nome originale.</string>
-  <string name="custom_carrier_label_notset">Nome personalizzato non impostato</string>
-  <string name="show_carrier_title">Mostra operatore</string>
-  <string name="show_carrier_disabled">Disattivato</string>
-  <string name="show_carrier_keyguard">Solo schermata di blocco</string>
-  <string name="show_carrier_statusbar">Solo barra di stato</string>
-  <string name="show_carrier_enabled">Schermata di blocco e barra di stato</string>
   <string name="xperience_settings_title">XPerience™ Settings</string>
   <string name="xperience_settings_summary">Customize ROM features</string>
   <!-- Custom Settings -->
