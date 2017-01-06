@@ -150,4 +150,6 @@
     <string name="show_carrier_statusbar">Statusbar only</string>
     <string name="show_carrier_enabled">Lockscreen &amp; statusbar</string>
 
+    <string name="xperience_settings_title">XPerience™ Settings</string>
+    <string name="xperience_settings_summary">Customize ROM features</string>  
 </resources>
