@@ -32,64 +32,64 @@
   <string name="immersive_recents_summary">Apparence de l\'écran des applications récentes</string>
   <string name="immersive_recents_dialog_title">Choisir l\'apparence</string>
   <string name="immersive_recents_default">Défaut</string>
-  <string name="immersive_recents_fullscreen">Fullscreen</string>
-  <string name="immersive_recents_statusbar">Statusbar only</string>
-  <string name="immersive_recents_navbar">Navbar only</string>
+  <string name="immersive_recents_fullscreen">Plein écran</string>
+  <string name="immersive_recents_statusbar">Seulement la barre de l\'état</string>
+  <string name="immersive_recents_navbar">Seulement la barre de navigation</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <!-- Change Log strings -->
-  <string name="changelog_title">View changelog</string>
-  <string name="changelog_loading">Loading changelog...</string>
-  <string name="changelog_error">Unable to load changelog</string>
+  <string name="changelog_title">Regardez la liste des changements</string>
+  <string name="changelog_loading">Chargement de la liste des changements...</string>
+  <string name="changelog_error">Impossible de charger la liste des changements</string>
   <!-- donators strings -->
-  <string name="donators_title">View donators</string>
-  <string name="donators_loading">Loading donators...</string>
-  <string name="donators_error">Unable to load donators text</string>
+  <string name="donators_title">Regardez les donateurs</string>
+  <string name="donators_loading">Chargement des donateurs...</string>
+  <string name="donators_error">Impossible de charger le texte des donateurs</string>
   <string name="OTACENTER">XPerience™ Center</string>
-  <string name="rel_type">Release type</string>
+  <string name="rel_type">Type de sortie</string>
   <string name="xpe_codename">XPerience™ CodeName</string>
   <!-- Network traffic -->
-  <string name="network_traffic_title">Network traffic</string>
-  <string name="show_network_traffic_state">Status bar traffic monitor</string>
-  <string name="network_traffic_summary">Enable various network traffic options in statusbar</string>
-  <string name="show_network_traffic_unit">Display unit</string>
-  <string name="show_network_traffic_frequency">Update interval</string>
-  <string name="show_network_traffic_disable">Disabled</string>
-  <string name="show_network_traffic_up">Outgoing</string>
-  <string name="show_network_traffic_down">Incoming</string>
-  <string name="show_network_traffic_all">Outgoing and incoming</string>
-  <string name="show_network_traffic_bit">Bits per second</string>
-  <string name="show_network_traffic_byte">Bytes per second</string>
-  <string name="network_traffic_autohide">Auto hide</string>
-  <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
-  <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
-  <string name="network_traffic_hidearrow_title">Hide arrows</string>
-  <string name="network_traffic_hidearrow_summary">Hide the traffic monitor activity arrows</string>
+  <string name="network_traffic_title">Trafic des données</string>
+  <string name="show_network_traffic_state">Trafic des données dans la barre d\'état</string>
+  <string name="network_traffic_summary">Activer les diverses options de réseau dans la barre d\'état</string>
+  <string name="show_network_traffic_unit">Afficher l\'unité</string>
+  <string name="show_network_traffic_frequency">Intervalle de mise à jour</string>
+  <string name="show_network_traffic_disable">Désactivé</string>
+  <string name="show_network_traffic_up">Sortants</string>
+  <string name="show_network_traffic_down">Entrant(s)</string>
+  <string name="show_network_traffic_all">Sortants et entrants</string>
+  <string name="show_network_traffic_bit">Bits par seconde</string>
+  <string name="show_network_traffic_byte">Bytes par seconde</string>
+  <string name="network_traffic_autohide">Cacher automatiquement</string>
+  <string name="network_traffic_autohide_summary">Masquer le moniteur de trafic lorsqu\'il n\'y a aucune activité</string>
+  <string name="network_traffic_autohide_threshold">Seuil d\'inactivité</string>
+  <string name="network_traffic_hidearrow_title">Masquer les flèches</string>
+  <string name="network_traffic_hidearrow_summary">Masquer les flèches de l’activité de moniteur de trafic</string>
   <!-- Display Settings -->
   <!-- Doze pulse options -->
-  <string name="summary_doze_enabled">Enabled</string>
-  <string name="summary_doze_disabled">Disabled</string>
-  <string name="doze_overwrite_value_title">Overwrite defaults</string>
-  <string name="doze_overwrite_value_summary">Allow override of default values with user config</string>
-  <string name="doze_pulse_title">User configurable settings</string>
-  <string name="doze_pulse_duration_in_title">Fade in</string>
+  <string name="summary_doze_enabled">Activé</string>
+  <string name="summary_doze_disabled">Désactivé</string>
+  <string name="doze_overwrite_value_title">Écraser les valeurs par défaut</string>
+  <string name="doze_overwrite_value_summary">Permettre de remplacer des valeurs par défaut avec la configuration de l\'utilisateur</string>
+  <string name="doze_pulse_title">Paramètres configurables de l’utilisateur</string>
+  <string name="doze_pulse_duration_in_title">Fondu</string>
   <string name="doze_pulse_duration_in_summary"></string>
-  <string name="doze_pulse_duration_visible_title">Visible duration</string>
+  <string name="doze_pulse_duration_visible_title">Durée d\'affichage</string>
   <string name="doze_pulse_duration_visible_summary"></string>
-  <string name="doze_pulse_duration_out_title">Fade out</string>
+  <string name="doze_pulse_duration_out_title">Fondu</string>
   <string name="doze_pulse_duration_out_summary"></string>
-  <string name="doze_trigger_pickup_title">Pick up sensor trigger</string>
-  <string name="doze_trigger_pickup_summary_on">Pulse will be triggered by pick up sensor</string>
-  <string name="doze_trigger_pickup_summary_off">Pick up sensor will not be utilized as a trigger</string>
-  <string name="doze_trigger_notification_title">Notification trigger</string>
-  <string name="doze_trigger_notification_summary_on">Pulse will be triggered by notifications</string>
-  <string name="doze_trigger_notification_summary_off">Notifications will not be utilized as a trigger</string>
-  <string name="doze_brightness_level_title">Brightness level</string>
-  <string name="fivehundred_ms_default">500 ms (default)</string>
-  <string name="three_second_default">3 s (default)</string>
+  <string name="doze_trigger_pickup_title">Prise en main</string>
+  <string name="doze_trigger_pickup_summary_on">Activer l\'écran lors de la prise en main de l\'appareil</string>
+  <string name="doze_trigger_pickup_summary_off">Ne pas activer l\'écran lors de la prise en main de l\'appareil</string>
+  <string name="doze_trigger_notification_title">Déclencheur de notification</string>
+  <string name="doze_trigger_notification_summary_on">Activer l\'écran lors de la réception de notifications</string>
+  <string name="doze_trigger_notification_summary_off">L\'impulsion ne sera pas déclenchée par les notifications</string>
+  <string name="doze_brightness_level_title">Niveau de luminosité</string>
+  <string name="fivehundred_ms_default">500 (par défaut)</string>
+  <string name="three_second_default">3 s (Par défaut)</string>
   <!--On the GO RESET-->
-  <string name="reset_all_settings">RESET ALL</string>
-  <string name="reset_selected_settings">RESET SELECTED</string>
-  <string name="reset_settings_title">Feature preferences</string>
+  <string name="reset_all_settings">RÉINTIALISER TOUT</string>
+  <string name="reset_selected_settings">REMISE À ZÉRO SÉLECTIONNÉ</string>
+  <string name="reset_settings_title">Préférences du fonction</string>
   <string name="reset_settings_summary">Reset XPerience feature preferences</string>
   <string name="keywords_settings_reset">reset</string>
   <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
@@ -104,16 +104,6 @@
   <!-- Lockscreen charging current indicator  -->
   <string name="lockscreen_charging_current_title">Lockscreen charging info</string>
   <string name="lockscreen_charging_current_summary">Display negociated charger max current and voltage on lockscreen</string>
-  <!-- Custom carrier label and position -->
-  <string name="carrier_label_settings_title">Carrier Label</string>
-  <string name="custom_carrier_label_title">Custom carrier label</string>
-  <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
-  <string name="custom_carrier_label_notset">Custom label currently not set</string>
-  <string name="show_carrier_title">Carrier label</string>
-  <string name="show_carrier_disabled">Disabled</string>
-  <string name="show_carrier_keyguard">Lockscreen only</string>
-  <string name="show_carrier_statusbar">Statusbar only</string>
-  <string name="show_carrier_enabled">Lockscreen &amp; statusbar</string>
   <string name="xperience_settings_title">XPerience™ Settings</string>
   <string name="xperience_settings_summary">Customize ROM features</string>
   <!-- Custom Settings -->
