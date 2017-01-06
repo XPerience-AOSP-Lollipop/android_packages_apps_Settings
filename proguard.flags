@@ -25,6 +25,8 @@
 
 -keep class com.android.settings.cyanogenmod.*Settings
 
+-keep class mx.xperience.rainbowunicorn.**
+
 # Keep click responders
 -keepclassmembers class com.android.settings.inputmethod.UserDictionaryAddWordActivity {
   *** onClick*(...);
