@@ -72,8 +72,11 @@
   <string name="doze_overwrite_value_summary">Varsayılan değerleri kullanıcı yapılandırması ile geçersiz kılmaya izin ver</string>
   <string name="doze_pulse_title">Kullanıcı yapılandırılabilir ayarlar</string>
   <string name="doze_pulse_duration_in_title">Artarak</string>
+  <string name="doze_pulse_duration_in_summary"></string>
   <string name="doze_pulse_duration_visible_title">Görünürlük süresi</string>
+  <string name="doze_pulse_duration_visible_summary"></string>
   <string name="doze_pulse_duration_out_title">Solma</string>
+  <string name="doze_pulse_duration_out_summary"></string>
   <string name="doze_trigger_pickup_title">Pick up sensor trigger</string>
   <string name="doze_trigger_pickup_summary_on">Pulse will be triggered by pick up sensor</string>
   <string name="doze_trigger_pickup_summary_off">Hareket sensörüni tetikleyici olarak kullanma</string>
@@ -111,4 +114,6 @@
   <string name="show_carrier_keyguard">Lockscreen only</string>
   <string name="show_carrier_statusbar">Statusbar only</string>
   <string name="show_carrier_enabled">Lockscreen &amp; statusbar</string>
+  <string name="cosmic_settings_title">XPerience™ Settings</string>
+  <string name="cosmic_settings_summary">Customize ROM features</string>
 </resources>
