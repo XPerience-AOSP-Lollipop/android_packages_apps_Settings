@@ -114,6 +114,6 @@
   <string name="show_carrier_keyguard">Apenas tela de bloqueio</string>
   <string name="show_carrier_statusbar">Apenas barra de status</string>
   <string name="show_carrier_enabled">Tela de bloqueio &amp; barra de status</string>
-  <string name="cosmic_settings_title">XPerience™ Settings</string>
-  <string name="cosmic_settings_summary">Customize ROM features</string>
+  <string name="xperience_settings_title">XPerience™ Settings</string>
+  <string name="xperience_settings_summary">Customize ROM features</string>
 </resources>
