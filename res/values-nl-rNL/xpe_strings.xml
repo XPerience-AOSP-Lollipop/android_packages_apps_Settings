@@ -104,16 +104,6 @@
   <!-- Lockscreen charging current indicator  -->
   <string name="lockscreen_charging_current_title">Info ophalen vergrendelingsscherm</string>
   <string name="lockscreen_charging_current_summary">Toon huidig maximum en spanning van gekoppelde lader op vergrendelingsscherm</string>
-  <!-- Custom carrier label and position -->
-  <string name="carrier_label_settings_title">Provider Label</string>
-  <string name="custom_carrier_label_title">Aangepast providerlabel</string>
-  <string name="custom_carrier_label_explain">Voer alstublieft een nieuw label in. Laat het leeg om terug te keren naar het standaardlabel.</string>
-  <string name="custom_carrier_label_notset">Aangepast label momenteel niet ingesteld</string>
-  <string name="show_carrier_title">Providerlabel</string>
-  <string name="show_carrier_disabled">Uitgeschakeld</string>
-  <string name="show_carrier_keyguard">Enkel vergrendelingsscherm</string>
-  <string name="show_carrier_statusbar">Enkel statusbalk</string>
-  <string name="show_carrier_enabled">Vergrendelingsscherm &amp; statusbalk</string>
   <string name="xperience_settings_title">XPerience™ instellingen</string>
   <string name="xperience_settings_summary">Customaliseer ROM-functies</string>
   <!-- Custom Settings -->
