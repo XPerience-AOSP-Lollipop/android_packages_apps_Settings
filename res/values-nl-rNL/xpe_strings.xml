@@ -100,7 +100,7 @@
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Geheugen</string>
   <string name="ambient_display_show_battery_title">Batterijstatus</string>
-  <string name="ambient_display_show_battery_summary">Toon batterijindicator tijdens impuls</string>
+  <string name="ambient_display_show_battery_summary">Toon batterijicoon tijdens impuls</string>
   <!-- Lockscreen charging current indicator  -->
   <string name="lockscreen_charging_current_title">Info ophalen vergrendelingsscherm</string>
   <string name="lockscreen_charging_current_summary">Toon huidig maximum en spanning van gekoppelde lader op vergrendelingsscherm</string>
