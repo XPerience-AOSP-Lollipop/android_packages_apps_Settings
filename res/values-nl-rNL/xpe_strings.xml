@@ -30,90 +30,93 @@
   <!-- Immersive Recents -->
   <string name="immersive_recents_title">Recente volledig scherm</string>
   <string name="immersive_recents_summary">Weergave wijzigen van het recente app-scherm</string>
-  <string name="immersive_recents_dialog_title">Select recents view</string>
-  <string name="immersive_recents_default">Default</string>
-  <string name="immersive_recents_fullscreen">Fullscreen</string>
-  <string name="immersive_recents_statusbar">Statusbar only</string>
-  <string name="immersive_recents_navbar">Navbar only</string>
+  <string name="immersive_recents_dialog_title">Selecteer weergave recente apps</string>
+  <string name="immersive_recents_default">Standaard</string>
+  <string name="immersive_recents_fullscreen">Volledig scherm</string>
+  <string name="immersive_recents_statusbar">Enkel statusbalk</string>
+  <string name="immersive_recents_navbar">Enkel navigatiebalk</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <!-- Change Log strings -->
-  <string name="changelog_title">View changelog</string>
-  <string name="changelog_loading">Loading changelog...</string>
-  <string name="changelog_error">Unable to load changelog</string>
+  <string name="changelog_title">Bekijk veranderingen</string>
+  <string name="changelog_loading">Veranderingen laden...</string>
+  <string name="changelog_error">Niet mogelijk om veranderingen te laden</string>
   <!-- donators strings -->
-  <string name="donators_title">View donators</string>
-  <string name="donators_loading">Loading donators...</string>
-  <string name="donators_error">Unable to load donators text</string>
+  <string name="donators_title">Bekijk donateurs</string>
+  <string name="donators_loading">Donateurs laden...</string>
+  <string name="donators_error">Niet mogelijk om tekst van donateur te laden</string>
   <string name="OTACENTER">XPerience™ Center</string>
-  <string name="rel_type">Release type</string>
+  <string name="rel_type">Versietype</string>
   <string name="xpe_codename">XPerience™ CodeName</string>
   <!-- Network traffic -->
-  <string name="network_traffic_title">Network traffic</string>
-  <string name="show_network_traffic_state">Status bar traffic monitor</string>
-  <string name="network_traffic_summary">Enable various network traffic options in statusbar</string>
-  <string name="show_network_traffic_unit">Display unit</string>
-  <string name="show_network_traffic_frequency">Update interval</string>
-  <string name="show_network_traffic_disable">Disabled</string>
-  <string name="show_network_traffic_up">Outgoing</string>
-  <string name="show_network_traffic_down">Incoming</string>
-  <string name="show_network_traffic_all">Outgoing and incoming</string>
-  <string name="show_network_traffic_bit">Bits per second</string>
-  <string name="show_network_traffic_byte">Bytes per second</string>
-  <string name="network_traffic_autohide">Auto hide</string>
-  <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
-  <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
-  <string name="network_traffic_hidearrow_title">Hide arrows</string>
-  <string name="network_traffic_hidearrow_summary">Hide the traffic monitor activity arrows</string>
+  <string name="network_traffic_title">Netwerkverkeer</string>
+  <string name="show_network_traffic_state">Statusbalk datamonitor</string>
+  <string name="network_traffic_summary">Schakel verschillende netwerkdataopties in in statusbalk</string>
+  <string name="show_network_traffic_unit">Beeldscherm</string>
+  <string name="show_network_traffic_frequency">Vernieuw interval</string>
+  <string name="show_network_traffic_disable">Uitgeschakeld</string>
+  <string name="show_network_traffic_up">Uitgaand</string>
+  <string name="show_network_traffic_down">Inkomend</string>
+  <string name="show_network_traffic_all">Uitgaand en inkomend</string>
+  <string name="show_network_traffic_bit">Bits per seconde</string>
+  <string name="show_network_traffic_byte">Bytes per seconde</string>
+  <string name="network_traffic_autohide">Automatisch verbergen</string>
+  <string name="network_traffic_autohide_summary">Verberg de datamonitor wanneer er geen activiteit is</string>
+  <string name="network_traffic_autohide_threshold">Inactiviteitsdrempel</string>
+  <string name="network_traffic_hidearrow_title">Verberg pijlen</string>
+  <string name="network_traffic_hidearrow_summary">Verberg activiteitspijlen van datamonitor</string>
   <!-- Display Settings -->
   <!-- Doze pulse options -->
-  <string name="summary_doze_enabled">Enabled</string>
-  <string name="summary_doze_disabled">Disabled</string>
-  <string name="doze_overwrite_value_title">Overwrite defaults</string>
-  <string name="doze_overwrite_value_summary">Allow override of default values with user config</string>
-  <string name="doze_pulse_title">User configurable settings</string>
-  <string name="doze_pulse_duration_in_title">Fade in</string>
+  <string name="summary_doze_enabled">Ingeschakeld</string>
+  <string name="summary_doze_disabled">Uitgeschakeld</string>
+  <string name="doze_overwrite_value_title">Standaardwaarden overschrijven</string>
+  <string name="doze_overwrite_value_summary">Sta overschrijven van standaardwaarden toe met gebruikersconfiguratie</string>
+  <string name="doze_pulse_title">Gebruikersconfigureerbare instellingen</string>
+  <string name="doze_pulse_duration_in_title">Invloeien</string>
   <string name="doze_pulse_duration_in_summary"></string>
-  <string name="doze_pulse_duration_visible_title">Visible duration</string>
+  <string name="doze_pulse_duration_visible_title">Zichtbaarheidsduur</string>
   <string name="doze_pulse_duration_visible_summary"></string>
-  <string name="doze_pulse_duration_out_title">Fade out</string>
+  <string name="doze_pulse_duration_out_title">Uitvloeien</string>
   <string name="doze_pulse_duration_out_summary"></string>
-  <string name="doze_trigger_pickup_title">Pick up sensor trigger</string>
-  <string name="doze_trigger_pickup_summary_on">Pulse will be triggered by pick up sensor</string>
-  <string name="doze_trigger_pickup_summary_off">Pick up sensor will not be utilized as a trigger</string>
-  <string name="doze_trigger_notification_title">Notification trigger</string>
-  <string name="doze_trigger_notification_summary_on">Pulse will be triggered by notifications</string>
-  <string name="doze_trigger_notification_summary_off">Notifications will not be utilized as a trigger</string>
-  <string name="doze_brightness_level_title">Brightness level</string>
-  <string name="fivehundred_ms_default">500 ms (default)</string>
-  <string name="three_second_default">3 s (default)</string>
+  <string name="doze_trigger_pickup_title">Neem sensoractivator op</string>
+  <string name="doze_trigger_pickup_summary_on">Impuls zal worden geactiveerd door opnamesensor</string>
+  <string name="doze_trigger_pickup_summary_off">Opnamesensor zal niet worden gebruikt als activatie</string>
+  <string name="doze_trigger_notification_title">Meldingsactivatie</string>
+  <string name="doze_trigger_notification_summary_on">Impuls zal worden geactiveerd door meldingen</string>
+  <string name="doze_trigger_notification_summary_off">Meldingen zullen niet worden gebruikt als activatie</string>
+  <string name="doze_brightness_level_title">Helderheidsniveau</string>
+  <string name="fivehundred_ms_default">500 ms (standaard)</string>
+  <string name="three_second_default">3 s (standaard)</string>
   <!--On the GO RESET-->
-  <string name="reset_all_settings">RESET ALL</string>
-  <string name="reset_selected_settings">RESET SELECTED</string>
-  <string name="reset_settings_title">Feature preferences</string>
-  <string name="reset_settings_summary">Reset XPerience feature preferences</string>
+  <string name="reset_all_settings">ALLES RESETTEN</string>
+  <string name="reset_selected_settings">RESET GESELECTEERD</string>
+  <string name="reset_settings_title">Functievoorkeuren</string>
+  <string name="reset_settings_summary">Reset functievoorkeuren van XPerience</string>
   <string name="keywords_settings_reset">reset</string>
   <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
-  <string name="show_cpu_info">Show CPU info</string>
+  <string name="show_cpu_info">Toon CPU-informatie</string>
   <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
-  <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+  <string name="show_cpu_info_summary">Schermoverlay met CPU-informatie</string>
   <!-- Device info settings -->
   <string name="cpu_info">CPU</string>
-  <string name="mem_info">Memory</string>
-  <string name="ambient_display_show_battery_title">Battery Status</string>
-  <string name="ambient_display_show_battery_summary">Show battery indicator during pulse</string>
+  <string name="mem_info">Geheugen</string>
+  <string name="ambient_display_show_battery_title">Batterijstatus</string>
+  <string name="ambient_display_show_battery_summary">Toon batterijindicator tijdens impuls</string>
   <!-- Lockscreen charging current indicator  -->
-  <string name="lockscreen_charging_current_title">Lockscreen charging info</string>
-  <string name="lockscreen_charging_current_summary">Display negociated charger max current and voltage on lockscreen</string>
+  <string name="lockscreen_charging_current_title">Info ophalen vergrendelingsscherm</string>
+  <string name="lockscreen_charging_current_summary">Toon huidig maximum en spanning van gekoppelde lader op vergrendelingsscherm</string>
   <!-- Custom carrier label and position -->
-  <string name="carrier_label_settings_title">Carrier Label</string>
-  <string name="custom_carrier_label_title">Custom carrier label</string>
-  <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
-  <string name="custom_carrier_label_notset">Custom label currently not set</string>
-  <string name="show_carrier_title">Carrier label</string>
-  <string name="show_carrier_disabled">Disabled</string>
+  <string name="carrier_label_settings_title">Provider Label</string>
+  <string name="custom_carrier_label_title">Aangepast providerlabel</string>
+  <string name="custom_carrier_label_explain">Voer alstublieft een nieuw label in. Laat het leeg om terug te keren naar het standaardlabel.</string>
+  <string name="custom_carrier_label_notset">Aangepast label momenteel niet ingesteld</string>
+  <string name="show_carrier_title">Providerlabel</string>
+  <string name="show_carrier_disabled">Uitgeschakeld</string>
   <string name="show_carrier_keyguard">Lockscreen only</string>
   <string name="show_carrier_statusbar">Statusbar only</string>
   <string name="show_carrier_enabled">Lockscreen &amp; statusbar</string>
   <string name="xperience_settings_title">XPerience™ Settings</string>
   <string name="xperience_settings_summary">Customize ROM features</string>
+  <!-- Custom Settings -->
+  <!-- Dashboard -->
+  <string name="header_category_custom">Rainbow Unicorn XPerience™</string>
 </resources>
