@@ -72,8 +72,11 @@
   <string name="doze_overwrite_value_summary">Consentire sostituzione dei valori predefiniti con quelli dell\'utente</string>
   <string name="doze_pulse_title">Impostazioni configurabili dall\'utente</string>
   <string name="doze_pulse_duration_in_title">Dissolvenza in entrata</string>
+  <string name="doze_pulse_duration_in_summary"></string>
   <string name="doze_pulse_duration_visible_title">Durata visibilità</string>
+  <string name="doze_pulse_duration_visible_summary"></string>
   <string name="doze_pulse_duration_out_title">Dissolvenza in uscita</string>
+  <string name="doze_pulse_duration_out_summary"></string>
   <string name="doze_trigger_pickup_title">Trigger sensore</string>
   <string name="doze_trigger_pickup_summary_on">Accendi schermo tramite sensore</string>
   <string name="doze_trigger_pickup_summary_off">Non utilizzare sensore</string>
@@ -111,4 +114,6 @@
   <string name="show_carrier_keyguard">Solo schermata di blocco</string>
   <string name="show_carrier_statusbar">Solo barra di stato</string>
   <string name="show_carrier_enabled">Schermata di blocco e barra di stato</string>
+  <string name="cosmic_settings_title">XPerience™ Settings</string>
+  <string name="cosmic_settings_summary">Customize ROM features</string>
 </resources>
