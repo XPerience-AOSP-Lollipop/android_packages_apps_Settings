@@ -31,7 +31,7 @@
   <string name="immersive_recents_title">Applications récentes immersives</string>
   <string name="immersive_recents_summary">Apparence de l\'écran des applications récentes</string>
   <string name="immersive_recents_dialog_title">Choisir l\'apparence</string>
-  <string name="immersive_recents_default">Default</string>
+  <string name="immersive_recents_default">Défaut</string>
   <string name="immersive_recents_fullscreen">Fullscreen</string>
   <string name="immersive_recents_statusbar">Statusbar only</string>
   <string name="immersive_recents_navbar">Navbar only</string>
