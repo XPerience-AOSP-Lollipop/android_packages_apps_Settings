@@ -72,8 +72,11 @@
   <string name="doze_overwrite_value_summary">Permitir anulación de valores por defecto con la configuración del usuario</string>
   <string name="doze_pulse_title">Ajustes configurables del usuario</string>
   <string name="doze_pulse_duration_in_title">Fundirse</string>
+  <string name="doze_pulse_duration_in_summary"></string>
   <string name="doze_pulse_duration_visible_title">Duración visible</string>
+  <string name="doze_pulse_duration_visible_summary"></string>
   <string name="doze_pulse_duration_out_title">Desvanecerse</string>
+  <string name="doze_pulse_duration_out_summary"></string>
   <string name="doze_trigger_pickup_title">Activar cuando levantas el dispositivo</string>
   <string name="doze_trigger_pickup_summary_on">El pulso será activado cuando levantes el dispositivo</string>
   <string name="doze_trigger_pickup_summary_off">Levantar el dispositivo no sera utilizado como disparador</string>
@@ -92,7 +95,7 @@
   <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
   <string name="show_cpu_info">Mostrar información de la CPU</string>
   <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
-  <string name="show_cpu_info_summary">Superposición en pantalla que muestra información actual de la CPU</string>
+  <string name="show_cpu_info_summary">Muestra la información actual del procesador en la pantalla</string>
   <!-- Device info settings -->
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Memoria</string>
@@ -111,4 +114,6 @@
   <string name="show_carrier_keyguard">Sólo en la pantalla de bloqueo</string>
   <string name="show_carrier_statusbar">Sólo barra de estado</string>
   <string name="show_carrier_enabled">Pantalla de bloqueo y barra de estado</string>
+  <string name="cosmic_settings_title">XPerience™ Settings</string>
+  <string name="cosmic_settings_summary">Customize ROM features</string>
 </resources>
