@@ -104,8 +104,8 @@
   <!-- Lockscreen charging current indicator  -->
   <string name="lockscreen_charging_current_title">Informação de carregamento na tela de bloqueio</string>
   <string name="lockscreen_charging_current_summary">Exibir a tensão e corrente máxima do carregador na tela de bloqueio</string>
-  <string name="xperience_settings_title">XPerience™ Settings</string>
-  <string name="xperience_settings_summary">Customize ROM features</string>
+  <string name="xperience_settings_title">Configurações XPerience™</string>
+  <string name="xperience_settings_summary">Personalizar ROM</string>
   <!-- Custom Settings -->
   <!-- Dashboard -->
   <string name="header_category_custom">Rainbow Unicorn XPerience™</string>
