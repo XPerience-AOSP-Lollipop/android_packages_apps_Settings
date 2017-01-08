@@ -104,7 +104,7 @@
   <!-- Lockscreen charging current indicator  -->
   <string name="lockscreen_charging_current_title">Informazioni carica in schermata blocco</string>
   <string name="lockscreen_charging_current_summary">Mostra corrente e tensione massime di ricarica nella schermata di blocco</string>
-  <string name="xperience_settings_title">XPerience™ Settings</string>
+  <string name="xperience_settings_title">Impostazioni XPerience™</string>
   <string name="xperience_settings_summary">Customize ROM features</string>
   <!-- Custom Settings -->
   <!-- Dashboard -->
