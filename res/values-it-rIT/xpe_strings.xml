@@ -105,8 +105,8 @@
   <string name="lockscreen_charging_current_title">Informazioni carica in schermata blocco</string>
   <string name="lockscreen_charging_current_summary">Mostra corrente e tensione massime di ricarica nella schermata di blocco</string>
   <string name="xperience_settings_title">Impostazioni XPerience™</string>
-  <string name="xperience_settings_summary">Customize ROM features</string>
+  <string name="xperience_settings_summary">Personalizzare caratteristiche ROM</string>
   <!-- Custom Settings -->
   <!-- Dashboard -->
-  <string name="header_category_custom">Rainbow Unicorn XPerience™</string>
+  <string name="header_category_custom">Unicorno arcobaleno XPerience™</string>
 </resources>
