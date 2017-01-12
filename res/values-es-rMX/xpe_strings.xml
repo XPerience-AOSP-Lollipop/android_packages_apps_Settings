@@ -27,14 +27,6 @@
   <!-- Disabling immersive mode messages -->
   <string name="disable_immersive_message_title">Deshabilitar mensajes de modo inmersivo</string>
   <string name="disable_immersive_message_summary">Esto ocultará todos los mensajes de modo inmersivo</string>
-  <!-- Immersive Recents -->
-  <string name="immersive_recents_title">Recientes Inmersivos</string>
-  <string name="immersive_recents_summary">Cambiar la vista de la pantalla de recientes</string>
-  <string name="immersive_recents_dialog_title">Seleccionar vista reciente</string>
-  <string name="immersive_recents_default">Defecto</string>
-  <string name="immersive_recents_fullscreen">Pantalla completa</string>
-  <string name="immersive_recents_statusbar">Sólo barra de estado</string>
-  <string name="immersive_recents_navbar">Sólo barra de Navegación</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <!-- Change Log strings -->
   <string name="changelog_title">Ver Registro de Cambios</string>
@@ -47,23 +39,6 @@
   <string name="OTACENTER">Centro XPerience™</string>
   <string name="rel_type">Tipo de lanzamiento</string>
   <string name="xpe_codename">Código XPerience™</string>
-  <!-- Network traffic -->
-  <string name="network_traffic_title">Tráfico de red</string>
-  <string name="show_network_traffic_state">Monitor de tráfico en la barra de estado</string>
-  <string name="network_traffic_summary">Permiten varias opciones de tráfico de red en barra de estado</string>
-  <string name="show_network_traffic_unit">Unidad de Muestreo</string>
-  <string name="show_network_traffic_frequency">Intervalo de actualización</string>
-  <string name="show_network_traffic_disable">Inhabilitado</string>
-  <string name="show_network_traffic_up">Saliente</string>
-  <string name="show_network_traffic_down">Entrante</string>
-  <string name="show_network_traffic_all">Salientes y entrantes</string>
-  <string name="show_network_traffic_bit">Bits por segundo</string>
-  <string name="show_network_traffic_byte">Bytes por segundo</string>
-  <string name="network_traffic_autohide">Auto ocultar</string>
-  <string name="network_traffic_autohide_summary">Ocultar al monitor de tráfico cuando no hay actividad</string>
-  <string name="network_traffic_autohide_threshold">Umbral de inactividad</string>
-  <string name="network_traffic_hidearrow_title">Ocultar las flechas</string>
-  <string name="network_traffic_hidearrow_summary">Ocultar las flechas de actividad de monitor de tráfico</string>
   <!-- Display Settings -->
   <!-- Doze pulse options -->
   <string name="summary_doze_enabled">Habilitado</string>
