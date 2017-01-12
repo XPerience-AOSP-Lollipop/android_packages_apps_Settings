@@ -27,14 +27,6 @@
   <!-- Disabling immersive mode messages -->
   <string name="disable_immersive_message_title">Deshabilitar mensajes de modo inmersivo</string>
   <string name="disable_immersive_message_summary">Esto ocultará todos los mensajes de modo inmersivo</string>
-  <!-- Immersive Recents -->
-  <string name="immersive_recents_title">Recientes Inmersivos</string>
-  <string name="immersive_recents_summary">Cambiar la vista de la pantalla de recientes</string>
-  <string name="immersive_recents_dialog_title">Seleccionar vista reciente</string>
-  <string name="immersive_recents_default">Por defecto</string>
-  <string name="immersive_recents_fullscreen">Pantalla completa</string>
-  <string name="immersive_recents_statusbar">Sólo barra de estado</string>
-  <string name="immersive_recents_navbar">Sólo barra de Navegación</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <!-- Change Log strings -->
   <string name="changelog_title">Ver Registro de Cambios</string>
@@ -47,23 +39,6 @@
   <string name="OTACENTER">Centro XPerience™</string>
   <string name="rel_type">Tipo de lanzamiento</string>
   <string name="xpe_codename">Código XPerience™</string>
-  <!-- Network traffic -->
-  <string name="network_traffic_title">Tráfico de red</string>
-  <string name="show_network_traffic_state">Monitor de tráfico en la barra de estado</string>
-  <string name="network_traffic_summary">Permiten varias opciones de tráfico de red en barra de estado</string>
-  <string name="show_network_traffic_unit">Unidad de Muestreo</string>
-  <string name="show_network_traffic_frequency">Intervalo de actualización</string>
-  <string name="show_network_traffic_disable">Inhabilitado</string>
-  <string name="show_network_traffic_up">Saliente</string>
-  <string name="show_network_traffic_down">Entrante</string>
-  <string name="show_network_traffic_all">Salientes y entrantes</string>
-  <string name="show_network_traffic_bit">Bits por segundo</string>
-  <string name="show_network_traffic_byte">Bytes por segundo</string>
-  <string name="network_traffic_autohide">Auto ocultar</string>
-  <string name="network_traffic_autohide_summary">Ocultar al monitor de tráfico cuando no hay actividad</string>
-  <string name="network_traffic_autohide_threshold">Umbral de inactividad</string>
-  <string name="network_traffic_hidearrow_title">Ocultar las flechas</string>
-  <string name="network_traffic_hidearrow_summary">Ocultar las flechas de actividad de monitor de tráfico</string>
   <!-- Display Settings -->
   <!-- Doze pulse options -->
   <string name="summary_doze_enabled">Habilitado</string>
@@ -104,16 +79,6 @@
   <!-- Lockscreen charging current indicator  -->
   <string name="lockscreen_charging_current_title">Información de carga en pantalla de bloqueo</string>
   <string name="lockscreen_charging_current_summary">Mostrar corriente máxima y voltaje usado en pantalla de bloqueo</string>
-  <!-- Custom carrier label and position -->
-  <string name="carrier_label_settings_title">Nombre de operador</string>
-  <string name="custom_carrier_label_title">Nombre de operador personalizado</string>
-  <string name="custom_carrier_label_explain">Por favor, introduzca una nueva etiqueta. Déjala en blanco para volver a la etiqueta por defecto.</string>
-  <string name="custom_carrier_label_notset">Etiqueta personalizada actualmente no establecida</string>
-  <string name="show_carrier_title">Etiqueta de Operador</string>
-  <string name="show_carrier_disabled">Inhabilitado</string>
-  <string name="show_carrier_keyguard">Sólo en la pantalla de bloqueo</string>
-  <string name="show_carrier_statusbar">Sólo en la barra de estado</string>
-  <string name="show_carrier_enabled">Pantalla de bloqueo y barra de estado</string>
   <string name="xperience_settings_title">Configuración de XPerience™</string>
   <string name="xperience_settings_summary">Personalizar funciones de la ROM</string>
   <!-- Custom Settings -->
