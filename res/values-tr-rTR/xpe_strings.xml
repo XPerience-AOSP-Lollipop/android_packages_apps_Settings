@@ -27,14 +27,6 @@
   <!-- Disabling immersive mode messages -->
   <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
   <string name="disable_immersive_message_summary">Bütün Sürüklemeli Mesaj Modu iletilerini gizle</string>
-  <!-- Immersive Recents -->
-  <string name="immersive_recents_title">Immersive Recents</string>
-  <string name="immersive_recents_summary">Son kullanılanlar ekranı görünümünü değiştirin</string>
-  <string name="immersive_recents_dialog_title">Son kullanılanlar görünümü</string>
-  <string name="immersive_recents_default">Varsayılan</string>
-  <string name="immersive_recents_fullscreen">Tam ekran</string>
-  <string name="immersive_recents_statusbar">Yalnızca durum çubuğu</string>
-  <string name="immersive_recents_navbar">Yalnızca gezinti çubuğu</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <!-- Change Log strings -->
   <string name="changelog_title">Değişiklikleri görüntüle</string>
@@ -47,23 +39,6 @@
   <string name="OTACENTER">XPerience™ Merkezi</string>
   <string name="rel_type">Yayın türü</string>
   <string name="xpe_codename">XPerience™ KodAdı</string>
-  <!-- Network traffic -->
-  <string name="network_traffic_title">Ağ trafiği</string>
-  <string name="show_network_traffic_state">Ağ Trafiğini Durum Çubuğunda Göster</string>
-  <string name="network_traffic_summary">Durum çubuğu çeşitli ağ trafik seçeneklerini etkinleştirmek</string>
-  <string name="show_network_traffic_unit">Gösterge ünitesi</string>
-  <string name="show_network_traffic_frequency">Güncelleme sıklığı</string>
-  <string name="show_network_traffic_disable">Devre dışı</string>
-  <string name="show_network_traffic_up">Giden</string>
-  <string name="show_network_traffic_down">Gelen</string>
-  <string name="show_network_traffic_all">Giden ve gelen</string>
-  <string name="show_network_traffic_bit">Bit/Saniye</string>
-  <string name="show_network_traffic_byte">Bayt/Saniye</string>
-  <string name="network_traffic_autohide">Otomatik Gizle</string>
-  <string name="network_traffic_autohide_summary">Veri Akışı Olmadığında Ağ Trafiğini Gizle</string>
-  <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
-  <string name="network_traffic_hidearrow_title">Okları Gizle</string>
-  <string name="network_traffic_hidearrow_summary">Ağ Trafiği Oklarını Gizle</string>
   <!-- Display Settings -->
   <!-- Doze pulse options -->
   <string name="summary_doze_enabled">Etkin</string>
