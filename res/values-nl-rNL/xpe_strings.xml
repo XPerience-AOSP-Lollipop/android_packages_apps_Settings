@@ -27,14 +27,6 @@
   <!-- Disabling immersive mode messages -->
   <string name="disable_immersive_message_title">Schakel volledig scherm-meldingen uit</string>
   <string name="disable_immersive_message_summary">Dit zal alle volledig scherm-meldingen verbergen</string>
-  <!-- Immersive Recents -->
-  <string name="immersive_recents_title">Recente volledig scherm</string>
-  <string name="immersive_recents_summary">Weergave wijzigen van het recente app-scherm</string>
-  <string name="immersive_recents_dialog_title">Selecteer weergave recente apps</string>
-  <string name="immersive_recents_default">Standaard</string>
-  <string name="immersive_recents_fullscreen">Volledig scherm</string>
-  <string name="immersive_recents_statusbar">Enkel statusbalk</string>
-  <string name="immersive_recents_navbar">Enkel navigatiebalk</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <!-- Change Log strings -->
   <string name="changelog_title">Bekijk veranderingen</string>
@@ -47,23 +39,6 @@
   <string name="OTACENTER">XPerience™ Center</string>
   <string name="rel_type">Versietype</string>
   <string name="xpe_codename">XPerience™ CodeName</string>
-  <!-- Network traffic -->
-  <string name="network_traffic_title">Netwerkverkeer</string>
-  <string name="show_network_traffic_state">Statusbalk datamonitor</string>
-  <string name="network_traffic_summary">Schakel verschillende netwerkdataopties in in statusbalk</string>
-  <string name="show_network_traffic_unit">Beeldscherm</string>
-  <string name="show_network_traffic_frequency">Vernieuw interval</string>
-  <string name="show_network_traffic_disable">Uitgeschakeld</string>
-  <string name="show_network_traffic_up">Uitgaand</string>
-  <string name="show_network_traffic_down">Inkomend</string>
-  <string name="show_network_traffic_all">Uitgaand en inkomend</string>
-  <string name="show_network_traffic_bit">Bits per seconde</string>
-  <string name="show_network_traffic_byte">Bytes per seconde</string>
-  <string name="network_traffic_autohide">Automatisch verbergen</string>
-  <string name="network_traffic_autohide_summary">Verberg de datamonitor wanneer er geen activiteit is</string>
-  <string name="network_traffic_autohide_threshold">Inactiviteitsdrempel</string>
-  <string name="network_traffic_hidearrow_title">Verberg pijlen</string>
-  <string name="network_traffic_hidearrow_summary">Verberg activiteitspijlen van datamonitor</string>
   <!-- Display Settings -->
   <!-- Doze pulse options -->
   <string name="summary_doze_enabled">Ingeschakeld</string>
