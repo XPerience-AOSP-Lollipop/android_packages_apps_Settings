@@ -40,22 +40,22 @@
   <string name="rel_type">Tipo rilascio</string>
   <string name="xpe_codename">Nome in codice XPerience™</string>
   <!-- Network traffic -->
-  <string name="network_traffic_title">Network traffic</string>
-  <string name="show_network_traffic_state">Status bar traffic monitor</string>
-  <string name="network_traffic_summary">Enable various network traffic options in statusbar</string>
-  <string name="show_network_traffic_unit">Display unit</string>
-  <string name="show_network_traffic_frequency">Update interval</string>
-  <string name="show_network_traffic_disable">Disabled</string>
-  <string name="show_network_traffic_up">Outgoing</string>
-  <string name="show_network_traffic_down">Incoming</string>
-  <string name="show_network_traffic_all">Outgoing and incoming</string>
-  <string name="show_network_traffic_bit">Bits per second</string>
-  <string name="show_network_traffic_byte">Bytes per second</string>
-  <string name="network_traffic_autohide">Auto hide</string>
-  <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
-  <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
-  <string name="network_traffic_hidearrow_title">Hide arrows</string>
-  <string name="network_traffic_hidearrow_summary">Hide the traffic monitor activity arrows</string>
+  <string name="network_traffic_title">Traffico di rete</string>
+  <string name="show_network_traffic_state">Monitor di traffico nella barra di stato</string>
+  <string name="network_traffic_summary">Attivare le varie opzioni del traffico di rete nella barra di stato</string>
+  <string name="show_network_traffic_unit">Mostra unità</string>
+  <string name="show_network_traffic_frequency">Intervallo di aggiornamento</string>
+  <string name="show_network_traffic_disable">Disattivato</string>
+  <string name="show_network_traffic_up">In uscita</string>
+  <string name="show_network_traffic_down">In entrata</string>
+  <string name="show_network_traffic_all">In entrata e in uscita</string>
+  <string name="show_network_traffic_bit">Bit al secondo</string>
+  <string name="show_network_traffic_byte">Byte al secondo</string>
+  <string name="network_traffic_autohide">Nascondi automaticamente</string>
+  <string name="network_traffic_autohide_summary">Nascondere il monitor di traffico quando non c\'è attività</string>
+  <string name="network_traffic_autohide_threshold">Soglia di inattività</string>
+  <string name="network_traffic_hidearrow_title">Nascondi frecce</string>
+  <string name="network_traffic_hidearrow_summary">Nascondere le frecce di attività di traffico</string>
   <!-- Display Settings -->
   <!-- Doze pulse options -->
   <string name="summary_doze_enabled">Attivato</string>
