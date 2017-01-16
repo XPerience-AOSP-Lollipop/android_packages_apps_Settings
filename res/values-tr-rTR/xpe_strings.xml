@@ -27,6 +27,14 @@
   <!-- Disabling immersive mode messages -->
   <string name="disable_immersive_message_title">Disable Immersive Mode Messages</string>
   <string name="disable_immersive_message_summary">Bütün Sürüklemeli Mesaj Modu iletilerini gizle</string>
+  <!-- Immersive Recents -->
+  <string name="immersive_recents_title">Immersive Recents</string>
+  <string name="immersive_recents_summary">Change the view of the recents screen</string>
+  <string name="immersive_recents_dialog_title">Select recents view</string>
+  <string name="immersive_recents_default">Default</string>
+  <string name="immersive_recents_fullscreen">Fullscreen</string>
+  <string name="immersive_recents_statusbar">Statusbar only</string>
+  <string name="immersive_recents_navbar">Navbar only</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <!-- Change Log strings -->
   <string name="changelog_title">Değişiklikleri görüntüle</string>
@@ -101,4 +109,6 @@
   <!-- Custom Settings -->
   <!-- Dashboard -->
   <string name="header_category_custom">Rainbow Unicorn XPerience™</string>
+  <string name="substratum_title">Substratum</string>
+  <string name="substratum_summary">Customize device theme</string>
 </resources>
