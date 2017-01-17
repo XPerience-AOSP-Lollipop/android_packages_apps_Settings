@@ -28,13 +28,13 @@
   <string name="disable_immersive_message_title">Desativar as mensagens de modo Immersive</string>
   <string name="disable_immersive_message_summary">Isto irá esconder todas as mensagens de modo Immersive</string>
   <!-- Immersive Recents -->
-  <string name="immersive_recents_title">Immersive Recents</string>
-  <string name="immersive_recents_summary">Change the view of the recents screen</string>
-  <string name="immersive_recents_dialog_title">Select recents view</string>
-  <string name="immersive_recents_default">Default</string>
-  <string name="immersive_recents_fullscreen">Fullscreen</string>
-  <string name="immersive_recents_statusbar">Statusbar only</string>
-  <string name="immersive_recents_navbar">Navbar only</string>
+  <string name="immersive_recents_title">Modo Tela Recentes</string>
+  <string name="immersive_recents_summary">Alterar a exibição das telas recentes</string>
+  <string name="immersive_recents_dialog_title">Selecionar o modo da tela recentes</string>
+  <string name="immersive_recents_default">Padrão</string>
+  <string name="immersive_recents_fullscreen">Tela Cheia</string>
+  <string name="immersive_recents_statusbar">Apenas barra de status</string>
+  <string name="immersive_recents_navbar">Barra de navegação somente</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <!-- Change Log strings -->
   <string name="changelog_title">Ver changelog</string>
@@ -110,5 +110,5 @@
   <!-- Dashboard -->
   <string name="header_category_custom">Personalização XPerience™</string>
   <string name="substratum_title">Substratum</string>
-  <string name="substratum_summary">Customize device theme</string>
+  <string name="substratum_summary">Personalizar o tema do dispositivo</string>
 </resources>
