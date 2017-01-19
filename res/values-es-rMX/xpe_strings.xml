@@ -111,4 +111,6 @@
   <string name="header_category_custom">XPerience™ Unicornio Arcoiris</string>
   <string name="substratum_title">Substratum</string>
   <string name="substratum_summary">Customize device theme</string>
+  <!--Battery style-->
+  <string name="battery_style_title">Battery status style</string>
 </resources>
