@@ -127,4 +127,6 @@
   <string name="status_bar_battery_percentage_default">Oculto</string>
   <string name="status_bar_battery_percentage_text_inside">Dentro do ícone</string>
   <string name="status_bar_battery_percentage_text_next">Ao lado do ícone</string>
+  <string name="ActiveDisplay_title">Active Display</string>
+  <string name="ActiveDisplay_summary">Active Display is a new way of handling notifications in Android.</string>
 </resources>
