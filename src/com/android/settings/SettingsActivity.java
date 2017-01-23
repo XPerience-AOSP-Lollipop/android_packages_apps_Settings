@@ -241,6 +241,7 @@ public class SettingsActivity extends SettingsDrawerActivity
     private static final String ALESSA_FRAGMENT = "com.android.settings.Alessa";
 
     private static final String SUBSTRATUM_FRAGMENT = "com.android.settings.Substratum";
+	 private static final String ACTIVE_DISPLAY_FRAGMENT = "com.android.settings.ActiveDisplay";
 
     private String mFragmentClass;
     private String mActivityAction;
@@ -1073,6 +1074,14 @@ public class SettingsActivity extends SettingsDrawerActivity
         if (SUBSTRATUM_FRAGMENT.equals(fragmentName)) {
             Intent subIntent = new Intent();
             subIntent.setClassName("projekt.substratum", "projekt.substratum.LaunchActivity");
+            startActivity(subIntent);
+            finish();
+            return null;
+        }
+
+        if (ACTIVE_DISPLAY_FRAGMENT.equals(fragmentName)) {
+            Intent subIntent = new Intent();
+            subIntent.setClassName("mx.xperience.XPeNotify.peek", "mx.xperience.XPeNotify.peek.MainActivity");
             startActivity(subIntent);
             finish();
             return null;

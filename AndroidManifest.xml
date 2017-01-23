@@ -2882,6 +2882,27 @@
                 android:resource="@string/substratum_summary" />
         </activity>
 
+        <activity android:name="Settings$ActiveDisplayActivity"
+            android:label="@string/ActiveDisplay_title"
+            android:icon="@drawable/ic_xpe_display"
+            android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <intent-filter android:priority="3">
+                <action android:name="com.android.settings.action.SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                android:value="com.android.settings.category.custom" />
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.ActiveDisplay" />
+            <meta-data android:name="com.android.settings.summary"
+                android:resource="@string/ActiveDisplay_summary" />
+        </activity>
+
 		<!-- Show Manual (from settings item) -->
         <activity android:name="ManualDisplayActivity"
                   android:label="@string/manual"

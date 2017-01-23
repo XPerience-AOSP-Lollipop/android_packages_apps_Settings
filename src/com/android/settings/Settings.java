@@ -168,4 +168,5 @@ public class Settings extends SettingsActivity {
     //someshit of the unicorn
     public static class RainbowSettingsActivity extends SettingsActivity { /* empty */ }
     public static class SubstratumActivity extends SettingsActivity { /* empty */ }
+	public static class ActiveDisplayActivity extends SettingsActivity { /* empty */ }
 }
