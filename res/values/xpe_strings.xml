@@ -152,4 +152,7 @@
 
    <string name="ActiveDisplay_title">Active Display</string>
    <string name="ActiveDisplay_summary">Active Display is a new way of handling notifications in Android.</string>
+
+    <!-- XPe Updater -->
+    <string name="xpeupdate_settings_title">XPerience updates</string>
 </resources>
