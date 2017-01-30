@@ -28,13 +28,6 @@
   <string name="disable_immersive_message_title">Schakel volledig scherm-meldingen uit</string>
   <string name="disable_immersive_message_summary">Dit zal alle volledig scherm-meldingen verbergen</string>
   <!-- Immersive Recents -->
-  <string name="immersive_recents_title">Immersive Recents</string>
-  <string name="immersive_recents_summary">Change the view of the recents screen</string>
-  <string name="immersive_recents_dialog_title">Select recents view</string>
-  <string name="immersive_recents_default">Default</string>
-  <string name="immersive_recents_fullscreen">Fullscreen</string>
-  <string name="immersive_recents_statusbar">Statusbar only</string>
-  <string name="immersive_recents_navbar">Navbar only</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <!-- Change Log strings -->
   <string name="changelog_title">Bekijk veranderingen</string>
@@ -48,22 +41,6 @@
   <string name="rel_type">Versietype</string>
   <string name="xpe_codename">XPerience™ CodeName</string>
   <!-- Network traffic -->
-  <string name="network_traffic_title">Network traffic</string>
-  <string name="show_network_traffic_state">Status bar traffic monitor</string>
-  <string name="network_traffic_summary">Enable various network traffic options in statusbar</string>
-  <string name="show_network_traffic_unit">Display unit</string>
-  <string name="show_network_traffic_frequency">Update interval</string>
-  <string name="show_network_traffic_disable">Disabled</string>
-  <string name="show_network_traffic_up">Outgoing</string>
-  <string name="show_network_traffic_down">Incoming</string>
-  <string name="show_network_traffic_all">Outgoing and incoming</string>
-  <string name="show_network_traffic_bit">Bits per second</string>
-  <string name="show_network_traffic_byte">Bytes per second</string>
-  <string name="network_traffic_autohide">Auto hide</string>
-  <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
-  <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
-  <string name="network_traffic_hidearrow_title">Hide arrows</string>
-  <string name="network_traffic_hidearrow_summary">Hide the traffic monitor activity arrows</string>
   <!-- Display Settings -->
   <!-- Doze pulse options -->
   <string name="summary_doze_enabled">Ingeschakeld</string>
@@ -72,11 +49,8 @@
   <string name="doze_overwrite_value_summary">Sta overschrijven van standaardwaarden toe met gebruikersconfiguratie</string>
   <string name="doze_pulse_title">Gebruikersconfigureerbare instellingen</string>
   <string name="doze_pulse_duration_in_title">Invloeien</string>
-  <string name="doze_pulse_duration_in_summary"></string>
   <string name="doze_pulse_duration_visible_title">Zichtbaarheidsduur</string>
-  <string name="doze_pulse_duration_visible_summary"></string>
   <string name="doze_pulse_duration_out_title">Uitvloeien</string>
-  <string name="doze_pulse_duration_out_summary"></string>
   <string name="doze_trigger_pickup_title">Neem sensoractivator op</string>
   <string name="doze_trigger_pickup_summary_on">Impuls zal worden geactiveerd door opnamesensor</string>
   <string name="doze_trigger_pickup_summary_off">Opnamesensor zal niet worden gebruikt als activatie</string>
@@ -109,24 +83,8 @@
   <!-- Custom Settings -->
   <!-- Dashboard -->
   <string name="header_category_custom">Rainbow Unicorn XPerience™</string>
-  <string name="substratum_title">Substratum</string>
-  <string name="substratum_summary">Customize device theme</string>
   <!--Battery style-->
-  <string name="battery_style_title">Battery status style</string>
   <!-- Status bar - Battery -->
-  <string name="status_bar_battery_style_title">Battery status style</string>
-  <string name="status_bar_battery_style_icon_portrait">Icon portrait</string>
-  <string name="status_bar_battery_style_icon_landscape">Icon landscape</string>
-  <string name="status_bar_battery_style_circle">Circle</string>
-  <string name="status_bar_battery_style_text">Text</string>
-  <string name="status_bar_battery_style_hidden">Hidden</string>
   <!-- Status bar - Battery percentage -->
   <!-- Status bar - Battery percentage -->
-  <string name="battery_percentage_title">Battery percentage</string>
-  <string name="status_bar_battery_percentage_title">Battery percentage</string>
-  <string name="status_bar_battery_percentage_default">Hidden</string>
-  <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
-  <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
-  <string name="ActiveDisplay_title">Active Display</string>
-  <string name="ActiveDisplay_summary">Active Display is a new way of handling notifications in Android.</string>
 </resources>
