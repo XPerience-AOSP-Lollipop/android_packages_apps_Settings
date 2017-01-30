@@ -28,13 +28,6 @@
   <string name="disable_immersive_message_title">Disattiva messaggi in modalità immersiva</string>
   <string name="disable_immersive_message_summary">Questo nasconderà tutti i messaggi in modalità immersiva</string>
   <!-- Immersive Recents -->
-  <string name="immersive_recents_title">Immersive Recents</string>
-  <string name="immersive_recents_summary">Change the view of the recents screen</string>
-  <string name="immersive_recents_dialog_title">Select recents view</string>
-  <string name="immersive_recents_default">Default</string>
-  <string name="immersive_recents_fullscreen">Fullscreen</string>
-  <string name="immersive_recents_statusbar">Statusbar only</string>
-  <string name="immersive_recents_navbar">Navbar only</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <!-- Change Log strings -->
   <string name="changelog_title">Mostra changelog</string>
@@ -72,11 +65,8 @@
   <string name="doze_overwrite_value_summary">Consentire sostituzione dei valori predefiniti con quelli dell\'utente</string>
   <string name="doze_pulse_title">Impostazioni configurabili dall\'utente</string>
   <string name="doze_pulse_duration_in_title">Dissolvenza in entrata</string>
-  <string name="doze_pulse_duration_in_summary"></string>
   <string name="doze_pulse_duration_visible_title">Durata visibilità</string>
-  <string name="doze_pulse_duration_visible_summary"></string>
   <string name="doze_pulse_duration_out_title">Dissolvenza in uscita</string>
-  <string name="doze_pulse_duration_out_summary"></string>
   <string name="doze_trigger_pickup_title">Trigger sensore</string>
   <string name="doze_trigger_pickup_summary_on">Accendi schermo tramite sensore</string>
   <string name="doze_trigger_pickup_summary_off">Non utilizzare sensore</string>
@@ -109,24 +99,8 @@
   <!-- Custom Settings -->
   <!-- Dashboard -->
   <string name="header_category_custom">Unicorno arcobaleno XPerience™</string>
-  <string name="substratum_title">Substratum</string>
-  <string name="substratum_summary">Customize device theme</string>
   <!--Battery style-->
-  <string name="battery_style_title">Battery status style</string>
   <!-- Status bar - Battery -->
-  <string name="status_bar_battery_style_title">Battery status style</string>
-  <string name="status_bar_battery_style_icon_portrait">Icon portrait</string>
-  <string name="status_bar_battery_style_icon_landscape">Icon landscape</string>
-  <string name="status_bar_battery_style_circle">Circle</string>
-  <string name="status_bar_battery_style_text">Text</string>
-  <string name="status_bar_battery_style_hidden">Hidden</string>
   <!-- Status bar - Battery percentage -->
   <!-- Status bar - Battery percentage -->
-  <string name="battery_percentage_title">Battery percentage</string>
-  <string name="status_bar_battery_percentage_title">Battery percentage</string>
-  <string name="status_bar_battery_percentage_default">Hidden</string>
-  <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
-  <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
-  <string name="ActiveDisplay_title">Active Display</string>
-  <string name="ActiveDisplay_summary">Active Display is a new way of handling notifications in Android.</string>
 </resources>
