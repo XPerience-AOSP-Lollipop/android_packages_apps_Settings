@@ -72,11 +72,8 @@
   <string name="doze_overwrite_value_summary">Permitir a substituição de valores padrão pela configuração do usuário</string>
   <string name="doze_pulse_title">Ajustes de configurações de usuário</string>
   <string name="doze_pulse_duration_in_title">Desvanecer-se</string>
-  <string name="doze_pulse_duration_in_summary"></string>
   <string name="doze_pulse_duration_visible_title">Duração visível</string>
-  <string name="doze_pulse_duration_visible_summary"></string>
   <string name="doze_pulse_duration_out_title">Desaparecer</string>
-  <string name="doze_pulse_duration_out_summary"></string>
   <string name="doze_trigger_pickup_title">Buscar o gatilho de sensor</string>
   <string name="doze_trigger_pickup_summary_on">Pulso será acionado pelo sensor de movimento</string>
   <string name="doze_trigger_pickup_summary_off">Pick-up sensor não será utilizado como um disparador</string>
@@ -127,6 +124,4 @@
   <string name="status_bar_battery_percentage_default">Oculto</string>
   <string name="status_bar_battery_percentage_text_inside">Dentro do ícone</string>
   <string name="status_bar_battery_percentage_text_next">Ao lado do ícone</string>
-  <string name="ActiveDisplay_title">Active Display</string>
-  <string name="ActiveDisplay_summary">Active Display is a new way of handling notifications in Android.</string>
 </resources>
