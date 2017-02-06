@@ -28,6 +28,13 @@
   <string name="disable_immersive_message_title">Deshabilitar mensajes de modo inmersivo</string>
   <string name="disable_immersive_message_summary">Esto ocultará todos los mensajes de modo inmersivo</string>
   <!-- Immersive Recents -->
+  <string name="immersive_recents_title">Recientes en pantalla completa</string>
+  <string name="immersive_recents_summary">Cambiar la vista de la pantalla de Recientes</string>
+  <string name="immersive_recents_dialog_title">Seleccione la vista de recientes</string>
+  <string name="immersive_recents_default">Por defecto</string>
+  <string name="immersive_recents_fullscreen">Pantalla completa</string>
+  <string name="immersive_recents_statusbar">Sólo barra de estado</string>
+  <string name="immersive_recents_navbar">Sólo barra de Navegación</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <!-- Change Log strings -->
   <string name="changelog_title">Ver Registro de Cambios</string>
@@ -41,6 +48,8 @@
   <string name="rel_type">Tipo de lanzamiento</string>
   <string name="xpe_codename">Código XPerience™</string>
   <!-- Network traffic -->
+  <string name="network_traffic_title">Tráfico de red</string>
+  <string name="show_network_traffic_state">Monitor de tráfico en la barra de estado</string>
   <!-- Display Settings -->
   <!-- Doze pulse options -->
   <string name="summary_doze_enabled">Habilitado</string>
