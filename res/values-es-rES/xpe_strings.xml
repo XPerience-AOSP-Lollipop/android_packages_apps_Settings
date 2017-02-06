@@ -50,6 +50,20 @@
   <!-- Network traffic -->
   <string name="network_traffic_title">Tráfico de red</string>
   <string name="show_network_traffic_state">Monitor de tráfico en la barra de estado</string>
+  <string name="network_traffic_summary">Permite varias opciones de tráfico de red en barra de estado various network traffic options in statusbar</string>
+  <string name="show_network_traffic_unit">Unidad de muestreo</string>
+  <string name="show_network_traffic_frequency">Intervalo de actualización</string>
+  <string name="show_network_traffic_disable">Desactivado</string>
+  <string name="show_network_traffic_up">Saliente</string>
+  <string name="show_network_traffic_down">Entrante</string>
+  <string name="show_network_traffic_all">Salientes y entrantes</string>
+  <string name="show_network_traffic_bit">Bits por segundo</string>
+  <string name="show_network_traffic_byte">Bytes por segundo</string>
+  <string name="network_traffic_autohide">Ocultar automáticamente</string>
+  <string name="network_traffic_autohide_summary">Ocultar el monitor de tráfico cuando no hay actividad</string>
+  <string name="network_traffic_autohide_threshold">Umbral de inactividad</string>
+  <string name="network_traffic_hidearrow_title">Ocultar las flechas</string>
+  <string name="network_traffic_hidearrow_summary">Ocultar las flechas de actividad de monitor de tráfico</string>
   <!-- Display Settings -->
   <!-- Doze pulse options -->
   <string name="summary_doze_enabled">Habilitado</string>
@@ -92,9 +106,26 @@
   <!-- Custom Settings -->
   <!-- Dashboard -->
   <string name="header_category_custom">XPerience™ Unicornio Arcoiris</string>
+  <string name="substratum_title">Substratum</string>
+  <string name="substratum_summary">Personalizar el tema de dispositivo</string>
   <!--Battery style-->
+  <string name="battery_style_title">Estilo de batería</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_style_title">Estilo de batería</string>
+  <string name="status_bar_battery_style_icon_portrait">Icono vertical</string>
+  <string name="status_bar_battery_style_icon_landscape">Icono horizontal</string>
+  <string name="status_bar_battery_style_circle">Circulo</string>
+  <string name="status_bar_battery_style_text">Texto</string>
+  <string name="status_bar_battery_style_hidden">Oculto</string>
   <!-- Status bar - Battery percentage -->
   <!-- Status bar - Battery percentage -->
+  <string name="battery_percentage_title">Porcentaje de batería</string>
+  <string name="status_bar_battery_percentage_title">Porcentaje de batería</string>
+  <string name="status_bar_battery_percentage_default">Oculto</string>
+  <string name="status_bar_battery_percentage_text_inside">Dentro del icono</string>
+  <string name="status_bar_battery_percentage_text_next">Junto al icono</string>
+  <string name="ActiveDisplay_title">Pantalla Activa</string>
+  <string name="ActiveDisplay_summary">Pantalla activa es una nueva forma de manejo de notificaciones en Android.</string>
   <!-- XPe Updater -->
+  <string name="xpeupdate_settings_title">Actualizaciones de XPerience</string>
 </resources>
