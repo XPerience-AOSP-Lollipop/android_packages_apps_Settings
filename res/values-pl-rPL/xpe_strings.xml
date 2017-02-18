@@ -17,16 +17,66 @@
 
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="xpe_version">Wersja XPerience™</string>
+  <string name="xpe_version_default">Nieznane</string>
   <!-- About phone screen, build date -->
+  <string name="build_date">Data kompilacji</string>
   <!-- Force expanded notifications -->
+  <string name="force_expanded_notifications_title">Wymuś rozwijanie powiadomień</string>
+  <string name="force_expanded_notifications_summary">Dostępne wyłącznie dla aplikacji, które obsługują rozwijane powiadomienia</string>
   <!-- Disabling immersive mode messages -->
+  <string name="disable_immersive_message_title">Wyłącz wiadomości pełnoekranowe</string>
+  <string name="disable_immersive_message_summary">Nie pokazuj wiadomości pełnoekranowych</string>
   <!-- Immersive Recents -->
+  <string name="immersive_recents_title">Tryb pełnoekranowy dla Ostatnio Uruchamianych</string>
+  <string name="immersive_recents_summary">Zmień wygląd Ostatnio Uruchamianych</string>
+  <string name="immersive_recents_dialog_title">Wybierz wygląd Ostatnio Uruchamianych</string>
+  <string name="immersive_recents_default">Domyślne</string>
+  <string name="immersive_recents_fullscreen">Pełny ekran</string>
+  <string name="immersive_recents_statusbar">Tylko pasek statusu</string>
+  <string name="immersive_recents_navbar">Tylko pasek nawigacji</string>
   <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
   <!-- Change Log strings -->
+  <string name="changelog_title">Zobacz dziennik zmian</string>
+  <string name="changelog_loading">Ładowanie dziennika zmian...</string>
+  <string name="changelog_error">Nie można załadować dziennika zmian</string>
   <!-- donators strings -->
+  <string name="donators_title">Zobacz listę darczyńców</string>
+  <string name="donators_loading">Ładowanie listy darczyńców...</string>
+  <string name="donators_error">Nie można załadować listy darczyńców</string>
+  <string name="OTACENTER">Centrum XPerience™</string>
+  <string name="rel_type">Typ wydania</string>
+  <string name="xpe_codename">Nazwa kodowa XPerience™</string>
   <!-- Network traffic -->
+  <string name="network_traffic_title">Monitor ruchu sieciowego</string>
+  <string name="show_network_traffic_state">Wskaźnik ruchu sieciowego na pasku statusu</string>
+  <string name="network_traffic_summary">Włącz różne opcje monitora ruchu sieciowego na pasku statusu</string>
+  <string name="show_network_traffic_unit">Pokaż jednostki</string>
+  <string name="show_network_traffic_frequency">Częstotliwość aktualizacji</string>
+  <string name="show_network_traffic_disable">Nieaktywne</string>
+  <string name="show_network_traffic_up">Wychodzące</string>
+  <string name="show_network_traffic_down">Przychodzące</string>
+  <string name="show_network_traffic_all">Wychodzące i przychodzące</string>
+  <string name="show_network_traffic_bit">Bity na sekundę</string>
+  <string name="show_network_traffic_byte">Bajty na sekundę</string>
+  <string name="network_traffic_autohide">Autoukrywanie</string>
+  <string name="network_traffic_autohide_summary">Ukryj monitor ruchu, przy braku aktywności</string>
+  <string name="network_traffic_autohide_threshold">Próg bezczynności</string>
+  <string name="network_traffic_hidearrow_title">Ukryj strzałki</string>
+  <string name="network_traffic_hidearrow_summary">Ukryj strzałki monitora ruchu sieciowego</string>
   <!-- Display Settings -->
   <!-- Doze pulse options -->
+  <string name="summary_doze_enabled">Włączone</string>
+  <string name="summary_doze_disabled">Nieaktywne</string>
+  <string name="doze_overwrite_value_title">Zastąp domyślne</string>
+  <string name="doze_overwrite_value_summary">Zezwól na zmianę wartości domyślnych</string>
+  <string name="doze_pulse_title">Konfigurowalne ustawienia</string>
+  <string name="doze_pulse_duration_in_title">Pojawianie się</string>
+  <string name="doze_pulse_duration_visible_title">Czas widoczności</string>
+  <string name="doze_pulse_duration_out_title">Zanikanie</string>
+  <string name="doze_trigger_pickup_title">Zapalanie ekranu przy podniesieniu urządzenia</string>
+  <string name="doze_trigger_pickup_summary_on">Pulsujący ekran zostanie aktywowany przy podniesieniu urządzenia</string>
+  <string name="doze_trigger_pickup_summary_off">Pulsujący ekran nie zostanie aktywowany przy podniesieniu urządzenia</string>
   <!--On the GO RESET-->
   <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
   <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
