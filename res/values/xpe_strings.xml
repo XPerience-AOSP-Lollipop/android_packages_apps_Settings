@@ -114,7 +114,7 @@
     <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
 
     <!-- Device info settings -->
-    <string name="cpu_info"translatable="false">CPU</string>
+    <string name="cpu_info" translatable="false">CPU</string>
     <string name="mem_info">Memory</string>
 
     <string name="ambient_display_show_battery_title">Battery Status</string>

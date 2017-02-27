@@ -17,30 +17,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-<<<<<<< HEAD
-    <string name="xpe_version">Versión de XPerience™</string>
-    <string name="xpe_version_default">Desconocida</string>
-
-    <!-- About phone screen, build date -->
-    <string name="build_date">Fecha de compilación</string>
-    <string name="build_date_default">2015-01-01-0000</string>
-
-    <!-- Change Log strings -->
-    <string name="changelog_title">Ver changelog</string>
-    <string name="changelog_loading">Cargando changelog...</string>
-    <string name="changelog_error">Imposible cargar changelog</string>
-    
-    <!-- donators strings -->
-    <string name="donators_title">Ver donators</string>
-    <string name="donators_loading">Cargando donadores...</string>
-    <string name="donators_error">Imposible cargar texto de donadores</string>
-        
-    <string name="OTACENTER">Centro XPerience™</string>
-
-    <string name="rel_type">Tipo de build</string>
-    <string name="xpe_codename">Nombre Código de XPerience™</string>
-
-=======
   <string name="xpe_version">Versión de XPerience™</string>
   <string name="xpe_version_default">Desconocido</string>
   <!-- About phone screen, build date -->
@@ -118,5 +94,5 @@
     <string name="show_cpu_info">Mostrar información de la CPU</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Superposición en pantalla que muestra información actual de la CPU</string>
->>>>>>> 74a330e... [2/2] settings: add CPU info overlay
+
 </resources>
