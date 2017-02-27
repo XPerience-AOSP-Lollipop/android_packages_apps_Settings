@@ -1180,9 +1180,8 @@ public class SettingsActivity extends SettingsDrawerActivity
                         Settings.DevelopmentSettingsActivity.class.getName()),
                 showDev, isAdmin, pm);
 
-<<<<<<< HEAD
         // Embedding into Settings is supported from SuperSU v1.85 and up
-=======
+
         // Substratum
         boolean subSupported = false;
         try {
@@ -1194,7 +1193,7 @@ public class SettingsActivity extends SettingsDrawerActivity
                 subSupported, isAdmin, pm);
 
         // SuperSU
->>>>>>> 36a971b... Add Substratum dashboard tile
+
         boolean suSupported = false;
         try {
             suSupported = (getPackageManager().getPackageInfo("eu.chainfire.supersu", 0).versionCode >= 185);
