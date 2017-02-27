@@ -43,7 +43,7 @@
     <string name="rel_type">Release type</string>
     <string name="xpe_codename">XPerience™ CodeName</string>
 
-    <string name="Alessa_title">Alessa™</string>
+    <string name="Alessa_title" translatable="false">Alessa™</string>
 
     <!-- Network traffic -->
     <string name="network_traffic_title">Network traffic</string>
@@ -113,7 +113,7 @@
     <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
 
     <!-- Device info settings -->
-    <string name="cpu_info">CPU</string>
+    <string name="cpu_info"translatable="false">CPU</string>
     <string name="mem_info">Memory</string>
 
     <string name="ambient_display_show_battery_title">Battery Status</string>
@@ -150,7 +150,7 @@
     <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
     <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
 
-   <string name="ActiveDisplay_title">Active Display</string>
+   <string name="ActiveDisplay_title" translatable="false">Active Display</string>
    <string name="ActiveDisplay_summary">Active Display is a new way of handling notifications in Android.</string>
 
     <!-- XPe Updater -->
