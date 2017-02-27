@@ -129,6 +129,12 @@
                 android:title="@string/xpe_version"
                 android:summary="@string/xpe_version_default" />
 
+        <!-- Detailed build version -->
+        <Preference android:key="caf_branch" 
+                android:enabled="false"
+                android:shouldDisableView="false"
+                android:title="@string/caf_branch"/>
+
         <!-- XPerience CodeName-->
         <Preference android:key="xpe_codename" 
                 android:enabled="false"

@@ -86,6 +86,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_XPE_VERSION = "xpe_version";
     private static final String KEY_MOD_RELEASE_TYPE = "rel_type";
     private static final String KEY_XPE_CODENAME = "xpe_codename";
+    private static final String KEY_CAF_BRANCH = "caf_branch";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
@@ -127,7 +128,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         } else {
             getPreferenceScreen().removePreference(findPreference(KEY_SECURITY_PATCH));
         }
-
+		
+		setValueSummary(KEY_CAF_BRANCH, "ro.xpe.cafbranch");
         setValueSummary(KEY_BASEBAND_VERSION, "gsm.version.baseband");
         setValueSummary(KEY_EQUIPMENT_ID, PROPERTY_EQUIPMENT_ID);
         setStringSummary(KEY_DEVICE_MODEL, Build.MODEL);
@@ -153,8 +155,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
         setValueSummary(KEY_XPE_VERSION, "ro.xpe.version");
         findPreference(KEY_XPE_VERSION).setEnabled(true);
-	setValueSummary(KEY_MOD_RELEASE_TYPE, "ro.xpe.releasetype");
-	setValueSummary(KEY_XPE_CODENAME, "ro.xpe.codename");
+	    setValueSummary(KEY_MOD_RELEASE_TYPE, "ro.xpe.releasetype");
+	    setValueSummary(KEY_XPE_CODENAME, "ro.xpe.codename");
 
         final String cpuInfo = DeviceInfoUtils.getCPUInfo();
         String memInfo = DeviceInfoUtils.getMemInfo();
