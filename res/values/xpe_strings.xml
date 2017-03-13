@@ -156,4 +156,7 @@
 
     <!-- XPe Updater -->
     <string name="xpeupdate_settings_title">XPerience updates</string>
+    <!-- Pocket judge -->
+    <string name="pocket_judge_title">Pocket detection</string>
+    <string name="pocket_judge_summary">Prevent accidental wakeups when device is in pocket</string>
 </resources>

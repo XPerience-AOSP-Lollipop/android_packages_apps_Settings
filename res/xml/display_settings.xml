@@ -176,11 +176,11 @@
             android:entryValues="@array/immersive_recents_values"
             android:persistent="false" />
 
-    <PreferenceScreen
-        android:key="network_traffic_state"
-        android:title="@string/network_traffic_title"
-        android:fragment="com.android.settings.xperience.Traffic"
-        android:summary="@string/network_traffic_summary" />
+
+        <SwitchPreference
+                android:key="pocket_judge"
+                android:title="@string/pocket_judge_title"
+                android:summary="@string/pocket_judge_summary" />
 		
     </PreferenceCategory>
 
