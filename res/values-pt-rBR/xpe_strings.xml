@@ -125,6 +125,7 @@
   <string name="status_bar_battery_percentage_text_inside">Dentro do ícone</string>
   <string name="status_bar_battery_percentage_text_next">Ao lado do ícone</string>
   <string name="ActiveDisplay_title">Tela ativada</string>
+  <string name="ActiveDisplay_summary">Active Display é o novo manipulador de notificações no Android.</string>
   <!-- XPe Updater -->
   <string name="xpeupdate_settings_title">Atualizações XPerience</string>
 </resources>
