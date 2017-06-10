@@ -116,6 +116,12 @@
                 settings:allowDividerAbove="true"
                 settings:allowDividerBelow="true"/>
 
+        <!-- Software Channel -->
+        <Preference android:key="xperience_channel" 
+                android:enabled="false"
+                android:shouldDisableView="false"
+                android:title="@string/xpe_channel"/>
+
         <!-- Device firmware version -->
         <Preference android:key="firmware_version"
                 android:enabled="false"

@@ -87,6 +87,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_MOD_RELEASE_TYPE = "rel_type";
     private static final String KEY_XPE_CODENAME = "xpe_codename";
     private static final String KEY_CAF_BRANCH = "caf_branch";
+    private static final String KEY_XPE_CHANNEL = "xperience_channel";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
@@ -157,6 +158,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         findPreference(KEY_XPE_VERSION).setEnabled(true);
 	    setValueSummary(KEY_MOD_RELEASE_TYPE, "ro.xpe.releasetype");
 	    setValueSummary(KEY_XPE_CODENAME, "ro.xpe.codename");
+	    setValueSummary(KEY_XPE_CHANNEL, "ro.xpe.channeltype");
 
         final String cpuInfo = DeviceInfoUtils.getCPUInfo();
         String memInfo = DeviceInfoUtils.getMemInfo();

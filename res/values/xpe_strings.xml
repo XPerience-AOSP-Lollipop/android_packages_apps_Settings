@@ -43,6 +43,7 @@
     <string name="rel_type">Release type</string>
     <string name="caf_branch">CAF Branch</string>
     <string name="xpe_codename">XPerience™ CodeName</string>
+    <string name="xpe_channel">Software channel</string>
 
     <string name="Alessa_title" translatable="false">Alessa™</string>
 
