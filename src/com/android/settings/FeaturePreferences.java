@@ -52,15 +52,15 @@ public class FeaturePreferences extends InstrumentedFragment {
         @Override
         public void onClick(View v) {
             if (v == mResetAllButton) {
-                for (String setting : Settings.Secure.SETTINGS_TO_RESET) {
-                    Settings.Secure.putInt(mCr, setting, 0);
+                for (String setting : Settings.System.SETTINGS_TO_RESET) {
+                    Settings.System.putInt(mCr, setting, 0);
                 }
             } else if (v == mResetSelectedButton) {
                 if (customPrefs != null) {
                     for (int i = 0; i < customPrefs.size(); i++) {
                         CheckBoxPreference pref = mSettingsAdapter.getItem(i);
                         if(pref.isChecked()) {
-                            Settings.Secure.putInt(mCr, customPrefs.get(i).getKey(), 0);
+                            Settings.System.putInt(mCr, customPrefs.get(i).getKey(), 0);
                         }
                     }
                 }
@@ -76,7 +76,7 @@ public class FeaturePreferences extends InstrumentedFragment {
             Context con = getActivity().getApplicationContext()
                     .createPackageContext("com.android.systemui", 0);
             Resources r = con.getResources();
-            for (String setting : Settings.Secure.SETTINGS_TO_RESET) {
+            for (String setting : Settings.System.SETTINGS_TO_RESET) {
                 String key = setting.toLowerCase();
                 int nameResId = r.getIdentifier(setting + "_name", "string", "com.android.systemui");
                 int descResId = r.getIdentifier(setting + "_summary", "string", "com.android.systemui");
@@ -88,7 +88,7 @@ public class FeaturePreferences extends InstrumentedFragment {
                         item.setKey(key);
                         item.setTitle(name);
                         item.setSummary(desc);
-                        item.setEnabled(!(Settings.Secure.getInt(mCr, setting, 0) == 0));
+                        item.setEnabled(!(Settings.System.getInt(mCr, setting, 0) == 0));
                         customPrefs.add(item);
                     } catch (Resources.NotFoundException e) {
                         Log.e(TAG, "Resource not found for: " + setting, e);
