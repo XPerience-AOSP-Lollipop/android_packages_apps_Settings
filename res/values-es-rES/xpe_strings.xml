@@ -47,8 +47,6 @@
   <string name="OTACENTER">Centro XPerience™</string>
   <string name="rel_type">Tipo de lanzamiento</string>
   <string name="xpe_codename">Código XPerience™</string>
-  <string name="xpe_channel">Canal de software</string>
-
   <!-- Network traffic -->
   <string name="network_traffic_title">Tráfico de red</string>
   <string name="show_network_traffic_state">Monitor de tráfico en la barra de estado</string>
