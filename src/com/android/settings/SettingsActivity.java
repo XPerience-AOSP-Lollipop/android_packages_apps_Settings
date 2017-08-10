@@ -137,6 +137,7 @@ import com.android.settingslib.drawer.SettingsDrawerActivity;
 import com.android.settingslib.drawer.Tile;
 
 import mx.xperience.rainbowunicorn.RainbowUnicorn;
+import mx.xperience.rainbowunicorn.PieSettings;
 
 import java.net.URISyntaxException;
 import java.util.ArrayList;
@@ -258,8 +259,8 @@ public class SettingsActivity extends SettingsDrawerActivity
             Settings.RoamingSettingsActivity.class.getName(),
             Settings.SimSettingsActivity.class.getName(),
             Settings.WirelessSettingsActivity.class.getName(),
-			//XPerienced
-			RainbowUnicorn.class.getName(),
+	    //XPerienced
+	    RainbowUnicorn.class.getName(),
             //device_section
             Settings.HomeSettingsActivity.class.getName(),
             Settings.SoundSettingsActivity.class.getName(),
@@ -380,7 +381,8 @@ public class SettingsActivity extends SettingsDrawerActivity
             NightDisplaySettings.class.getName(),
             ManageDomainUrls.class.getName(),
             AutomaticStorageManagerSettings.class.getName(),
-			RainbowUnicorn.class.getName()
+	    RainbowUnicorn.class.getName()
+            PieSettings.class.getName()
     };
 
 
