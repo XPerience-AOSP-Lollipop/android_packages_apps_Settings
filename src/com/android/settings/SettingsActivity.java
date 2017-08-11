@@ -381,7 +381,7 @@ public class SettingsActivity extends SettingsDrawerActivity
             NightDisplaySettings.class.getName(),
             ManageDomainUrls.class.getName(),
             AutomaticStorageManagerSettings.class.getName(),
-	    RainbowUnicorn.class.getName()
+	    RainbowUnicorn.class.getName(),
             PieSettings.class.getName()
     };
 
