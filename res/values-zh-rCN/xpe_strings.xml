@@ -23,7 +23,7 @@
 
     <!-- Force expanded notifications -->
     <string name="force_expanded_notifications_title">强制展开通知</string>
-    <string name="force_expanded_notifications_summary">Available only for apps that support expanded notifications</string>
+    <string name="force_expanded_notifications_summary">仅适用于支持扩展通知的应用</string>
 
     <!-- Disabling immersive mode messages -->
     <string name="disable_immersive_message_title">禁用拟真模式信息</string>
@@ -32,8 +32,8 @@
     <!-- Immersive Recents -->
     <string name="immersive_recents_default">默认</string>
     <string name="immersive_recents_fullscreen">全屏</string>
-    <string name="immersive_recents_statusbar">Statusbar only</string>
-    <string name="immersive_recents_navbar">Navbar only</string>
+    <string name="immersive_recents_statusbar">仅状态栏/string>
+    <string name="immersive_recents_navbar">仅导航栏</string>
 
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="supersu_title">SuperSU超级用户</string>
@@ -52,10 +52,10 @@
   
     <string name="rel_type">发布类型</string>
     <string name="caf_branch">CAF 分支</string>
-    <string name="xpe_codename">XPerience™ CodeName</string>
+    <string name="xpe_codename">XPerience™ 代号</string>
     <string name="xpe_channel">软件通道</string>
 
-    <string name="Alessa_title" translatable="false">Alessa™内核管理</string>
+    <string name="Alessa_title" translatable="false">Alessa™ 内核管理器</string>
 
     <!-- Network traffic -->
     <string name="network_traffic_title">网络流量</string>
@@ -74,29 +74,29 @@
     <string name="show_network_traffic_1500">1500 毫秒</string>
     <string name="show_network_traffic_2000">2000 毫秒</string>
     <string name="network_traffic_autohide">自动隐藏</string>
-    <string name="network_traffic_autohide_summary">当不活动时自动隐藏流量监视器</string>
-    <string name="network_traffic_autohide_threshold">设置静止的阈值</string>
+    <string name="network_traffic_autohide_summary">当无网络活动活动时自动隐藏流量监视器</string>
+    <string name="network_traffic_autohide_threshold">设置不活跃阀值</string>
     <string name="network_traffic_hidearrow_title">隐藏箭头</string>
     <string name="network_traffic_hidearrow_summary">在流量监视器里隐藏箭头</string>
     <!-- Display Settings -->
     <!-- Doze pulse options -->
     <string name="summary_doze_enabled">启用</string>
     <string name="summary_doze_disabled">禁用</string>
-    <string name="doze_overwrite_value_title">覆盖默认</string>
-    <string name="doze_overwrite_value_summary">Allow override of default values with user config</string>
+    <string name="doze_overwrite_value_title">覆盖默认设置</string>
+    <string name="doze_overwrite_value_summary">允许用户配置覆盖默认设置</string>
     <string name="doze_pulse_title">用户可配置的设置</string>
     <string name="doze_pulse_duration_in_title">淡入</string>
     <string name="doze_pulse_duration_in_summary"></string>
-    <string name="doze_pulse_duration_visible_title">可见时间</string>
+    <string name="doze_pulse_duration_visible_title">动画时长</string>
     <string name="doze_pulse_duration_visible_summary"></string>
     <string name="doze_pulse_duration_out_title">淡出</string>
     <string name="doze_pulse_duration_out_summary"></string>
-    <string name="doze_trigger_pickup_title">拿起手机时传感器触发</string>
-    <string name="doze_trigger_pickup_summary_on">Pulse将在拿起传感器时触发</string>
-    <string name="doze_trigger_pickup_summary_off">拿起时不触发传感器</string>
+    <string name="doze_trigger_pickup_title">拿起感应</string>
+    <string name="doze_trigger_pickup_summary_on">当手机被拿起时将触发自动显示</string>
+    <string name="doze_trigger_pickup_summary_off">当手机被拿起时将不会触发自动显示</string>
     <string name="doze_trigger_notification_title">通知触发器</string>
-    <string name="doze_trigger_notification_summary_on">Pulse将会在有通知时触发</string>
-    <string name="doze_trigger_notification_summary_off">通知将不使用触发器</string>
+    <string name="doze_trigger_notification_summary_on">通知将会唤醒设备</string>
+    <string name="doze_trigger_notification_summary_off">通知将不会唤醒设备</string>
     <string name="doze_brightness_level_title">亮度等级</string>
     <string name="onehundred_ms" translatable="false">100 毫秒</string>
     <string name="twofifty_ms" translatable="false">250 毫秒</string>
@@ -124,10 +124,10 @@
 
     <!-- Device info settings -->
     <string name="cpu_info" translatable="false">处理器</string>
-    <string name="mem_info">物理内存</string>
+    <string name="mem_info">可用内存</string>
 
     <string name="ambient_display_show_battery_title">电池风格</string>
-    <string name="ambient_display_show_battery_summary">在Pulse显示电池指示器</string>
+    <string name="ambient_display_show_battery_summary">在充电时显示电池电量指示器</string>
 
     <!-- Lockscreen charging current indicator  -->
     <string name="lockscreen_charging_current_title">锁屏充电信息</string>
@@ -138,7 +138,7 @@
 
 <!-- Custom Settings -->    
 <!-- Dashboard -->
-   <string name="header_category_custom">Rainbow Unicorn XPerience™</string>
+   <string name="header_category_custom">XPerience™ Rainbow Unicorn 设置</string>
    <string name="substratum_title">Substratum主题引擎</string>
    <string name="substratum_summary">自定义设备主题风格</string>
 
@@ -162,7 +162,7 @@
     <string name="status_bar_battery_percentage_text_next">图标旁</string>
 
    <string name="ActiveDisplay_title" translatable="false">主动显示</string>
-   <string name="ActiveDisplay_summary">主动显示是一种新的处理通知的方式在Android里。</string>
+   <string name="ActiveDisplay_summary">主动显示是一种新的Android处理通知的方式。</string>
 
     <!-- XPe Updater -->
     <string name="xpeupdate_settings_title">XPerience 更新</string>
