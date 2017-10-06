@@ -32,7 +32,7 @@
     <!-- Immersive Recents -->
     <string name="immersive_recents_default">默认</string>
     <string name="immersive_recents_fullscreen">全屏</string>
-    <string name="immersive_recents_statusbar">仅状态栏/string>
+    <string name="immersive_recents_statusbar">仅状态栏</string>
     <string name="immersive_recents_navbar">仅导航栏</string>
 
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
