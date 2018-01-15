@@ -29,6 +29,8 @@ import com.android.settings.Utils;
 import com.android.settingslib.BatteryInfo;
 import com.android.settingslib.graph.UsageView;
 
+import mx.xperience.settings.extensions.ModsUtils;
+
 /**
  * Custom preference for displaying power consumption as a bar and an icon on the left for the
  * subsystem/app type.
@@ -43,7 +45,11 @@ public class BatteryHistoryPreference extends Preference {
 
     public BatteryHistoryPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
-        setLayoutResource(R.layout.battery_usage_graph);
+        if (ModsUtils.showModsHistoryChart(getContext())) {
+            setLayoutResource(R.layout.battery_usage_graph_mod);
+        } else {
+            setLayoutResource(R.layout.battery_usage_graph);
+        }
         setSelectable(true);
     }
 
@@ -73,10 +79,18 @@ public class BatteryHistoryPreference extends Preference {
         }
         view.itemView.setClickable(true);
         view.setDividerAllowedAbove(true);
-        ((TextView) view.findViewById(R.id.charge)).setText(mBatteryInfo.batteryPercentString);
-        ((TextView) view.findViewById(R.id.estimation)).setText(mBatteryInfo.remainingLabel);
+        if (!ModsUtils.showModsHistoryChart(getContext())) {
+        ((TextView) view.findViewById(R.id.charge)).setText(this.mBatteryInfo.batteryPercentString);
+        }
+        ((TextView) view.findViewById(R.id.estimation)).setText(this.mBatteryInfo.remainingLabel);
+        if (ModsUtils.showModsHistoryChart(getContext())) {
+           ((TextView) view.findViewById(R.id.power_remaining_duration_info)).setText(this.mBatteryInfo.remainingLabelInfo);
+        }
         UsageView usageView = (UsageView) view.findViewById(R.id.battery_usage);
         usageView.findViewById(R.id.label_group).setAlpha(.7f);
         mBatteryInfo.bindHistory(usageView);
+        if (ModsUtils.showModsHistoryChart(getContext())) {
+           ModsUtils.setBatteryLabels(getContext(), null, view, this.mHelper.getBatteryBroadcast());
+       }
     }
 }

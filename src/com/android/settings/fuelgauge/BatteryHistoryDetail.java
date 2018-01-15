@@ -34,6 +34,8 @@ import com.android.settings.fuelgauge.BatteryActiveView.BatteryActiveProvider;
 import com.android.settingslib.BatteryInfo;
 import com.android.settingslib.graph.UsageView;
 
+import mx.xperience.settings.extensions.ModsUtils;
+
 public class BatteryHistoryDetail extends SettingsPreferenceFragment {
     public static final String EXTRA_STATS = "stats";
     public static final String EXTRA_BROADCAST = "broadcast";
@@ -97,7 +99,16 @@ public class BatteryHistoryDetail extends SettingsPreferenceFragment {
         info.bindHistory((UsageView) view.findViewById(R.id.battery_usage), mChargingParser,
                 mScreenOn, mGpsParser, mFlashlightParser, mCameraParser, mWifiParser, mCpuParser,
                 mPhoneParser);
+        if (ModsUtils.showModsHistoryChart(getContext())) {
+            ((TextView) view.findViewById(R.id.charge)).setVisibility(8);
+            TextView estimationTextView = (TextView) view.findViewById(R.id.estimation);
+            estimationTextView.setPadding(estimationTextView.getPaddingLeft(), (int) (((double) (getContext().getResources().getDisplayMetrics().density * 8.0f)) + 0.5d), estimationTextView.getPaddingRight(), estimationTextView.getPaddingBottom());
+            estimationTextView.setTextSize(0, getContext().getResources().getDimension(R.dimen.estimation_text_size_battery_history_detail));
+            TypedValue value = new TypedValue();
+            getContext().getTheme().resolveAttribute(16842806, value, true);
+            estimationTextView.setTextColor(getContext().getColor(value.resourceId));
         ((TextView) view.findViewById(R.id.charge)).setText(info.batteryPercentString);
+		}
         ((TextView) view.findViewById(R.id.estimation)).setText(info.remainingLabel);
 
         bindData(mChargingParser, R.string.battery_stats_charging_label, R.id.charging_group);

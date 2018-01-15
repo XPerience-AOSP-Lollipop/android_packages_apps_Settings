@@ -161,4 +161,31 @@
     <!-- Pocket judge -->
     <string name="pocket_judge_title">Pocket detection</string>
     <string name="pocket_judge_summary">Prevent accidental wakeups when device is in pocket</string>
+
+	<!--MotoMods-->
+    <string name="core_status">Phone Battery: %s</string>
+    <string name="mod_status">Mod Battery: %s</string>
+    <string name="battery_title">Battery Status</string>
+    <string name="battery_manager_core_sub_desc">Phone</string>
+    <string name="battery_manager_mod_sub_desc">Moto Mod</string>
+    <string name="battery_manager_charging_sub_desc">Charging</string>
+    <string name="power_remaining_duration_only">Approx. %1$s left</string>
+    <string name="power_remaining_duration_only_short">%1$s left</string>
+    <string name="power_discharging_duration">%1$s - approx. %2$s left</string>
+    <string name="power_discharging_duration_short">%1$s - %2$s left</string>
+    <string name="power_charging">%1$s - %2$s</string>
+    <string name="power_charging_duration">%1$s - %2$s until full</string>
+    <string name="power_charging_duration_short">%1$s - %2$s</string>
+    <string name="power_charging_duration_ac">%1$s - %2$s until full on AC</string>
+    <string name="power_charging_duration_ac_short">%1$s - %2$s</string>
+    <string name="power_charging_duration_usb">%1$s - %2$s until full over USB</string>
+    <string name="power_charging_duration_usb_short">%1$s - %2$s</string>
+    <string name="power_charging_duration_wireless">%1$s - %2$s until full from wireless</string>
+    <string name="power_charging_duration_wireless_short">%1$s - %2$s</string>
+    <string name="power_remaining_duration_info">Time until phone battery is empty</string>
+    <string name="power_charging_duration_info">Time until phone battery is full</string>
+    <string name="power_charging_duration_mod">%1$s - %2$s until full from MOD</string>
+    <string name="power_charging_duration_mod_short">%1$s - %2$s</string>
+
+
 </resources>

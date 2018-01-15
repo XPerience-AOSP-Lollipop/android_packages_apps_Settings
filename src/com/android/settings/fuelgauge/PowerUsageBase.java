@@ -34,6 +34,8 @@ import com.android.internal.os.BatteryStatsHelper;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
+import mx.xperience.settings.extensions.ModsUtils;
+
 /**
  * Common base class for things that need to show the battery usage graph.
  */
@@ -48,6 +50,10 @@ public abstract class PowerUsageBase extends SettingsPreferenceFragment {
 
     private String mBatteryLevel;
     private String mBatteryStatus;
+	
+	//mods
+    private String mModLevel;
+    private String mModStatus;
 
     @Override
     public void onAttach(Activity activity) {
@@ -135,9 +141,17 @@ public abstract class PowerUsageBase extends SettingsPreferenceFragment {
             String batteryLevel = com.android.settings.Utils.getBatteryPercentage(intent);
             String batteryStatus = com.android.settings.Utils.getBatteryStatus(getResources(),
                     intent);
-            if (!batteryLevel.equals(mBatteryLevel) || !batteryStatus.equals(mBatteryStatus)) {
+            String modLevel = "0";
+            String modStatus = getResources().getString(R.string.battery_info_status_unknown);
+            if (ModsUtils.isModAttached(intent)) {
+                modLevel = ModsUtils.getModBatteryPercentage(intent);
+                modStatus = ModsUtils.getModBatteryStatus(getResources(), intent);
+            }
+            if (!batteryLevel.equals(mBatteryLevel) || !batteryStatus.equals(mBatteryStatus) || !modLevel.equals(mModLevel) || !modStatus.equals(mModStatus)) {
                 mBatteryLevel = batteryLevel;
                 mBatteryStatus = batteryStatus;
+                mModLevel = modLevel;
+                mModStatus = modStatus;
                 return true;
             }
         }
