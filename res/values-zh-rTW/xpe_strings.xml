@@ -21,4 +21,12 @@
   <!-- CAF Branch version -->
   <!-- Build type version -->
   <!-- Build type version -->
+  <!-- Themes -->
+  <!-- Format string for fingerprint location message -->
+  <!-- Fingerprint sensor locations -->
+  <!-- Manual provisioning support -->
+  <!-- Color Manager -->
+  <!-- Color Manager: Options -->
+  <!-- Color Manager: Device accent -->
+  <!-- Wake on plug -->
 </resources>
