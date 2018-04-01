@@ -57,10 +57,36 @@
   <!-- Manual provisioning support -->
   <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
   <string name="sim_disabled">Отключено</string>
+  <string name="sim_missing">отсутствует или неисправна</string>
+  <string name="sim_enabler_need_disable_sim">SIM-карта будет отключена. Вы хотите продолжить?</string>
+  <string name="sim_enabler_will_disable_sim_title">Внимание</string>
+  <string name="sim_enabler_need_switch_data_service">Эта SIM будет деактивирована и SIM <xliff:g id="slotid">%1$s</xliff:g> будет использована для передачи данных. Вы уверены что хотите продолжить?</string>
+  <string name="sim_enabler_airplane_on">Выполнение операции невозможно, пока активен режим полета.</string>
+  <string name="sim_enabler_in_call">Выполнение операции невозможно во время вызова.</string>
+  <string name="sim_enabler_both_inactive">Невозможно отключить все SIM-карты</string>
+  <string name="sim_enabler_enabling">Включение\u2026</string>
+  <string name="sim_enabler_disabling">Деактивация\u2026</string>
+  <string name="sub_activate_success">SIM-карта активирована.</string>
+  <string name="sub_activate_failed">Ошибка активации.</string>
+  <string name="sub_deactivate_success">SIM-карта деактивирована.</string>
+  <string name="sub_deactivate_failed">Ошибка деактивации.</string>
   <!-- Color Manager -->
+  <string name="color_manager_title">Управление цветом</string>
+  <string name="color_manager_summary">Изменение цвета системы с различными режимами темы</string>
   <!-- Color Manager: Options -->
+  <string name="theme_auto_title">Автоматически</string>
+  <string name="theme_auto_title_summary">Тема системы на основе цвета изображения рабочего стола</string>
+  <string name="theme_light_title">Светлая</string>
+  <string name="theme_light_title_summary">Светлая тема системы</string>
+  <string name="theme_dark_title">Темная</string>
+  <string name="theme_dark_title_summary">Тёмно-серая тема системы</string>
+  <string name="theme_black_title">Чёрная</string>
+  <string name="theme_black_title_summary">Чёрная тема системы</string>
   <!-- Color Manager: Device accent -->
+  <string name="device_accent_title">Цвет темы</string>
   <!-- Wake on plug -->
+  <string name="wake_when_plugged_or_unplugged_title">Включение экрана при подключении зарядки</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Включать экран при подключении или отключении зарядного устройства</string>
   <!-- Color Picker -->
   <!-- Battery Light -->
   <!-- Custom light color -->
