@@ -101,6 +101,7 @@
   <string name="battery_low_pulse_title">Pulsa cuando esta baja</string>
   <string name="battery_low_pulse_title_summary">Pulso cuando el nivel de la batería es bajo</string>
   <string name="battery_light_only_full_charge_title">Indicación de completamente cargado</string>
+  <string name="battery_light_only_full_charge_title_summary">Solo muestra la luz de la batería cuando el dispositivo está completamente cargado</string>
   <string name="battery_light_list_title">Colores</string>
   <string name="battery_light_low_color_title">Batería baja</string>
   <string name="battery_light_medium_color_title">Cargando</string>
