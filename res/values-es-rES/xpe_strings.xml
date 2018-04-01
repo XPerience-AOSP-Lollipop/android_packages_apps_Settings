@@ -21,6 +21,8 @@
   <string name="network_traffic_autohide_threshold_title">Umbral mínimo de red para ocultarse (KB/s)</string>
   <string name="xperience_settings_title">Configuración de XPerience™</string>
   <string name="xperience_settings_summary">Personalizar funciones de la ROM</string>
+  <!--Alessa-->
+  <string name="alessa_settings_summary">Personaliza tus funciones de kernel</string>
   <string name="xperience_version">Versión de XPerience™</string>
   <string name="xperience_version_default">Desconocido</string>
   <string name="xpe_update_settings_title">Actualizaciones XPerience™</string>
@@ -86,4 +88,9 @@
   <!-- Wake on plug -->
   <string name="wake_when_plugged_or_unplugged_title">Encender al Conectar</string>
   <string name="wake_when_plugged_or_unplugged_summary">Encender la pantalla cuando conecte o desconecte una fuente de energía</string>
+  <!-- Color Picker -->
+  <string name="dialog_color_picker">Selector de Color</string>
+  <string name="press_color_to_apply">Pulsa sobre el color debajo para aplicar</string>
+  <!-- Battery Light -->
+  <!-- Custom light color -->
 </resources>
